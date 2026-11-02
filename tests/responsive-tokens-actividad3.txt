@@ -1,0 +1,12 @@
+Chrome 156.0.8078.76; siete productos ficticios; SDK real; red interceptada.
+✔ Inicio conserva el ancho de 360 px sin JavaScript de animaciones (3599.6455ms)
+Chrome 156.0.8078.76; siete productos ficticios; SDK real; red interceptada.
+✔ Tienda muestra productos con CSS de entrada AOS, en móvil y movimiento reducido (7242.1803ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11901.3953

@@ -92,3 +92,7 @@ Estas convenciones buscan que THE WOLF tenga un código legible, ordenado y cohe
 ## Estructura existente y herramientas
 
 Se conserva Scripts/ como carpeta existente del sitio. En Windows no crear scripts/ para otro propósito: no se distingue de Scripts/. Las herramientas de pruebas y empaquetado se ubican en tools/. Esta aclaración evita colisiones sin renombrar rutas del sitio.
+
+### Tokens del sitio
+
+Los colores se declaran una sola vez como variables de :root en style/style.css; las reglas de componentes de ambas hojas usan var(). Las transparencias se nombran por familia y alfa en milésimas (dorado-a120 significa alfa 0,12). Las superficies heredadas se identifican por su tono. Usar fuente-texto, fuente-titulos y fuente-acento para las tipografías. El theme-color del HTML es metainformación del navegador y necesita un valor literal, no una variable CSS.

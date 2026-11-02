@@ -1,0 +1,16 @@
+{
+  "scope": "Dos hojas CSS; valores equivalentes normalizados, sin auditoria de contraste",
+  "registryTokens": 87,
+  "report": [
+    {
+      "file": "style/style.css",
+      "componentLiteralsRemaining": 0,
+      "valuesEquivalent": true
+    },
+    {
+      "file": "style/styleNC.css",
+      "componentLiteralsRemaining": 0,
+      "valuesEquivalent": true
+    }
+  ]
+}

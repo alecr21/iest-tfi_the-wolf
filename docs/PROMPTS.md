@@ -187,3 +187,7 @@ Hay seis casos reales de IA documentados en la copia integrada; sus conteos ante
 Pedido del estudiante: «entrando en la tienda con el f12 para ver el responsivo anda muy mal, tienda y inicio los otros dos los veo bien, empezemos con la actividad 3 tenemos que cumplir con los requisitos de las tabla 2».
 
 Se reprodujeron los defectos con pruebas anteriores al cambio. El diagnóstico posterior identificó además los 20 px del menú oculto: corregidos con desplazamiento vertical, manteniendo su apertura. Se revisó el diff de main.js y style.css y las capturas móviles posteriores. Se conserva el alcance: sin rehacer el sitio, sin publicación ni modificación del original. Tabla 2 controlada en docs/ACTIVIDAD-3.md.
+
+### Actividad 3 — centralización de identidad visual
+
+Se continuó el pedido «sigamos entonces» con un cambio acotado a CSS: colores y familias tipográficas desde tokens. Se comprobó equivalencia de valores antes/después, referencias definidas, build y las dos pruebas responsive. Se ejecutó una inspección preliminar de las cinco páginas a dos anchos, con sus límites documentados; no se declaró accesibilidad completa ni un resultado Lighthouse. No se repitió la batería funcional de 84 pruebas porque no cambió JavaScript/HTML ni la lógica y la equivalencia de colores se comprobó directamente.

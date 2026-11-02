@@ -59,10 +59,20 @@ Se trabaja exclusivamente en el proyecto integrado. RF11/RNF02 ya exigían adapt
 | Publicación | Pendiente por decisión del estudiante: crear GitHub y publicar al terminar el informe. Se conservan commits locales reales. |
 | Specs | Tres funcionalidades validadas con el alcance documentado; falta completar matriz de todos los RF altos, incluidos servicios/contacto. |
 | Tests y build | Build aprobado y regresión completa: 84 pruebas aprobadas, 0 fallidas y 0 omitidas (tests/ejecucion-actividad3.txt). |
-| Identidad visual | Pendiente: inventario y sustitución de colores literales por tokens, revisión de tipografías. |
+| Identidad visual | Tokens de colores y tipografías aplicados en ambas hojas CSS; equivalencia de valores verificada. Revisión visual final pendiente. |
 | Responsivo y accesible | Corrección de Inicio/Tienda en verificación; faltan revisión transversal, teclado, contraste y alternativas de imágenes. |
 | Rendimiento y SEO | Pendiente: títulos/descripciones y Lighthouse real >=80 en las cuatro categorías. |
 | Seguridad | Evidencia RLS y pruebas de escape existentes; falta cerrar configuración de entorno y revisión de entrega. |
 | Contenido | Pendiente revisión final e integración de las piezas exigidas en Actividad 4; no inventar su procedencia. |
 
 La Actividad 3 no está completa por corregir estas dos páginas.
+
+## Tokens e inspección preliminar — 2 de noviembre de 2026
+
+Las dos hojas CSS aplican colores desde variables definidas en `:root` de `style/style.css`. Se consolidaron 87 valores distintos (incluidos los tokens existentes y variantes con transparencia) y tres tokens de tipografía. No quedan valores hexadecimales/rgb/rgba en reglas de componentes; los literales se concentran en la definición de tokens. Los nombres `a120`, por ejemplo, indican alfa 0,120; `tono-181818` conserva una superficie gris preexistente. No se cambió deliberadamente la apariencia ni se homogeneizaron tonos de superficies.
+
+La verificación del cambio expandió las referencias de color y comparó los valores normalizados de ambas hojas antes/después: equivalentes. Evidencia en `tests/tokens-actividad3.json`. La metainformación HTML `theme-color` conserva el valor de marca literal porque no admite `var()` de CSS: no es una regla de presentación de un componente.
+
+Inspección reproducible: `node tools/auditar-tabla2.cjs`. Diez escenarios (cinco páginas a 360 y 1440 px), sin desborde, imágenes sin atributo alt, controles sin nombre ni errores JS no capturados. En las primeras 16 pulsaciones de Tab por página no se observó foco dentro de aria-hidden=true. La inspección usa recursos locales, bloquea CDN visuales, usa el SDK real y siete productos ficticios; el informe es `tests/auditoria-tabla2.json`. Es una revisión preliminar, no un informe Lighthouse ni certificación WCAG, y no evalúa si cada descripción alternativa es suficientemente precisa.
+
+Pendientes concretos: contraste (en particular textos secundarios semitransparentes), recorrido completo y gestión de foco en menú/modal/carrito, títulos distintos por página y Lighthouse con recursos reales. Las cinco páginas actualmente repiten el mismo título, según el informe; se corregirá en el bloque SEO.

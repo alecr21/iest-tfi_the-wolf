@@ -1,0 +1,1105 @@
+{
+  "scope": "Inspeccion preliminar local de cinco paginas: recursos propios, SDK real, siete productos ficticios; CDN visuales bloqueados; no es Lighthouse ni certificacion WCAG. Contraste pendiente.",
+  "results": [
+    {
+      "page": "index.html",
+      "width": 360,
+      "lang": "es",
+      "title": "The Wolf | Tecnología & Soporte",
+      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "h1": 1,
+      "scrollWidth": 360,
+      "missingAlt": [],
+      "unnamedControls": [],
+      "errors": [],
+      "keyboard": [
+        {
+          "element": "A",
+          "id": "",
+          "text": "THE WOLF - Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "burger",
+          "text": "Abrir menú",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Explorar servicios",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Ver productos",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Explorar todos los servicios",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Conocé más sobre nosotros",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Explorar tienda",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Contanos lo que necesitás",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Nosotros",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Servicios",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Tienda",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Portafolio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Contacto",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "wa-btn",
+          "text": "Contactar por WhatsApp",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BODY",
+          "id": "",
+          "text": "Inicio\n            Nosotros\n            Servicios\n            Tienda\n ",
+          "insideAriaHidden": false
+        }
+      ]
+    },
+    {
+      "page": "page/tienda.html",
+      "width": 360,
+      "lang": "es",
+      "title": "The Wolf | Tecnología & Soporte",
+      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "h1": 1,
+      "scrollWidth": 360,
+      "missingAlt": [],
+      "unnamedControls": [],
+      "errors": [],
+      "keyboard": [
+        {
+          "element": "A",
+          "id": "",
+          "text": "THE WOLF - Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "burger",
+          "text": "Abrir menú",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "INPUT",
+          "id": "shop-search-input",
+          "text": "Buscar productos",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Todos",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Notebooks",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Computadoras",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Celulares",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Componentes",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Periféricos",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Accesorios",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Ver detalle",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Agregar",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Ver detalle",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Agregar",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Ver detalle",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Agregar",
+          "insideAriaHidden": false
+        }
+      ]
+    },
+    {
+      "page": "page/servicios.html",
+      "width": 360,
+      "lang": "es",
+      "title": "The Wolf | Tecnología & Soporte",
+      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "h1": 0,
+      "scrollWidth": 360,
+      "missingAlt": [],
+      "unnamedControls": [],
+      "errors": [],
+      "keyboard": [
+        {
+          "element": "A",
+          "id": "",
+          "text": "THE WOLF - Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "burger",
+          "text": "Abrir menú",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Todos",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Mantenimiento",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Reparación",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Software",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Impresoras",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Conectividad",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Desarrollo",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Consultar",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Consultar",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Consultar",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Consultar",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Consultar",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Consultar",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Contactarnos",
+          "insideAriaHidden": false
+        }
+      ]
+    },
+    {
+      "page": "page/nostros.html",
+      "width": 360,
+      "lang": "es",
+      "title": "The Wolf | Tecnología & Soporte",
+      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "h1": 1,
+      "scrollWidth": 360,
+      "missingAlt": [],
+      "unnamedControls": [],
+      "errors": [],
+      "keyboard": [
+        {
+          "element": "A",
+          "id": "",
+          "text": "THE WOLF - Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "burger",
+          "text": "Abrir menú",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Ir a Contacto",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Nosotros",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Servicios",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Tienda",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Portafolio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Contacto",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "wa-btn",
+          "text": "Contactar por WhatsApp",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BODY",
+          "id": "",
+          "text": "Inicio\n            Nosotros\n            Servicios\n            Tienda\n ",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "THE WOLF - Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "burger",
+          "text": "Abrir menú",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Ir a Contacto",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Nosotros",
+          "insideAriaHidden": false
+        }
+      ]
+    },
+    {
+      "page": "page/contacto.html",
+      "width": 360,
+      "lang": "es",
+      "title": "The Wolf | Tecnología & Soporte",
+      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "h1": 1,
+      "scrollWidth": 360,
+      "missingAlt": [],
+      "unnamedControls": [],
+      "errors": [],
+      "keyboard": [
+        {
+          "element": "A",
+          "id": "",
+          "text": "THE WOLF - Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "burger",
+          "text": "Abrir menú",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "INPUT",
+          "id": "nombre",
+          "text": "",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "SELECT",
+          "id": "tipo_consulta",
+          "text": "Seleccioná una opción...\n                                    Mantenimi",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "TEXTAREA",
+          "id": "mensaje",
+          "text": "",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Enviar por WhatsApp",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Nosotros",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Servicios",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Tienda",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Portafolio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Contacto",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "wa-btn",
+          "text": "Contactar por WhatsApp",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BODY",
+          "id": "",
+          "text": "Inicio\n            Nosotros\n            Servicios\n            Tienda\n ",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "THE WOLF - Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "burger",
+          "text": "Abrir menú",
+          "insideAriaHidden": false
+        }
+      ]
+    },
+    {
+      "page": "index.html",
+      "width": 1440,
+      "lang": "es",
+      "title": "The Wolf | Tecnología & Soporte",
+      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "h1": 1,
+      "scrollWidth": 1440,
+      "missingAlt": [],
+      "unnamedControls": [],
+      "errors": [],
+      "keyboard": [
+        {
+          "element": "A",
+          "id": "",
+          "text": "THE WOLF - Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Nosotros",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Servicios",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Tienda",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Contacto",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Explorar servicios",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Ver productos",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Explorar todos los servicios",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Conocé más sobre nosotros",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Explorar tienda",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Contanos lo que necesitás",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Nosotros",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Servicios",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Tienda",
+          "insideAriaHidden": false
+        }
+      ]
+    },
+    {
+      "page": "page/tienda.html",
+      "width": 1440,
+      "lang": "es",
+      "title": "The Wolf | Tecnología & Soporte",
+      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "h1": 1,
+      "scrollWidth": 1440,
+      "missingAlt": [],
+      "unnamedControls": [],
+      "errors": [],
+      "keyboard": [
+        {
+          "element": "A",
+          "id": "",
+          "text": "THE WOLF - Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Nosotros",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Servicios",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Tienda",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Contacto",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "INPUT",
+          "id": "shop-search-input",
+          "text": "Buscar productos",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Todos",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Notebooks",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Computadoras",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Celulares",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Componentes",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Periféricos",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Accesorios",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Ver detalle",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Agregar",
+          "insideAriaHidden": false
+        }
+      ]
+    },
+    {
+      "page": "page/servicios.html",
+      "width": 1440,
+      "lang": "es",
+      "title": "The Wolf | Tecnología & Soporte",
+      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "h1": 0,
+      "scrollWidth": 1440,
+      "missingAlt": [],
+      "unnamedControls": [],
+      "errors": [],
+      "keyboard": [
+        {
+          "element": "A",
+          "id": "",
+          "text": "THE WOLF - Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Nosotros",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Servicios",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Tienda",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Contacto",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Todos",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Mantenimiento",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Reparación",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Software",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Impresoras",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Conectividad",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Desarrollo",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Consultar",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Consultar",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Consultar",
+          "insideAriaHidden": false
+        }
+      ]
+    },
+    {
+      "page": "page/nostros.html",
+      "width": 1440,
+      "lang": "es",
+      "title": "The Wolf | Tecnología & Soporte",
+      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "h1": 1,
+      "scrollWidth": 1440,
+      "missingAlt": [],
+      "unnamedControls": [],
+      "errors": [],
+      "keyboard": [
+        {
+          "element": "A",
+          "id": "",
+          "text": "THE WOLF - Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Nosotros",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Servicios",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Tienda",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Contacto",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Ir a Contacto",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Nosotros",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Servicios",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Tienda",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Portafolio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Contacto",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "wa-btn",
+          "text": "Contactar por WhatsApp",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BODY",
+          "id": "",
+          "text": "Inicio\n            Nosotros\n            Servicios\n            Tienda\n ",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "THE WOLF - Inicio",
+          "insideAriaHidden": false
+        }
+      ]
+    },
+    {
+      "page": "page/contacto.html",
+      "width": 1440,
+      "lang": "es",
+      "title": "The Wolf | Tecnología & Soporte",
+      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "h1": 1,
+      "scrollWidth": 1440,
+      "missingAlt": [],
+      "unnamedControls": [],
+      "errors": [],
+      "keyboard": [
+        {
+          "element": "A",
+          "id": "",
+          "text": "THE WOLF - Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Nosotros",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Servicios",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Tienda",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Contacto",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "INPUT",
+          "id": "nombre",
+          "text": "",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "SELECT",
+          "id": "tipo_consulta",
+          "text": "Seleccioná una opción...\n                                    Mantenimi",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "TEXTAREA",
+          "id": "mensaje",
+          "text": "",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "BUTTON",
+          "id": "",
+          "text": "Enviar por WhatsApp",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Inicio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Nosotros",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Servicios",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Tienda",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Portafolio",
+          "insideAriaHidden": false
+        },
+        {
+          "element": "A",
+          "id": "",
+          "text": "Contacto",
+          "insideAriaHidden": false
+        }
+      ]
+    }
+  ]
+}
