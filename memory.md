@@ -154,3 +154,9 @@ H04 corregido con escapeHtml para datos de tarjeta/modal/carrito y safeProductIm
 ### Evidencia RLS recibida — Cierre técnico de Tarea 6
 
 El estudiante compartió la salida de revisar-rls-productos.sql: public.productos con RLS habilitado; política SELECT true para anon/authenticated; ambos con USAGE y SELECT, sin INSERT/UPDATE/DELETE sobre tabla. JSON conservado en `tests/resultado-rls-productos.json`. RLS forzado=false no deshabilita RLS. No se cambió Supabase ni se intentaron escrituras. Tarea 6 comprobada técnicamente; revisión humana, integración y commit pendientes. CP09 actualizado con alcance y procedencia de la evidencia. Siguiente: Tarea 7, consolidar validación por CAT-RF y resolver pendientes, incluido CP02; no declarar Actividad 2 completa.
+
+### Actividad 3 — corrección de Inicio/Tienda
+
+Inicio y Tienda corregidos en la copia integrada: fondos limitados al contenedor, menú cerrado sin desplazamiento horizontal y contenido visible sin AOS/móvil/movimiento reducido. Pruebas nuevas primero; diagnóstico real posterior: ambas páginas 360/360 px y escritorio 1440/1440; Tienda HTTP 200, ocho tarjetas visibles. Capturas inspeccionadas. Dos pruebas responsive aprobadas y build correcto. Regresión completa en curso al registrar este avance. No publicar ni crear remoto: el estudiante lo posterga hasta finalizar el informe. Siguiente bloque: tokens, accesibilidad, SEO/Lighthouse y matriz de tabla 2; no declarar Actividad 3 completa.
+
+Cierre de esta corrección: npm test finalizó con 84/84 aprobadas, 0 fallidas y 0 omitidas; build aprobado. Diagnóstico real de Inicio/Tienda: 360 px sin desborde, ocho tarjetas visibles en Tienda; escritorio 1440 px conservado. Pendientes restantes de tabla 2 en docs/ACTIVIDAD-3.md.

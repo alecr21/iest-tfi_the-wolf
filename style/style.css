@@ -318,7 +318,7 @@ h1, h2, h3 {
   z-index: -2;
   top: 10%;
   left: 5%;
-  width: 480px;
+  width: min(480px, 95%);
   height: 480px;
   pointer-events: none;
   border-radius: 50%;
@@ -522,7 +522,7 @@ h1, h2, h3 {
   z-index: -1;
   top: 50%;
   left: 50%;
-  width: 400px;
+  width: min(400px, 100%);
   height: 200px;
   transform: translate(-50%, -50%);
   border-radius: 50%;
@@ -597,7 +597,7 @@ h1, h2, h3 {
 }
 
 .orbit-one { width: 300px; height: 300px; }
-.orbit-two { width: 410px; height: 410px; border-color: rgba(192,192,192,.075); }
+.orbit-two { width: min(410px, 100%); height: 410px; border-color: rgba(192,192,192,.075); }
 
 .floating-product {
   position: absolute;
@@ -899,7 +899,7 @@ h1, h2, h3 {
     visibility: hidden;
     pointer-events: none;
     opacity: 0;
-    transform: translateX(20px);
+    transform: translateY(-10px);
     transition: opacity .22s ease, transform .22s ease, visibility .22s ease;
   }
   .nav-menu.open {
@@ -1778,4 +1778,18 @@ h1, h2, h3 {
         padding: 20px 12px;
         font-size: .9rem;
     }
+}
+
+/* El contenido sigue visible si AOS falta o está desactivado. */
+html:not(.animations-enabled) [data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+@media (max-width: 768px), (prefers-reduced-motion: reduce) {
+  html [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }

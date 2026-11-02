@@ -181,3 +181,9 @@ Después de preparar la integración se ejecutó un diagnóstico de Inicio y Tie
 - **Evidencia:** tests/diagnostico-actividad3-inicial.json, diagnostico-actividad3.json y sus salidas. No cambió el sitio entre esas mediciones.
 
 Hay seis casos reales de IA documentados en la copia integrada; sus conteos anteriores son avances históricos. La lectura del estudiante sigue pendiente.
+
+### Actividad 3 — pedido y corrección responsive
+
+Pedido del estudiante: «entrando en la tienda con el f12 para ver el responsivo anda muy mal, tienda y inicio los otros dos los veo bien, empezemos con la actividad 3 tenemos que cumplir con los requisitos de las tabla 2».
+
+Se reprodujeron los defectos con pruebas anteriores al cambio. El diagnóstico posterior identificó además los 20 px del menú oculto: corregidos con desplazamiento vertical, manteniendo su apertura. Se revisó el diff de main.js y style.css y las capturas móviles posteriores. Se conserva el alcance: sin rehacer el sitio, sin publicación ni modificación del original. Tabla 2 controlada en docs/ACTIVIDAD-3.md.

@@ -740,13 +740,14 @@ updateCartUI();
   });
 
   // Animaciones AOS
-  if (window.AOS && !reducedMotion.matches) {
+  if (window.AOS && !reducedMotion.matches && window.matchMedia("(min-width: 769px)").matches) {
+    document.documentElement.classList.add("animations-enabled");
     AOS.init({
       duration: 650,
       easing: "ease-out-cubic",
       once: true,
       offset: 55,
-      disable: "mobile"
+      disable: false
     });
   }
 

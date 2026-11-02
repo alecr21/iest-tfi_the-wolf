@@ -41,3 +41,28 @@ Esto no es Lighthouse, una medición de rendimiento ni una auditoría completa d
 5. Preparar publicación y enlaces cuando el estudiante autorice crear/subir el repositorio y desplegar la copia del TFI. No sobrescribir el sitio original.
 
 No se modificó HTML, CSS o JavaScript del sitio durante este diagnóstico. Las correcciones responsive todavía no fueron aplicadas.
+
+## Corrección responsive — 2 de noviembre de 2026
+
+Se trabaja exclusivamente en el proyecto integrado. RF11/RNF02 ya exigían adaptación móvil: es una corrección de implementación, sin ampliar el alcance funcional.
+
+- Los brillos decorativos y la órbita se limitan al espacio disponible.
+- El menú móvil cerrado se desplaza verticalmente: su antiguo desplazamiento horizontal agregaba otros 20 px al documento aun estando invisible.
+- Las animaciones son optativas. Sin AOS activo, en anchos de hasta 768 px o con movimiento reducido, el contenido conserva opacidad 1 y no depende de una transición para aparecer. En escritorio compatible se mantiene AOS.
+- Pruebas escritas antes del arreglo reprodujeron los dos defectos. La prueba controlada usa siete productos ficticios y simula el estado CSS inicial de AOS; no sustituye la comprobación con la librería real del diagnóstico.
+- Evidencias nuevas: `tests/responsive-actividad3.test.cjs`, `tests/responsive-actividad3-resultado.txt`, `tests/diagnostico-actividad3-corregido-salida.txt`. El diagnóstico JSON y las capturas se actualizan con la ejecución más reciente.
+
+### Seguimiento de la tabla 2
+
+| Aspecto | Estado / siguiente comprobación |
+|---|---|
+| Publicación | Pendiente por decisión del estudiante: crear GitHub y publicar al terminar el informe. Se conservan commits locales reales. |
+| Specs | Tres funcionalidades validadas con el alcance documentado; falta completar matriz de todos los RF altos, incluidos servicios/contacto. |
+| Tests y build | Build aprobado y regresión completa: 84 pruebas aprobadas, 0 fallidas y 0 omitidas (tests/ejecucion-actividad3.txt). |
+| Identidad visual | Pendiente: inventario y sustitución de colores literales por tokens, revisión de tipografías. |
+| Responsivo y accesible | Corrección de Inicio/Tienda en verificación; faltan revisión transversal, teclado, contraste y alternativas de imágenes. |
+| Rendimiento y SEO | Pendiente: títulos/descripciones y Lighthouse real >=80 en las cuatro categorías. |
+| Seguridad | Evidencia RLS y pruebas de escape existentes; falta cerrar configuración de entorno y revisión de entrega. |
+| Contenido | Pendiente revisión final e integración de las piezas exigidas en Actividad 4; no inventar su procedencia. |
+
+La Actividad 3 no está completa por corregir estas dos páginas.
