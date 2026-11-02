@@ -1,0 +1,28 @@
+✔ solicita productos disponibles y orden ascendente por id (16.4654ms)
+✔ transforma todos los campos y continúa con renderizado y filtros (5.8272ms)
+✔ usa descripción alternativa para null y cadena vacía, y conserva categoría desconocida (3.4591ms)
+✔ acepta respuesta vacía y llama al renderizado y filtros (2.5687ms)
+✔ captura el error devuelto por Supabase sin renderizar productos (4.0444ms)
+✔ captura un rechazo de red sin renderizar productos (2.3756ms)
+✔ omite la consulta si no existe el contenedor de la tienda (2.2931ms)
+✔ tarjeta con nombre, imagen y precio; descripción en detalle (220.5211ms)
+✔ descripción null llega al HTML del modal como texto alternativo (6.0533ms)
+✔ descripción vacía llega al HTML del modal como texto alternativo (2.4803ms)
+✔ el HTML contiene contenedor, mensaje vacío inicialmente oculto y buscador (2.415ms)
+✔ la carga permanece hasta que se resuelve la consulta (6.6788ms)
+✔ el catálogo vacío muestra el mensaje sin resultados y elimina la carga (7.9729ms)
+✔ una consulta fallida muestra el mensaje establecido y elimina la carga (2.4532ms)
+✔ los productos recibidos ocultan el mensaje sin resultados (50.4624ms)
+✔ una nueva carga tras catálogo vacío oculta el mensaje anterior incluso si falla (18.4205ms)
+✔ tarjeta: conserva URL original y texto alternativo antes de cualquier error (68.7385ms)
+✔ tarjeta: intenta la alternativa una sola vez si ambas imágenes fallan (9.844ms)
+✔ modal: conserva URL original y texto alternativo antes de cualquier error (2.5792ms)
+✔ modal: intenta la alternativa una sola vez si ambas imágenes fallan (4.005ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2561.1327

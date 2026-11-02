@@ -1,0 +1,11 @@
+{
+  "command": "npm test",
+  "tests": 82,
+  "passed": 82,
+  "failed": 0,
+  "skipped": 0,
+  "buildCommand": "npm run build",
+  "buildStatus": "aprobado",
+  "siteMainSha256": "a52d7be9ddd36f1bf961caf472e9d503f67b3eaa426820aa242fddb1c37802fc",
+  "context": "Copia integrada; pruebas adaptadas a rutas relativas; red interceptada; sin datos reales o envío WhatsApp"
+}

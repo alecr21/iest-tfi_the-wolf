@@ -1,0 +1,46 @@
+{
+  "kind": "Revisión documental y de evidencia; no reejecución de los tests del navegador",
+  "runs": [
+    {
+      "task": "T01",
+      "passed": 2,
+      "failed": 0,
+      "evidence": "tests/busqueda-t01-resultado.txt"
+    },
+    {
+      "task": "T02",
+      "passed": 3,
+      "failed": 0,
+      "evidence": "tests/busqueda-t02-resultado.txt"
+    },
+    {
+      "task": "T03",
+      "passed": 7,
+      "failed": 0,
+      "evidence": "tests/busqueda-t03-resultado.txt"
+    },
+    {
+      "task": "T04",
+      "passed": 3,
+      "failed": 0,
+      "evidence": "tests/busqueda-t04-resultado.txt"
+    },
+    {
+      "task": "T05",
+      "passed": 3,
+      "failed": 0,
+      "evidence": "tests/busqueda-t05-resultado.txt"
+    },
+    {
+      "task": "T06",
+      "passed": 3,
+      "failed": 0,
+      "evidence": "tests/busqueda-t06-resultado.txt"
+    }
+  ],
+  "totalPassed": 21,
+  "totalFailed": 0,
+  "screenshotsPresent": 6,
+  "functionalRequirements": 5,
+  "acceptanceCriteria": 8
+}

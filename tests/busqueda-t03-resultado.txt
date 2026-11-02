@@ -1,0 +1,16 @@
+Chrome 156.0.8078.76; siete productos ficticios; SDK real; red interceptada.
+✔ 002/T03 CP03: clic en notebooks muestra solo esa categoría y deja un único botón activo (5169.368ms)
+✔ 002/T03 CP03: clic en computadoras muestra solo esa categoría y deja un único botón activo (1396.2428ms)
+✔ 002/T03 CP03: clic en celulares muestra solo esa categoría y deja un único botón activo (1387.0411ms)
+✔ 002/T03 CP03: clic en componentes muestra solo esa categoría y deja un único botón activo (1626.6425ms)
+✔ 002/T03 CP03: clic en perifericos muestra solo esa categoría y deja un único botón activo (1342.7122ms)
+✔ 002/T03 CP03: clic en accesorios muestra solo esa categoría y deja un único botón activo (1426.5547ms)
+✔ 002/T03 CP03: cambiar de categoría y volver a Todos restaura los siete productos (2086.8633ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 16199.0274

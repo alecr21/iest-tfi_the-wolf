@@ -1,0 +1,11 @@
+Chrome 156.0.8078.76; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T04 CP05: quitar la última unidad elimina el producto y muestra el carrito vacío (5134.605ms)
+✔ 003/T04 CP05: eliminar un producto mantiene el otro y sus unidades (2378.5597ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9411.2557

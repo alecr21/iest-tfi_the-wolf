@@ -1,0 +1,15 @@
+✔ solicita productos disponibles y orden ascendente por id (8.2344ms)
+✔ transforma todos los campos y continúa con renderizado y filtros (6.3657ms)
+✔ usa descripción alternativa para null y cadena vacía, y conserva categoría desconocida (3.4749ms)
+✔ acepta respuesta vacía y llama al renderizado y filtros (3.1311ms)
+✔ captura el error devuelto por Supabase sin renderizar productos (3.3065ms)
+✔ captura un rechazo de red sin renderizar productos (2.8197ms)
+✔ omite la consulta si no existe el contenedor de la tienda (2.9666ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 510.422

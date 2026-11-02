@@ -1,0 +1,24 @@
+Navegador de prueba: Chromium/Chrome 156.0.8078.76; red interceptada, sin Supabase real.
+✔ datos externos de nombre permanecen como texto o atributo en tarjeta y detalle (3989.6415ms)
+✔ datos externos de descripcion permanecen como texto o atributo en tarjeta y detalle (1332.5596ms)
+✔ datos externos de categoria permanecen como texto o atributo en tarjeta y detalle (1271.848ms)
+✔ datos externos de etiqueta permanecen como texto o atributo en tarjeta y detalle (1384.0086ms)
+✔ datos externos de id permanecen como texto o atributo en tarjeta y detalle (1232.5049ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "javascript:window.__" (1136.486ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "java\nscript:window._" (1354.8265ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "data:image/svg+xml,<" (1140.1174ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "file:///C:/privado.p" (1214.8631ms)
+✔ una URL HTTPS con comillas no inyecta atributos y conserva su valor (1688.8542ms)
+✔ carrito trata nombre persistido como dato, sin HTML ejecutable (1782.5331ms)
+✔ carrito trata id persistido como dato, sin HTML ejecutable (1516.8655ms)
+✔ carrito trata cantidad persistido como dato, sin HTML ejecutable (1534.6241ms)
+✔ carrito trata precio persistido como dato, sin HTML ejecutable (1759.6649ms)
+✔ flujo normal conserva filtros, detalle, suma de cantidad, total y persistencia (5298.1418ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 35269.1811

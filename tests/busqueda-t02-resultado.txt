@@ -1,0 +1,12 @@
+Chrome 156.0.8078.76; siete productos ficticios; SDK real; red interceptada.
+✔ 002/T02 CP01: búsqueda por nombre parcial, mayúsculas y espacios exteriores (5038.1417ms)
+✔ 002/T02 CP02: búsqueda por texto de categoría que no aparece en el nombre (1714.5746ms)
+✔ 002/T02 CP07: minúsculas y mayúsculas devuelven lo mismo, y el nombre con comillas/ampersand se busca como texto (1520.562ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10156.7394

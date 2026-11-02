@@ -1,0 +1,11 @@
+MENSAJE DE PRUEBA CON PRODUCTOS FICTICIOS. SOLICITUD INTERCEPTADA; NO ENVIADO.
+
+Hola THE WOLF!
+Quiero consultar la disponibilidad de los siguientes productos de la tienda:
+
+1. *Notebook Alfa* x2 - $200
+2. *Kit & "Pro"* x1 - $100
+
+*Total Estimado:* $300
+
+¿Tienen stock disponible para confirmar la compra?

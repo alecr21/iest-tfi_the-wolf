@@ -1,0 +1,156 @@
+# Memoria del proyecto — THE WOLF
+
+## Estado vigente — Copia integrada para entrega
+
+- Las 23 tareas de las listas de 001/002/003 tienen validación técnica en sus alcances. T09 de 003 consolidó ocho CAR-RF y doce CA, con EARS y casos límite sin nuevo alcance.
+- Esta carpeta reúne código, documentación y tests. npm test ejecutado aquí: 82 aprobadas, 0 fallidas/omitidas; npm run build aprobado. Salidas y hash en tests/resultado-integrado.json.
+- Código del sitio idéntico a la copia autorizada del Escritorio; pruebas usan rutas relativas y dependencia Playwright fijada. Skills/prompts y kit documental reunidos con rutas canónicas. Originales conservados.
+- El estudiante confirmó manualmente búsqueda/filtros, limpiar manteniendo categoría y Unidad/Subtotal. Lectura y comprensión de código/evidencias pendiente; checklist en docs/REVISION-ESTUDIANTE.md. Cinco errores reales de IA documentados.
+- Git local inicializado en main; se registrará la integración actual, sin inventar commits históricos por tarea. GitHub no existe y el estudiante quiere subirlo al finalizar su PDF. No publicar, crear remoto ni hacer push sin autorización.
+- Actividad 2: técnico validado, cierre formal con diferencias de proceso pendientes de revisión humana. Actividad 3: preparar responsive 360px, accesibilidad, tokens, Lighthouse y publicación posterior. No se declara completada ni publicada.
+
+## 1. Identificación
+
+- Nombre del emprendimiento: THE WOLF.
+- Slogan: Tecnología & Soporte.
+- Rubro: productos tecnológicos, soporte técnico y mantenimiento informático.
+- Objetivo del sitio: presentar el emprendimiento, mostrar productos y servicios y facilitar consultas y pedidos.
+
+## 2. Identidad de marca
+
+- Negro: `#0B0B0B`.
+- Gris carbón: `#252525`.
+- Plata metálica: `#C0C0C0`.
+- Dorado metálico: `#D4AF37`.
+- Blanco: `#FFFFFF`.
+- Tipografía principal: Montserrat.
+- Tipografía secundaria: Orbitron, para títulos y elementos destacados.
+- Estilo: tecnológico, moderno, profesional y legible.
+- Comunicación: clara, directa, cercana y transparente.
+
+La identidad visual debe mantenerse consistente en el sitio y en los materiales multimedia.
+
+## 3. Tecnologías confirmadas
+
+- HTML5.
+- CSS3.
+- JavaScript.
+- Supabase (PostgreSQL) para la consulta de productos.
+- GitHub para el repositorio y control de versiones.
+- Netlify para publicar el sitio.
+- Visual Studio Code como editor de desarrollo.
+
+El proyecto utiliza Supabase para consultar los productos del catálogo. 
+
+## 4. Alcance funcional
+
+El sitio contempla:
+
+- Presentación del emprendimiento.
+- Catálogo de productos tecnológicos.
+- Organización de productos por categorías.
+- Visualización de imágenes, descripciones y precios.
+- Consulta de productos desde Supabase.
+- Filtro y búsqueda de productos.
+- Visualización de detalles de productos.
+- Carrito para reunir productos y modificar cantidades.
+- Preparación de pedidos para consultar por WhatsApp.
+- Presentación de servicios técnicos.
+- Medios de contacto.
+- Diseño adaptable a computadoras, tablets y celulares.
+
+
+## 5. Límites del proyecto
+
+La versión actual no contempla:
+
+- Procesamiento de pagos en línea.
+- Confirmación automática de stock.
+- Administración de productos mediante cuentas de usuario.
+- Modificación o eliminación de productos desde el sitio.
+- Almacenamiento de pedidos en un servidor.
+- Desarrollo de aplicaciones móviles.
+
+Los precios y la disponibilidad deberán confirmarse con el emprendimiento.
+
+## 6. Base de datos
+
+La información del catálogo se consulta desde Supabase mediante la tabla `public.productos`.
+
+La tabla contiene datos como nombre, descripción, precio, categoría, imagen, disponibilidad y fecha de creación.
+
+El acceso público está limitado a la lectura de productos. El sitio no debe utilizar credenciales secretas ni permitir operaciones de escritura desde el frontend.
+
+## 7. Documentación de referencia
+
+Consultar `AGENTS.md` y los documentos de la carpeta `docs/`.
+
+La constitución del proyecto se encuentra en `docs/CONSTITUCION.md`. Las especificaciones y convenciones deben mantenerse alineadas con el código real.
+
+Si se modifica la arquitectura o el alcance, actualizar los documentos correspondientes.
+
+## 8. Estado actual conocido
+
+- El sitio se encuentra publicado en Netlify.
+- El proyecto está alojado en GitHub.
+- El catálogo está conectado a Supabase y se comprobó la consulta de productos.
+- Las funciones de visualización de productos, detalles, carrito y preparación de pedidos por WhatsApp fueron comprobadas.
+- El diseño responsive necesita una revisión final.
+- La estructura exacta del repositorio y el estado de cada funcionalidad deben comprobarse antes de proponer modificaciones.
+
+No se deben asumir pruebas ejecutadas, resultados de Lighthouse, funcionalidades terminadas ni evidencias que todavía no se hayan verificado.
+
+## 9. Contexto del TFI
+
+El objetivo es continuar el emprendimiento del TP3 y preparar el proyecto para trabajar con asistencia de IA bajo reglas claras.
+
+Se deben documentar las especificaciones, las aclaraciones, los planes, las tareas, las pruebas y las verificaciones de las funcionalidades seleccionadas.
+
+También se deben registrar los errores reales producidos por la IA, cómo fueron detectados y qué correcciones humanas se realizaron.
+
+## 10. Reglas para actualizar esta memoria
+
+- Registrar decisiones confirmadas, no suposiciones.
+- Mantener la información breve y útil.
+- Actualizar el estado cuando haya evidencias de cambios.
+- No almacenar contraseñas, claves API ni datos privados.
+- No declarar una tarea terminada sin verificarla.
+- Si una decisión contradice la documentación anterior, señalar la diferencia y solicitar aclaración cuando sea necesario.
+
+## Avance comprobado — 2026-11-02
+
+- Código autorizado: `C:/Users/El Mero Mero/Desktop/the wolf tft/Presentacion/The-Wolf`; documentos: esta carpeta. No se movieron archivos ni se modificó la versión publicada.
+- Existen actualizaciones en `docs/docs/`; su constitución y memoria reflejan Supabase, pero otros documentos anidados mantienen referencias antiguas. No se reemplazaron ni eliminaron versiones.
+- Catálogo 001: Tarea 1 con inicialización y consulta real comprobadas previamente en Node.js. Tarea 2 con 7 pruebas controladas aprobadas; evidencia en `specs/001-catalogo/verificacion.md` y `tests/`. No se cambió implementación.
+- Próximo paso: Tarea 3, visualización; revisar discrepancia entre descripciones en tarjetas indicadas por los casos de prueba y descripción existente en modal antes de modificar. H04 pendiente.
+- Consigna PDF leída. Integración de documentación, código y tests en el repositorio de entrega, commits, navegador, RLS y validación completa pendientes. No se creó commit ni se hizo push.
+
+
+### Confirmación manual de la Tarea 3
+
+El estudiante respondió «si funciona» a la comprobación del detalle de dos productos (nombre, descripción, imagen y precio). Evidencia textual registrada en CP03; no se recibieron capturas ni identificación del navegador. Tarea 3 en curso: descripción alternativa visual y discrepancia tarjetas/modal pendientes. Sin cambios de código.
+
+
+### Cierre de Tarea 3
+
+El estudiante decidió mantener la descripción en «Ver detalle» (H06). Se aclararon CAT-RF04/CAT-RF05 y CP03/CP04. Tres pruebas del HTML generado aprobadas, con caso de descripción null y vacía; evidencia en `tests/catalogo-tarea3*` y `verificacion.md`. Se conserva el resultado manual informado por el estudiante; caso visual alternativo no observado. Tarea 3 completada, sin cambios de código; commit pendiente. Próximo paso: Tarea 4, estados del catálogo. H04 y RLS pendientes.
+
+
+### Cierre de Tarea 4
+
+Estados de carga, error y vacío probados de forma automatizada. Se reprodujo H07 (aviso vacío persistente en segunda carga) y se añadieron dos instrucciones para ocultarlo al inicio, sin cambiar Supabase ni el diseño. Se corrigió un doble de DOM erróneo generado por la IA y se registró EIA-01 con evidencia. Regresión final: 16 pruebas aprobadas. Revisión visual de estados, revisión humana de cambios, integración y commits pendientes. Próximo paso: Tarea 5, imágenes alternativas; después seguridad H04 y RLS.
+
+
+### Cierre de Tarea 5
+
+H08 corregido: onerror se anula antes de asignar la alternativa en tarjetas y modal. Solo dos manejadores modificados. PNG alternativo existente y decodificado (1254 × 1254). Cuatro pruebas nuevas y regresión final de 20 aprobadas. Evidencia en `tests/catalogo-tarea5-*`. Tarea 5 completada con alcance automatizado; visual específico, revisión humana, integración y commits pendientes. Próximo paso: Tarea 6, seguridad H04 y permisos RLS. Mantener la descripción en Ver detalle, según decisión del estudiante.
+
+
+### Avance de Tarea 6
+
+H04 corregido con escapeHtml para datos de tarjeta/modal/carrito y safeProductImageUrl para protocolos HTTP/HTTPS y rutas relativas seguras. Se conservaron plantillas y clases. Quince pruebas en Chrome real aprobadas con red interceptada y datos ficticios; veinte pruebas anteriores aprobadas. Se leyó/revisó el diff. Tarea 6 sigue en curso porque RLS y permisos efectivos necesitan evidencia de Supabase; consulta SELECT preparada en `tests/revisar-rls-productos.sql`. No asumir RLS verificado por la mera lectura pública. EIA-02 registrado: test confundía fallback con validación; se corrigió antes de implementar. Dos errores reales documentados; falta uno. Revisión humana de cambios, integración y commits pendientes. Sin cambios de Supabase, commit ni publicación.
+
+
+### Evidencia RLS recibida — Cierre técnico de Tarea 6
+
+El estudiante compartió la salida de revisar-rls-productos.sql: public.productos con RLS habilitado; política SELECT true para anon/authenticated; ambos con USAGE y SELECT, sin INSERT/UPDATE/DELETE sobre tabla. JSON conservado en `tests/resultado-rls-productos.json`. RLS forzado=false no deshabilita RLS. No se cambió Supabase ni se intentaron escrituras. Tarea 6 comprobada técnicamente; revisión humana, integración y commit pendientes. CP09 actualizado con alcance y procedencia de la evidencia. Siguiente: Tarea 7, consolidar validación por CAT-RF y resolver pendientes, incluido CP02; no declarar Actividad 2 completa.

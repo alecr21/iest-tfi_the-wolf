@@ -1,0 +1,47 @@
+const path = require('node:path');
+const { test, before, after } = require('node:test');
+const assert = require('node:assert/strict');
+const { launch, initialize, fixture } = require('./tienda-fixture-002.cjs');
+let browser;
+before(async () => { browser = await launch(); });
+after(async () => { await browser?.close(); });
+test('003/T06 CP08: recargar recupera productos, cantidades, subtotales y total del almacenamiento', async () => fixture(browser, async page => {
+  await page.locator('.btn-add-cart[data-id="1"]').click();
+  await page.locator('.btn-plus[data-id="1"]').click();
+  await page.locator('#close-cart-btn').click();
+  await page.locator('.btn-add-cart[data-id="2"]').click();
+  const saved = await page.evaluate(() => localStorage.getItem('wolf_cart'));
+  await page.reload();
+  await initialize(page);
+  await page.locator('#open-cart-btn').click();
+  assert.deepEqual(await page.locator('.cart-item-details strong').allTextContents(), ['Notebook Alfa', 'Notebook Beta']);
+  assert.deepEqual(await page.locator('.cart-qty-num').allTextContents(), ['2', '1']);
+  assert.deepEqual(await page.locator('.cart-item-subtotal').allTextContents(), ['Subtotal: $200', 'Subtotal: $100']);
+  assert.equal(await page.locator('#cart-count').textContent(), '3');
+  assert.equal(await page.locator('#cart-total-price').textContent(), '$300');
+  assert.equal(await page.evaluate(() => localStorage.getItem('wolf_cart')), saved);
+}));
+test('003/T06 CP08: otra pestaña del mismo contexto y origen recupera la selección guardada', async () => fixture(browser, async page => {
+  await page.locator('.btn-add-cart[data-id="7"]').click();
+  const next = await page.context().newPage();
+  const errors = [];
+  next.on('pageerror', error => errors.push(error.message));
+  await next.goto('http://wolf.test/page/tienda.html');
+  await initialize(next);
+  await next.locator('#open-cart-btn').click();
+  assert.equal(await next.locator('.cart-item-details strong').textContent(), 'Kit & "Pro"');
+  assert.equal(await next.locator('.cart-qty-num').textContent(), '1');
+  assert.equal(await next.locator('#cart-total-price').textContent(), '$100');
+  assert.deepEqual(errors, []);
+}));
+test('003/T06 CP08: un producto eliminado no reaparece al recargar', async () => fixture(browser, async page => {
+  await page.locator('.btn-add-cart[data-id="1"]').click();
+  await page.locator('.btn-minus[data-id="1"]').click();
+  await page.reload();
+  await initialize(page);
+  await page.locator('#open-cart-btn').click();
+  assert.equal(await page.locator('.cart-item-row').count(), 0);
+  assert.equal((await page.locator('.cart-empty-msg').textContent()).trim(), 'Tu carrito está vacío.');
+  assert.equal(await page.locator('#cart-count').textContent(), '0');
+  assert.equal(await page.locator('#cart-total-price').textContent(), '$0');
+}));

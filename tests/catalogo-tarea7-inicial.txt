@@ -1,0 +1,50 @@
+Chrome 156.0.8078.76; SDK real, servidor REST simulado, productos ficticios.
+✔ CP01/CP02: SDK solicita disponibles ordenados y el navegador excluye el registro no disponible del servidor simulado (11858.3823ms)
+✖ CP04: descripción alternativa visible en modal de un producto sin descripción (2041.714ms)
+✔ CP05/CP07: carga visible hasta recibir respuesta vacía, luego aviso sin resultados (2046.9387ms)
+✔ CP06: error HTTP controlado muestra el texto esperado en navegador (8722.997ms)
+✔ CP08: imágenes originales válidas y alternativa cargada por error real de recurso en tarjeta y modal (2224.0344ms)
+✖ CP08 límite: si también falla la alternativa, el manejador se desactiva y los intentos terminan (2003.6013ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 4
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 32704.5795
+
+✖ failing tests:
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea7.test.cjs:84:1
+✖ CP04: descripción alternativa visible en modal de un producto sin descripción (2041.714ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(await page.locator('.modal-description').isVisible())
+  
+      at C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea7.test.cjs:88:10
+      at async fixture (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea7.test.cjs:66:5)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea7.test.cjs:121:1
+✖ CP08 límite: si también falla la alternativa, el manejador se desactiva y los intentos terminan (2003.6013ms)
+  AssertionError [ERR_ASSERTION]: a lo sumo un intento de alternativa por imagen
+      at C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea7.test.cjs:130:10
+      at async fixture (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea7.test.cjs:66:5)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

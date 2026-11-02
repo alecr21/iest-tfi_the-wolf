@@ -1,0 +1,35 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const { test, before, after } = require('node:test');
+const assert = require('node:assert/strict');
+const { launch, fixture } = require('./tienda-fixture-002.cjs');
+let browser;
+before(async () => { browser = await launch(); });
+after(async () => { await browser?.close(); });
+test('003/T05 CP06: muestra subtotal por fila y lo actualiza al subir o bajar unidades', async () => fixture(browser, async page => {
+  await page.locator('.btn-add-cart[data-id="1"]').click();
+  await page.locator('.btn-plus[data-id="1"]').click();
+  const row = page.locator('.cart-item-row');
+  assert.ok((await row.textContent()).includes('Subtotal: $200'), 'debe mostrarse el subtotal, además del precio unitario');
+  assert.equal(await row.locator('.cart-item-subtotal').textContent(), 'Subtotal: $200');
+  assert.equal(await row.locator('.cart-item-price:not(.cart-item-subtotal)').textContent(), 'Unidad: $100');
+  await page.locator('.btn-minus[data-id="1"]').click();
+  assert.equal(await row.locator('.cart-item-subtotal').textContent(), 'Subtotal: $100');
+  assert.equal(await page.locator('#cart-total-price').textContent(), '$100');
+}));
+test('003/T05 CP07: precios diferentes y decimales producen subtotales y total correctos', async () => fixture(browser, async page => {
+  await page.evaluate(() => { PRODUCTOS_TIENDA.find(product => product.id === '2').precio = 250.5; });
+  await page.locator('.btn-add-cart[data-id="1"]').click();
+  await page.locator('.btn-plus[data-id="1"]').click();
+  await page.locator('#close-cart-btn').click();
+  await page.locator('.btn-add-cart[data-id="2"]').click();
+  assert.equal(await page.locator('#cart-total-price').textContent(), '$450,5');
+  assert.ok((await page.locator('#cart-items-container').textContent()).includes('Subtotal: $250,5'), 'la fila debe mostrar el subtotal de precio decimal');
+  assert.deepEqual(await page.locator('.cart-item-subtotal').allTextContents(), ['Subtotal: $200', 'Subtotal: $250,5']);
+  await page.locator('.btn-plus[data-id="2"]').click();
+  assert.deepEqual(await page.locator('.cart-item-subtotal').allTextContents(), ['Subtotal: $200', 'Subtotal: $501']);
+  assert.equal(await page.locator('#cart-total-price').textContent(), '$701');
+  const dir = process.env.WOLF_CART_EVIDENCE || path.join(__dirname, 'evidencias/003-carrito-whatsapp');
+  fs.mkdirSync(dir, { recursive: true });
+  await page.locator('.cart-content').screenshot({ path: path.join(dir, 'carrito-subtotales-total.png'), animations: 'disabled' });
+}));

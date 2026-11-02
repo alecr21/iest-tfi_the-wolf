@@ -1,0 +1,32 @@
+Chrome 156.0.8078.76; SDK real, servidor REST simulado, productos ficticios.
+✔ CP01/CP02: SDK solicita disponibles ordenados y el navegador excluye el registro no disponible del servidor simulado (5896.9606ms)
+✔ CP04: descripción alternativa visible en modal de un producto sin descripción (2191.9044ms)
+✔ CP05/CP07: carga visible hasta recibir respuesta vacía, luego aviso sin resultados (2057.0696ms)
+✔ CP06: error HTTP controlado muestra el texto esperado en navegador (8500.5464ms)
+✔ CP08: imágenes originales válidas y alternativa cargada por error real de recurso en tarjeta y modal (1750.7147ms)
+✖ CP08 límite: si también falla la alternativa, el manejador se desactiva y los intentos terminan (2060.9843ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 5
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 24328.1561
+
+✖ failing tests:
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea7.test.cjs:123:1
+✖ CP08 límite: si también falla la alternativa, el manejador se desactiva y los intentos terminan (2060.9843ms)
+  AssertionError [ERR_ASSERTION]: a lo sumo un intento por imagen de producto, excluyendo el logo del footer
+      at C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea7.test.cjs:133:10
+      at async fixture (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea7.test.cjs:67:5)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

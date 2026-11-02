@@ -1,0 +1,49 @@
+{
+  "kind": "Consolidado de resultados previos, sin afirmar nueva ejecución conjunta",
+  "runs": [
+    {
+      "file": "carrito-t01-regresion-t05.txt",
+      "passed": 2,
+      "failed": 0
+    },
+    {
+      "file": "carrito-t02-regresion-t05.txt",
+      "passed": 3,
+      "failed": 0
+    },
+    {
+      "file": "carrito-t03-regresion-t05.txt",
+      "passed": 2,
+      "failed": 0
+    },
+    {
+      "file": "carrito-t04-regresion-t05.txt",
+      "passed": 2,
+      "failed": 0
+    },
+    {
+      "file": "carrito-t05-despues.txt",
+      "passed": 2,
+      "failed": 0
+    },
+    {
+      "file": "carrito-t06-resultado.txt",
+      "passed": 3,
+      "failed": 0
+    },
+    {
+      "file": "carrito-t07-resultado.txt",
+      "passed": 3,
+      "failed": 0
+    },
+    {
+      "file": "carrito-t08-resultado.txt",
+      "passed": 3,
+      "failed": 0
+    }
+  ],
+  "totalPassed": 20,
+  "totalFailed": 0,
+  "functionalRequirements": 8,
+  "acceptanceCriteria": 12
+}

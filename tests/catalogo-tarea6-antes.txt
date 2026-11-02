@@ -1,0 +1,243 @@
+Navegador de prueba: Chromium/Chrome 156.0.8078.76; red interceptada, sin Supabase real.
+✖ datos externos de nombre permanecen como texto o atributo en tarjeta y detalle (9734.185ms)
+✖ datos externos de descripcion permanecen como texto o atributo en tarjeta y detalle (1459.5076ms)
+✖ datos externos de categoria permanecen como texto o atributo en tarjeta y detalle (2099.239ms)
+✖ datos externos de etiqueta permanecen como texto o atributo en tarjeta y detalle (1819.738ms)
+✖ datos externos de id permanecen como texto o atributo en tarjeta y detalle (2317.791ms)
+✖ rechaza URL de imagen fuera de HTTP/HTTPS: "javascript:window.__" (1595.6064ms)
+✖ rechaza URL de imagen fuera de HTTP/HTTPS: "java\nscript:window._" (1103.8672ms)
+✖ rechaza URL de imagen fuera de HTTP/HTTPS: "data:image/svg+xml,<" (1146.0596ms)
+✖ rechaza URL de imagen fuera de HTTP/HTTPS: "file:///C:/privado.p" (1248.8362ms)
+✖ una URL HTTPS con comillas no inyecta atributos y conserva su valor (1388.099ms)
+✖ carrito trata nombre persistido como dato, sin HTML ejecutable (1954.8467ms)
+✖ carrito trata id persistido como dato, sin HTML ejecutable (1656.3548ms)
+✖ carrito trata cantidad persistido como dato, sin HTML ejecutable (2279.9456ms)
+✖ carrito trata precio persistido como dato, sin HTML ejecutable (1178.1671ms)
+✔ flujo normal conserva filtros, detalle, suma de cantidad, total y persistencia (3389.1435ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 1
+ℹ fail 14
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 38790.5175
+
+✖ failing tests:
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:39:3
+✖ datos externos de nombre permanecen como texto o atributo en tarjeta y detalle (9734.185ms)
+  AssertionError [ERR_ASSERTION]: no debe crearse HTML inyectado
+  
+  5 !== 0
+  
+      at C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:42:12
+      at async fixture (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:35:5)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 5,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:39:3
+✖ datos externos de descripcion permanecen como texto o atributo en tarjeta y detalle (1459.5076ms)
+  AssertionError [ERR_ASSERTION]: no debe crearse HTML inyectado
+  
+  1 !== 0
+  
+      at C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:42:12
+      at async fixture (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:35:5)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:39:3
+✖ datos externos de categoria permanecen como texto o atributo en tarjeta y detalle (2099.239ms)
+  AssertionError [ERR_ASSERTION]: no debe crearse HTML inyectado
+  
+  1 !== 0
+  
+      at C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:42:12
+      at async fixture (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:35:5)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:39:3
+✖ datos externos de etiqueta permanecen como texto o atributo en tarjeta y detalle (1819.738ms)
+  AssertionError [ERR_ASSERTION]: no debe crearse HTML inyectado
+  
+  2 !== 0
+  
+      at C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:42:12
+      at async fixture (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:35:5)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:39:3
+✖ datos externos de id permanecen como texto o atributo en tarjeta y detalle (2317.791ms)
+  AssertionError [ERR_ASSERTION]: no debe crearse HTML inyectado
+  
+  3 !== 0
+  
+      at C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:42:12
+      at async fixture (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:35:5)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 3,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:56:3
+✖ rechaza URL de imagen fuera de HTTP/HTTPS: "javascript:window.__" (1595.6064ms)
+  page.evaluate: ReferenceError: safeProductImageUrl is not defined
+      at eval (eval at evaluate (:311:30), <anonymous>:1:10)
+      at UtilityScript.evaluate (<anonymous>:313:16)
+      at UtilityScript.<anonymous> (<anonymous>:1:44)
+      at C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:57:29
+      at fixture (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:35:11) {
+    log: []
+  }
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:56:3
+✖ rechaza URL de imagen fuera de HTTP/HTTPS: "java\nscript:window._" (1103.8672ms)
+  page.evaluate: ReferenceError: safeProductImageUrl is not defined
+      at eval (eval at evaluate (:311:30), <anonymous>:1:10)
+      at UtilityScript.evaluate (<anonymous>:313:16)
+      at UtilityScript.<anonymous> (<anonymous>:1:44)
+      at C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:57:29
+      at fixture (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:35:11) {
+    log: []
+  }
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:56:3
+✖ rechaza URL de imagen fuera de HTTP/HTTPS: "data:image/svg+xml,<" (1146.0596ms)
+  page.evaluate: ReferenceError: safeProductImageUrl is not defined
+      at eval (eval at evaluate (:311:30), <anonymous>:1:10)
+      at UtilityScript.evaluate (<anonymous>:313:16)
+      at UtilityScript.<anonymous> (<anonymous>:1:44)
+      at C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:57:29
+      at fixture (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:35:11) {
+    log: []
+  }
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:56:3
+✖ rechaza URL de imagen fuera de HTTP/HTTPS: "file:///C:/privado.p" (1248.8362ms)
+  page.evaluate: ReferenceError: safeProductImageUrl is not defined
+      at eval (eval at evaluate (:311:30), <anonymous>:1:10)
+      at UtilityScript.evaluate (<anonymous>:313:16)
+      at UtilityScript.<anonymous> (<anonymous>:1:44)
+      at C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:57:29
+      at fixture (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:35:11) {
+    log: []
+  }
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:63:1
+✖ una URL HTTPS con comillas no inyecta atributos y conserva su valor (1388.099ms)
+  page.evaluate: ReferenceError: safeProductImageUrl is not defined
+      at eval (eval at evaluate (:311:30), <anonymous>:1:11)
+      at UtilityScript.evaluate (<anonymous>:313:16)
+      at UtilityScript.<anonymous> (<anonymous>:1:44)
+      at C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:67:27
+      at async fixture (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:35:5) {
+    log: []
+  }
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:73:3
+✖ carrito trata nombre persistido como dato, sin HTML ejecutable (1954.8467ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 0
+  
+      at C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:76:12
+      at async fixture (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:35:5)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:73:3
+✖ carrito trata id persistido como dato, sin HTML ejecutable (1656.3548ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  2 !== 0
+  
+      at C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:76:12
+      at async fixture (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:35:5)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:73:3
+✖ carrito trata cantidad persistido como dato, sin HTML ejecutable (2279.9456ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 0
+  
+      at C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:76:12
+      at async fixture (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:35:5)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:73:3
+✖ carrito trata precio persistido como dato, sin HTML ejecutable (1178.1671ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 0
+  
+      at C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:76:12
+      at async fixture (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea6.test.cjs:35:5)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,30 @@
+const path = require('node:path');
+const { test, before, after } = require('node:test');
+const assert = require('node:assert/strict');
+const { launch, fixture } = require('./tienda-fixture-002.cjs');
+let browser;
+before(async () => { browser = await launch(); });
+after(async () => { await browser?.close(); });
+test('003/T01: elementos del carrito únicos y estado inicial vacío', async () => fixture(browser, async page => {
+  for (const id of ['cart-drawer', 'cart-items-container', 'cart-count', 'cart-total-price', 'checkout-wa-btn', 'clear-cart-btn', 'open-cart-btn', 'close-cart-btn']) assert.equal(await page.locator('#' + id).count(), 1);
+  assert.equal(await page.locator('#cart-drawer').getAttribute('aria-hidden'), 'true');
+  assert.equal(await page.locator('#cart-drawer').isVisible(), false);
+  assert.equal(await page.locator('#cart-count').textContent(), '0');
+  assert.equal(await page.locator('#cart-total-price').textContent(), '$0');
+  assert.equal((await page.locator('#cart-items-container').textContent()).trim(), 'Tu carrito está vacío.');
+  assert.equal(await page.getByRole('button', { name: 'Ver Carrito' }).count(), 1);
+}));
+test('003/T01: panel abre y cierra por botón y por overlay, con aria-hidden coherente', async () => fixture(browser, async page => {
+  await page.locator('#open-cart-btn').click();
+  await page.locator('#cart-drawer').waitFor({ state: 'visible' });
+  assert.equal(await page.locator('#cart-drawer').getAttribute('aria-hidden'), 'false');
+  assert.ok(await page.locator('#checkout-wa-btn').isVisible());
+  assert.ok(await page.locator('#clear-cart-btn').isVisible());
+  await page.locator('#close-cart-btn').click();
+  await page.locator('#cart-drawer').waitFor({ state: 'hidden' });
+  assert.equal(await page.locator('#cart-drawer').getAttribute('aria-hidden'), 'true');
+  await page.locator('#open-cart-btn').click();
+  await page.locator('#cart-drawer').waitFor({ state: 'visible' });
+  await page.locator('#cart-overlay').click({ position: { x: 10, y: 10 } });
+  await page.locator('#cart-drawer').waitFor({ state: 'hidden' });
+}));

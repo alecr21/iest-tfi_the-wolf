@@ -1,0 +1,15 @@
+Chrome 156.0.8078.76; SDK real, servidor REST simulado, productos ficticios.
+✔ CP01/CP02: SDK solicita disponibles ordenados y el navegador excluye el registro no disponible del servidor simulado (6450.5454ms)
+✔ CP04: descripción alternativa visible en modal de un producto sin descripción (2124.195ms)
+✔ CP05/CP07: carga visible hasta recibir respuesta vacía, luego aviso sin resultados (1757.0552ms)
+✔ CP06: error HTTP controlado muestra el texto esperado en navegador (8670.0303ms)
+✔ CP08: imágenes originales válidas y alternativa cargada por error real de recurso en tarjeta y modal (1840.6746ms)
+✔ CP08 límite: si también falla la alternativa, el manejador se desactiva y los intentos terminan (2021.2127ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 24961.9845

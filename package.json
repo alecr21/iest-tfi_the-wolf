@@ -1,0 +1,16 @@
+{
+  "name": "iest-tfi_the-wolf",
+  "version": "1.0.0",
+  "private": true,
+  "description": "THE WOLF: HTML, CSS y JavaScript con catálogo Supabase y consultas por WhatsApp.",
+  "scripts": {
+    "test": "node tools/run-tests.cjs",
+    "build": "node tools/build.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

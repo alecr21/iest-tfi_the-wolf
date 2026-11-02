@@ -1,0 +1,43 @@
+Chrome 156.0.8078.76; siete productos ficticios; SDK real; red interceptada.
+✖ 003/T05 CP06: muestra subtotal por fila y lo actualiza al subir o bajar unidades (5761.9582ms)
+✖ 003/T05 CP07: precios diferentes y decimales producen subtotales y total correctos (2290.1535ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 0
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9991.318
+
+✖ failing tests:
+
+test at work\carrito-t05.test.cjs:9:1
+✖ 003/T05 CP06: muestra subtotal por fila y lo actualiza al subir o bajar unidades (5761.9582ms)
+  AssertionError [ERR_ASSERTION]: debe mostrarse el subtotal, además del precio unitario
+      at C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\work\carrito-t05.test.cjs:13:10
+      at async fixture (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\work\tienda-fixture-002.cjs:44:5)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at work\carrito-t05.test.cjs:20:1
+✖ 003/T05 CP07: precios diferentes y decimales producen subtotales y total correctos (2290.1535ms)
+  AssertionError [ERR_ASSERTION]: la fila debe mostrar el subtotal de precio decimal
+      at C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\work\carrito-t05.test.cjs:27:10
+      at async fixture (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\work\tienda-fixture-002.cjs:44:5)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

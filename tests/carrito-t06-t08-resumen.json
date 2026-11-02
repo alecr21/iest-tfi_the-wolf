@@ -1,0 +1,24 @@
+{
+  "sourceSha256": "a52d7be9ddd36f1bf961caf472e9d503f67b3eaa426820aa242fddb1c37802fc",
+  "siteSourceUnchangedSinceT05": true,
+  "runs": [
+    {
+      "file": "carrito-t06-resultado.txt",
+      "passed": 3,
+      "failed": 0
+    },
+    {
+      "file": "carrito-t07-resultado.txt",
+      "passed": 3,
+      "failed": 0
+    },
+    {
+      "file": "carrito-t08-resultado.txt",
+      "passed": 3,
+      "failed": 0
+    }
+  ],
+  "totalPassed": 9,
+  "totalFailed": 0,
+  "whatsapp": "solicitud interceptada; sin conexión o envío real"
+}

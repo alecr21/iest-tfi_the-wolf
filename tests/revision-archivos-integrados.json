@@ -1,0 +1,12 @@
+{
+  "review": "Archivos textuales incluidos, sin node_modules/dist/.git",
+  "checkedFiles": 116,
+  "assetsIdenticalToAuthorizedCopy": 31,
+  "secretPatternMatches": 0,
+  "patterns": [
+    "sb_secret con valor",
+    "JWT con role service_role",
+    "cabeceras de clave privada"
+  ],
+  "limits": "Revisión por patrones; no auditoría universal de secretos ni del historial original."
+}

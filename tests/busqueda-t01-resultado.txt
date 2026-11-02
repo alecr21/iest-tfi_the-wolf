@@ -1,0 +1,11 @@
+Chrome 156.0.8078.76; siete productos ficticios; SDK real; red interceptada.
+✔ 002/T01: existen los seis elementos HTML con identificadores únicos y buscador accesible por nombre (5363.2198ms)
+✔ 002/T01: siete botones con data-filter válido y único, Todos activo al iniciar (1411.4381ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10943.0724

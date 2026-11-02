@@ -1,0 +1,33 @@
+{
+  "tabla": "public.productos",
+  "politicas": [
+    {
+      "modo": "PERMISSIVE",
+      "roles": ["anon", "authenticated"],
+      "nombre": "Lectura publica de productos",
+      "operacion": "SELECT",
+      "condicion_lectura": "true",
+      "condicion_escritura": null
+    }
+  ],
+  "rls_forzado": false,
+  "rls_habilitado": true,
+  "permisos_efectivos": [
+    {
+      "rol": "anon",
+      "delete": false,
+      "insert": false,
+      "select": true,
+      "update": false,
+      "uso_esquema": true
+    },
+    {
+      "rol": "authenticated",
+      "delete": false,
+      "insert": false,
+      "select": true,
+      "update": false,
+      "uso_esquema": true
+    }
+  ]
+}

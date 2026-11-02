@@ -1,0 +1,11 @@
+✔ tarjeta con nombre, imagen y precio; descripción en detalle (73.0564ms)
+✔ descripción null llega al HTML del modal como texto alternativo (8.0929ms)
+✔ descripción vacía llega al HTML del modal como texto alternativo (4.246ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 672.1221

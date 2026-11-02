@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="icon" type="image/png" href="../logo/11.png">
+    <title>The Wolf | Tecnología & Soporte</title>
+    <meta name="description"
+        content="THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.">
+    <meta name="theme-color" content="#0B0B0B">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css">
+
+    <!-- Animaciones AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <link rel="stylesheet" href="../style/style.css">
+
+    <script>
+        document.documentElement.classList.add("js");
+    </script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="top" id="top">
+        <a class="brand" href="../index.html" aria-label="THE WOLF - Inicio">
+            <img src="../logo/14.png" alt="THE WOLF">
+        </a>
+
+        <button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false"
+            aria-controls="nav-menu">
+            <i class="fa-solid fa-bars burger-icon-open" aria-hidden="true"></i>
+            <i class="fa-solid fa-xmark burger-icon-close" aria-hidden="true"></i>
+        </button>
+
+        <nav class="nav-menu" id="nav-menu" aria-label="Navegación principal">
+            <a class="nav-link" href="../index.html">Inicio</a>
+            <a class="nav-link" href="../page/nostros.html">Nosotros</a>
+            <a class="nav-link nav-featured active" href="../page/servicios.html">Servicios</a>
+            <a class="nav-link nav-featured" href="../page/tienda.html">Tienda</a>
+            <a class="nav-link" href="..page/contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <!-- SECCIÓN 1: THE WOLF EN ACCIÓN (SHOWCASE DINÁMICO) -->
+        <section class="section showcase-section">
+            <div class="container">
+
+                <div class="section-heading text-center margin-auto" data-aos="fade-up">
+
+                    <h2>THE WOLF <span>EN ACCIÓN</span></h2>
+                    <p>Conocé nuestros trabajos, mirá cómo trabajamos y descubrí las soluciones que podemos ofrecerte.
+                    </p>
+                </div>
+
+                <!-- Filtros Interactivos (Generados o Fijos) -->
+                <div class="filter-bar" id="filter-bar" data-aos="fade-up" data-aos-delay="100">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="mantenimiento">Mantenimiento</button>
+                    <button class="filter-btn" data-filter="reparacion">Reparación</button>
+                    <button class="filter-btn" data-filter="software">Software</button>
+                    <button class="filter-btn" data-filter="impresoras">Impresoras</button>
+                    <button class="filter-btn" data-filter="conectividad">Conectividad</button>
+                    <button class="filter-btn" data-filter="desarrollo">Desarrollo</button>
+                </div>
+
+                <!-- Contenedor donde JS inyectará los trabajos -->
+                <div class="showcase-grid" id="showcase-container"></div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: DETALLE DE SERVICIOS OFRECIDOS -->
+        <section class="section services-detail-section">
+            <div class="container">
+
+                <div class="section-heading" data-aos="fade-up">
+                    <span class="eyebrow">SOLUCIONES A TU MEDIDA</span>
+                    <h2>Especialidades <span>técnicas</span></h2>
+                    <p>Servicios detallados para particulares, profesionales, comercios y emprendimientos.</p>
+                </div>
+
+                <!-- Contenedor donde JS inyectará las tarjetas de servicios -->
+                <div class="services-full-grid" id="services-container"></div>
+
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="contact-cta">
+            <div class="container contact-inner" data-aos="zoom-in">
+                <span class="eyebrow">¿TENÉS DUDAS ESPECÍFICAS?</span>
+                <h2>¿No sabés qué servicio necesita tu equipo?</h2>
+                <p>Escribinos detallando qué pasa y te asesoramos sin compromiso.</p>
+
+                <a class="btn btn-primary" href="contacto.html">
+                    Contactarnos
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER ELEGANTE Y VISUAL -->
+    <footer class="footer">
+        <div class="footer-divider" aria-hidden="true"></div>
+        <div class="container footer-layout">
+
+            <div class="footer-brand">
+                <a href="#" class="footer-logo-link" aria-label="Inicio">
+                    <img src="../logo/1.png" alt="THE WOLF" loading="lazy">
+                </a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Explorá</h3>
+                <a href="nostros.html"><i class="fa-solid fa-chevron-right icon-arrow"></i> Nosotros</a>
+                <a href="servicios.html"><i class="fa-solid fa-chevron-right icon-arrow"></i> Servicios</a>
+                <a href="tienda.html"><i class="fa-solid fa-chevron-right icon-arrow"></i> Tienda</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Conectá</h3>
+                <a href="https://portafolio1-alexis.netlify.app/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-solid fa-arrow-up-right-from-square icon-arrow"></i> Portafolio</a>
+                <a href="contacto.html"><i class="fa-solid fa-chevron-right icon-arrow"></i> Contacto</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="year">2026</span> THE WOLF. Todos los derechos reservados.</p>
+                <p class="footer-motto">PRECISIÓN · ESTRATEGIA · TECNOLOGÍA</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <a class="floating-button back-to-top" id="back-to-top" href="#inicio" aria-label="Volver al inicio"
+        title="Volver al inicio">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <!-- WHATSAPP FLOTANTE CON MENSAJE PREDETERMINADO -->
+    <a class="floating-button whatsapp-button" id="wa-btn" href="#" aria-label="Contactar por WhatsApp"
+        title="Contactar por WhatsApp" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js" defer></script>
+    <script src="../Scripts/main.js" defer></script>
+</body>
+
+</html>

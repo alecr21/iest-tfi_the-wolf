@@ -1,0 +1,11 @@
+Chrome 156.0.8078.76; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T01: elementos del carrito únicos y estado inicial vacío (9586.7406ms)
+✔ 003/T01: panel abre y cierra por botón y por overlay, con aria-hidden coherente (4629.9187ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 40902.4187

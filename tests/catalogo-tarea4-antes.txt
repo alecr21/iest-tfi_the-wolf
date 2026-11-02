@@ -1,0 +1,33 @@
+✔ el HTML contiene contenedor, mensaje vacío inicialmente oculto y buscador (2.2754ms)
+✔ la carga permanece hasta que se resuelve la consulta (3.7975ms)
+✔ el catálogo vacío muestra el mensaje sin resultados y elimina la carga (4.136ms)
+✔ una consulta fallida muestra el mensaje establecido y elimina la carga (2.892ms)
+✔ los productos recibidos ocultan el mensaje sin resultados (47.447ms)
+✖ una nueva carga tras catálogo vacío oculta el mensaje anterior incluso si falla (4.945ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 5
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 319.2144
+
+✖ failing tests:
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea4.test.cjs:52:1
+✖ una nueva carga tras catálogo vacío oculta el mensaje anterior incluso si falla (4.945ms)
+  AssertionError [ERR_ASSERTION]: el aviso de catálogo vacío no debe acompañar a Cargando productos
+  
+  'block' !== 'none'
+  
+      at TestContext.<anonymous> (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea4.test.cjs:58:10)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'block',
+    expected: 'none',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

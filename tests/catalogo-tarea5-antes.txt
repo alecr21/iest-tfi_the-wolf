@@ -1,0 +1,58 @@
+✔ tarjeta: conserva URL original y texto alternativo antes de cualquier error (48.6876ms)
+✖ tarjeta: intenta la alternativa una sola vez si ambas imágenes fallan (4.0641ms)
+✔ modal: conserva URL original y texto alternativo antes de cualquier error (4.498ms)
+✖ modal: intenta la alternativa una sola vez si ambas imágenes fallan (4.4227ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 2
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 382.5549
+
+✖ failing tests:
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea5.test.cjs:24:3
+✖ tarjeta: intenta la alternativa una sola vez si ambas imágenes fallan (4.0641ms)
+  AssertionError [ERR_ASSERTION]: debe anular onerror para evitar repetir la alternativa
+  + actual - expected
+  
+  + [Function: anonymous]
+  - null
+  
+      at TestContext.<anonymous> (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea5.test.cjs:31:12)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)
+      at Test.postRun (node:internal/test_runner/test:1235:19)
+      at Test.run (node:internal/test_runner/test:1163:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    expected: null,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at ..\..\..\..\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea5.test.cjs:24:3
+✖ modal: intenta la alternativa una sola vez si ambas imágenes fallan (4.4227ms)
+  AssertionError [ERR_ASSERTION]: debe anular onerror para evitar repetir la alternativa
+  + actual - expected
+  
+  + [Function: anonymous]
+  - null
+  
+      at TestContext.<anonymous> (C:\Users\El Mero Mero\Desktop\iest-tfi_Alexis Soria_The wolf\tests\catalogo-tarea5.test.cjs:31:12)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)
+      at Test.postRun (node:internal/test_runner/test:1235:19)
+      at Test.run (node:internal/test_runner/test:1163:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    expected: null,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

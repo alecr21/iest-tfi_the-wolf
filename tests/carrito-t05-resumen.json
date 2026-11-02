@@ -1,0 +1,38 @@
+{
+  "kind": "Resumen de ejecuciones separadas posteriores a la corrección de subtotal",
+  "sourceSha256": "a52d7be9ddd36f1bf961caf472e9d503f67b3eaa426820aa242fddb1c37802fc",
+  "runs": [
+    {
+      "file": "carrito-t01-regresion-t05.txt",
+      "passed": 2,
+      "failed": 0
+    },
+    {
+      "file": "carrito-t02-regresion-t05.txt",
+      "passed": 3,
+      "failed": 0
+    },
+    {
+      "file": "carrito-t03-regresion-t05.txt",
+      "passed": 2,
+      "failed": 0
+    },
+    {
+      "file": "carrito-t04-regresion-t05.txt",
+      "passed": 2,
+      "failed": 0
+    },
+    {
+      "file": "carrito-t05-despues.txt",
+      "passed": 2,
+      "failed": 0
+    },
+    {
+      "file": "carrito-t05-regresion-seguridad.txt",
+      "passed": 15,
+      "failed": 0
+    }
+  ],
+  "totalPassed": 26,
+  "totalFailed": 0
+}
