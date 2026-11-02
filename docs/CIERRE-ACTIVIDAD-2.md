@@ -15,7 +15,7 @@ Las tres funcionalidades están tomadas del alcance de `08-TAREAS.md`: catálogo
 | 003 — Carrito/WhatsApp | Ocho CAR-RF y doce criterios con resultados favorables |
 | Ocho fases | Constitución, specs, clarificaciones, planes, tareas, código/tests y matrices. Fase 7 sin requisito funcional nuevo; commits y revisión humana se evalúan aparte |
 | Pruebas previas | 41 tests de catálogo, 21 de búsqueda y 20 de carrito, en ejecuciones separadas. No confundir ese conteo con una ejecución integrada nueva |
-| Prompts y errores | `PROMPTS.md`, con cuatro casos reales de IA del trabajo previo; también se registra el error de integración de nombres de carpeta de Windows |
+| Prompts y errores | `PROMPTS.md`, con seis casos reales de IA registrados y sus correcciones |
 | Confirmaciones humanas | Búsqueda/nombre/categoría/Todos, limpiar conservando categoría y presentación Unidad/Subtotal, informadas por el estudiante |
 
 Los resultados técnicos no constituyen una auditoría universal, una prueba de stock real ni una afirmación de que el estudiante ya leyó todo el código.
@@ -34,7 +34,7 @@ Los resultados históricos se conservan con sus rutas originales para no alterar
 - `npm test`: aprobado, 82 pruebas, 0 fallidas y 0 omitidas, en una nueva ejecución integrada sobre esta copia. Salida: tests/ejecucion-integrada.txt; resumen: tests/resultado-integrado.json.
 - `npm run build`: aprobado; build estático en dist/, con comprobación de sintaxis. Salida: tests/build-integrado.txt.
 - Revisión de archivos: 31 archivos del sitio idénticos a la copia autorizada; 116 archivos textuales revisados inicialmente por patrones, sin coincidencias de claves sb_secret con valor, JWT service_role o claves privadas. No es auditoría universal; informe en tests/revision-archivos-integrados.json.
-- Git local inicializado en main, sin remoto. El commit de integración se registrará solo después de concluir pruebas y revisar los archivos. GitHub no creado ni publicado.
+- Git local en main, sin remoto. Commit actual de integración: 00fac4a2055ab1d945eab616294392a769c38f4b (`chore: integrar TFI con pruebas reproducibles`). No es historial por tarea. La actualización documental y el diagnóstico se registran en un commit posterior. GitHub no creado ni publicado.
 
 Estos estados se actualizarán solo con resultados ejecutados.
 
@@ -59,3 +59,8 @@ GitHub y publicación quedan a la espera del momento indicado por el estudiante.
 ## Preparación para la Actividad 3
 
 La programación de las tres funcionalidades y la comprobación técnica permiten comenzar la revisión del producto final. El estado formal de la Actividad 2 se mantiene pendiente de lectura humana y reconocimiento de las diferencias históricas de proceso descritas arriba. No se sustituye esa revisión con la frase tests en verde.
+
+
+## Diagnóstico posterior de Actividad 3
+
+Al ampliar la comprobación a móvil con recursos reales se reprodujeron desbordes y tarjetas invisibles. RF11/RNF02 no cumplen en esos escenarios; RF04 queda afectado en móvil. Estos fallos se registran en ACTIVIDAD-3.md y requieren corrección. Los resultados funcionales anteriores tienen el alcance de escritorio/controlado descrito; no se declara el producto completo para todos los dispositivos.

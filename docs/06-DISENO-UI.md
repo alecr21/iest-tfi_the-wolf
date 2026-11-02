@@ -22,7 +22,7 @@ La tipografía principal será Montserrat. Orbitron podrá utilizarse en algunos
 
 * **Encabezado:** logo y menú de navegación.
 * **Sección principal:** presentación de THE WOLF y acceso al catálogo.
-* **Tarjetas de productos:** imagen, nombre, descripción breve y precio.
+* **Tarjetas de productos:** imagen, nombre y precio; la descripción se presenta en Ver detalle, según la decisión del estudiante.
 * **Botones de acción:** acceso al catálogo, contacto y pedido.
 * **Pie de página:** información del emprendimiento y medios de contacto.
 
@@ -36,7 +36,7 @@ Presentará el logo, el nombre THE WOLF, el slogan “Tecnología & Soporte” y
 
 ### Catálogo de productos
 
-Mostrará productos organizados por categorías. Cada tarjeta incluirá una imagen ilustrativa, el nombre, una descripción breve y un precio de ejemplo.
+Mostrará productos organizados por categorías. Cada tarjeta muestra imagen, nombre y precio informativo. La descripción se consulta en Ver detalle. La disponibilidad y condiciones comerciales se confirman directamente con THE WOLF.
 
 ### Servicios
 

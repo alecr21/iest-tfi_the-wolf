@@ -1,0 +1,82 @@
+{
+  "type": "Diagnóstico inicial, no Lighthouse ni auditoría completa",
+  "localBuild": true,
+  "liveResources": true,
+  "writesBlocked": true,
+  "results": [
+    {
+      "page": "inicio",
+      "mode": "escritorio",
+      "catalogStatus": "no aplica",
+      "api": [],
+      "metrics": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "horizontalOverflow": false,
+        "renderedProducts": 0,
+        "displayedProducts": 0,
+        "brokenImages": 0
+      },
+      "errors": [],
+      "screenshot": "inicio-escritorio.png"
+    },
+    {
+      "page": "tienda",
+      "mode": "escritorio",
+      "catalogStatus": "productos cargados",
+      "api": [
+        {
+          "status": 200,
+          "method": "GET"
+        }
+      ],
+      "metrics": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "horizontalOverflow": false,
+        "renderedProducts": 8,
+        "displayedProducts": 8,
+        "brokenImages": 0
+      },
+      "errors": [],
+      "screenshot": "tienda-escritorio.png"
+    },
+    {
+      "page": "inicio",
+      "mode": "movil-360",
+      "catalogStatus": "no aplica",
+      "api": [],
+      "metrics": {
+        "width": 520,
+        "scrollWidth": 520,
+        "horizontalOverflow": false,
+        "renderedProducts": 0,
+        "displayedProducts": 0,
+        "brokenImages": 0
+      },
+      "errors": [],
+      "screenshot": "inicio-movil-360.png"
+    },
+    {
+      "page": "tienda",
+      "mode": "movil-360",
+      "catalogStatus": "productos cargados",
+      "api": [
+        {
+          "status": 200,
+          "method": "GET"
+        }
+      ],
+      "metrics": {
+        "width": 498,
+        "scrollWidth": 498,
+        "horizontalOverflow": false,
+        "renderedProducts": 8,
+        "displayedProducts": 0,
+        "brokenImages": 0
+      },
+      "errors": [],
+      "screenshot": "tienda-movil-360.png"
+    }
+  ]
+}

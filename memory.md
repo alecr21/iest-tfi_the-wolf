@@ -1,13 +1,13 @@
 # Memoria del proyecto — THE WOLF
 
-## Estado vigente — Copia integrada para entrega
+## Estado vigente — Integración y diagnóstico de Actividad 3
 
-- Las 23 tareas de las listas de 001/002/003 tienen validación técnica en sus alcances. T09 de 003 consolidó ocho CAR-RF y doce CA, con EARS y casos límite sin nuevo alcance.
-- Esta carpeta reúne código, documentación y tests. npm test ejecutado aquí: 82 aprobadas, 0 fallidas/omitidas; npm run build aprobado. Salidas y hash en tests/resultado-integrado.json.
-- Código del sitio idéntico a la copia autorizada del Escritorio; pruebas usan rutas relativas y dependencia Playwright fijada. Skills/prompts y kit documental reunidos con rutas canónicas. Originales conservados.
-- El estudiante confirmó manualmente búsqueda/filtros, limpiar manteniendo categoría y Unidad/Subtotal. Lectura y comprensión de código/evidencias pendiente; checklist en docs/REVISION-ESTUDIANTE.md. Cinco errores reales de IA documentados.
-- Git local inicializado en main; se registrará la integración actual, sin inventar commits históricos por tarea. GitHub no existe y el estudiante quiere subirlo al finalizar su PDF. No publicar, crear remoto ni hacer push sin autorización.
-- Actividad 2: técnico validado, cierre formal con diferencias de proceso pendientes de revisión humana. Actividad 3: preparar responsive 360px, accesibilidad, tokens, Lighthouse y publicación posterior. No se declara completada ni publicada.
+- Esta es la copia integrada de entrega: código, docs, specs, tests, skills/prompts y herramientas reunidos. Las carpetas originales del Escritorio se conservaron; continuar cambios del sitio en esta copia.
+- Las 23 tareas de las listas tienen validación técnica en el alcance documentado. npm test integrado: 82 aprobadas, 0 fallidas/omitidas; build estático aprobado. No son una certificación móvil.
+- Commit local de integración 00fac4a2055ab1d945eab616294392a769c38f4b. Se registra documentación/diagnóstico posterior por separado. No se inventan commits históricos por tarea. GitHub aún no existe; el estudiante quiere subirlo al finalizar su PDF. No crear remoto, publicar ni hacer push sin autorización.
+- Actividad 3 iniciada con diagnóstico real local: escritorio sin desborde, Tienda carga 8 y muestra 8; móvil 360 px ensancha Inicio a 520 y Tienda a 498, con 8 tarjetas en DOM y 0 visibles por opacity:0/data-aos. RF11/RNF02 no cumplen en esos escenarios y RF04 está afectado en móvil. Siguiente: corregir responsive en esta copia integrada, sin tocar sitio publicado.
+- Confirmaciones manuales del estudiante: búsqueda/filtros, limpieza manteniendo categoría y Unidad/Subtotal. Lectura/comprensión del código y evidencias pendientes. Seis errores reales de IA documentados, sujetos a revisión humana.
+- Actividad 2: validación técnica de las tres funciones con límites, cierre formal pendiente de revisión humana y reconocimiento de diferencias de proceso. Actividad 3: responsive, accesibilidad, tokens, Lighthouse y publicación pendientes.
 
 ## 1. Identificación
 

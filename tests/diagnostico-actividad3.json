@@ -1,0 +1,220 @@
+{
+  "type": "Diagnóstico inicial, no Lighthouse ni auditoría completa",
+  "localBuild": true,
+  "liveResources": true,
+  "writesBlocked": true,
+  "results": [
+    {
+      "page": "inicio",
+      "mode": "escritorio",
+      "catalogStatus": "no aplica",
+      "api": [],
+      "metrics": {
+        "requestedWidth": 1440,
+        "width": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "horizontalOverflow": false,
+        "renderedProducts": 0,
+        "displayedProducts": 0,
+        "hiddenReasons": [],
+        "overflowCandidates": [],
+        "brokenImages": 0
+      },
+      "errors": [],
+      "screenshot": "inicio-escritorio.png"
+    },
+    {
+      "page": "tienda",
+      "mode": "escritorio",
+      "catalogStatus": "productos cargados",
+      "api": [
+        {
+          "status": 200,
+          "method": "GET"
+        }
+      ],
+      "metrics": {
+        "requestedWidth": 1440,
+        "width": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "horizontalOverflow": false,
+        "renderedProducts": 8,
+        "displayedProducts": 8,
+        "hiddenReasons": [],
+        "overflowCandidates": [],
+        "brokenImages": 0
+      },
+      "errors": [],
+      "screenshot": "tienda-escritorio.png"
+    },
+    {
+      "page": "inicio",
+      "mode": "movil-360",
+      "catalogStatus": "no aplica",
+      "api": [],
+      "metrics": {
+        "requestedWidth": 360,
+        "width": 520,
+        "clientWidth": 360,
+        "scrollWidth": 520,
+        "horizontalOverflow": true,
+        "renderedProducts": 0,
+        "displayedProducts": 0,
+        "hiddenReasons": [],
+        "overflowCandidates": [
+          {
+            "element": "DIV.hero-glow",
+            "left": 40,
+            "right": 520
+          },
+          {
+            "element": "DIV.statement-glow",
+            "left": -20,
+            "right": 380
+          },
+          {
+            "element": "DIV.product-orbit orbit-two",
+            "left": -25,
+            "right": 385
+          },
+          {
+            "element": "A.floating-button whatsapp-button",
+            "left": 444,
+            "right": 497
+          },
+          {
+            "element": "I.fa-brands fa-whatsapp",
+            "left": 454,
+            "right": 487
+          }
+        ],
+        "brokenImages": 0
+      },
+      "errors": [],
+      "screenshot": "inicio-movil-360.png"
+    },
+    {
+      "page": "tienda",
+      "mode": "movil-360",
+      "catalogStatus": "productos cargados",
+      "api": [
+        {
+          "status": 200,
+          "method": "GET"
+        }
+      ],
+      "metrics": {
+        "requestedWidth": 360,
+        "width": 498,
+        "clientWidth": 360,
+        "scrollWidth": 498,
+        "horizontalOverflow": true,
+        "renderedProducts": 8,
+        "displayedProducts": 0,
+        "hiddenReasons": [
+          {
+            "productIndex": 1,
+            "element": "ARTICLE.shop-product-card",
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": "0",
+            "aos": "fade-up"
+          },
+          {
+            "productIndex": 2,
+            "element": "ARTICLE.shop-product-card",
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": "0",
+            "aos": "fade-up"
+          },
+          {
+            "productIndex": 3,
+            "element": "ARTICLE.shop-product-card",
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": "0",
+            "aos": "fade-up"
+          },
+          {
+            "productIndex": 4,
+            "element": "ARTICLE.shop-product-card",
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": "0",
+            "aos": "fade-up"
+          },
+          {
+            "productIndex": 5,
+            "element": "ARTICLE.shop-product-card",
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": "0",
+            "aos": "fade-up"
+          },
+          {
+            "productIndex": 6,
+            "element": "ARTICLE.shop-product-card",
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": "0",
+            "aos": "fade-up"
+          },
+          {
+            "productIndex": 7,
+            "element": "ARTICLE.shop-product-card",
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": "0",
+            "aos": "fade-up"
+          },
+          {
+            "productIndex": 8,
+            "element": "ARTICLE.shop-product-card",
+            "display": "flex",
+            "visibility": "visible",
+            "opacity": "0",
+            "aos": "fade-up"
+          }
+        ],
+        "overflowCandidates": [
+          {
+            "element": "DIV.hero-glow",
+            "left": 18,
+            "right": 498
+          },
+          {
+            "element": "BUTTON.floating-button cart-floating-button",
+            "left": 357,
+            "right": 410
+          },
+          {
+            "element": "I.fa-solid fa-cart-shopping",
+            "left": 371,
+            "right": 396
+          },
+          {
+            "element": "SPAN.floating-cart-badge",
+            "left": 393,
+            "right": 413
+          },
+          {
+            "element": "A.floating-button whatsapp-button",
+            "left": 422,
+            "right": 475
+          },
+          {
+            "element": "I.fa-brands fa-whatsapp",
+            "left": 432,
+            "right": 465
+          }
+        ],
+        "brokenImages": 0
+      },
+      "errors": [],
+      "screenshot": "tienda-movil-360.png"
+    }
+  ]
+}

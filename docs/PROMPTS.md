@@ -165,3 +165,19 @@
 - **Evidencia:** fallo real de preparar-entrega.cjs en las herramientas de este chat y estructura final tools/. No se fabrica un log histórico del error.
 
 Se mantienen los cinco casos como errores reales del asistente, sujetos a lectura y revisión del estudiante; no se atribuyen defectos históricos del sitio a IA sin autoría comprobada.
+
+
+## Inicio de Actividad 3 — Diagnóstico móvil real
+
+Después de preparar la integración se ejecutó un diagnóstico de Inicio y Tienda con Chrome, build local y recursos reales. Se reprodujeron desbordes a 360 px y ocho tarjetas móviles con opacidad 0, aun con Supabase HTTP 200. Sin cambios del sitio en este diagnóstico. No se inventó una puntuación Lighthouse.
+
+### EIA-06 — Comparar desborde con un viewport ya ampliado
+
+- **Qué hizo mal la IA:** el primer instrumento comparó scrollWidth con innerWidth. En la emulación móvil, el desborde amplió innerWidth a 520/498 y ambos valores coincidieron, produciendo false negativo.
+- **Detección:** el ancho solicitado era 360, clientWidth seguía en 360 y las capturas mostraban contenido ensanchado; el primer JSON marcaba horizontalOverflow=false.
+- **Impacto:** el indicador aislado no detectaba un fallo real. No se dio por aprobada la vista móvil a partir de él.
+- **Corrección:** comparar contra el ancho solicitado por Playwright e incluir clientWidth, razones de ocultamiento y candidatos fuera de pantalla. Se repitió el diagnóstico con resultado de desborde confirmado.
+- **Aprendizaje:** validar la métrica contra el escenario configurado y la evidencia visual, especialmente con viewport móvil dinámico.
+- **Evidencia:** tests/diagnostico-actividad3-inicial.json, diagnostico-actividad3.json y sus salidas. No cambió el sitio entre esas mediciones.
+
+Hay seis casos reales de IA documentados en la copia integrada; sus conteos anteriores son avances históricos. La lectura del estudiante sigue pendiente.

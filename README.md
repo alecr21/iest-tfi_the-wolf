@@ -38,4 +38,4 @@ La validación técnica y los límites de cada prueba están en los tres `verifi
 
 El estudiante confirmó pruebas manuales de búsqueda, filtros, limpieza y subtotales. La lectura y comprensión del código y las evidencias siguen pendientes: ver [REVISION-ESTUDIANTE.md](docs/REVISION-ESTUDIANTE.md).
 
-GitHub se creará al momento que indique el estudiante. No se declara cumplida la publicación de la Actividad 3. También quedan la revisión responsive a 360 px, accesibilidad, Lighthouse y revisión de tokens de marca antes de ese cierre.
+GitHub se creará al momento que indique el estudiante. No se declara cumplida la publicación de la Actividad 3. El [diagnóstico inicial de Actividad 3](docs/ACTIVIDAD-3.md) reprodujo desborde y tarjetas invisibles a 360 px. Su corrección, accesibilidad, Lighthouse y revisión de tokens siguen pendientes.

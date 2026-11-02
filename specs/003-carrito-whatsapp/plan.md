@@ -97,13 +97,13 @@ Los cambios posteriores se guardan mediante la función `saveCart()`.
 | Requisito | General | Trabajo previsto |
 |---|---|---|
 | CAR-RF01 | RF06 | Revisar alta y repetición de productos |
-| CAR-RF02 | RF06 | Comprobar controles de cantidad |
-| CAR-RF03 | RF06 | Comprobar eliminación al llegar a cero |
-| CAR-RF04 | RF07 | Comprobar cálculo y presentación del subtotal previsto en HU04 |
-| CAR-RF05 | RF07 | Comparar total con suma de subtotales |
+| CAR-RF02 | RF07 | Comprobar controles de cantidad |
+| CAR-RF03 | RF07 | Comprobar eliminación al llegar a cero |
+| CAR-RF04 | RF06/RF07/RF08 (apoyo) | Comprobar cálculo y presentación del subtotal previsto en HU04 |
+| CAR-RF05 | RF06/RF07/RF08 (apoyo) | Comparar total con suma de subtotales |
 | CAR-RF06 | RF06 | Guardar y recuperar selección con localStorage |
 | CAR-RF07 | RF08 | Inspeccionar mensaje y URL de consulta sin envío real |
-| CAR-RF08 | RF06 | Comprobar aceptar y cancelar vaciado |
+| CAR-RF08 | RF07 | Comprobar aceptar y cancelar vaciado |
 
 La correspondencia se mantiene según la matriz general de requerimientos del proyecto.
 
@@ -128,3 +128,6 @@ La funcionalidad ya cuenta con una implementación inicial.
 El objetivo principal de esta etapa es verificar el comportamiento existente y corregir posibles errores si se detectan.
 
 El carrito no realiza pagos, no confirma compras y no reserva stock. La consulta se completa mediante la comunicación directa con THE WOLF por WhatsApp.
+
+
+La correspondencia se ajustó a docs/02-REQUERIMIENTOS.md: RF06 agrega, RF07 modifica cantidades/quita y RF08 prepara la consulta. Los cálculos apoyan el carrito y su resumen; no se inventa un requisito general numérico adicional.

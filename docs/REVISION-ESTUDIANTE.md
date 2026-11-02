@@ -39,7 +39,7 @@ Las plantillas conservan `innerHTML`; la corrección codifica los datos interpol
 ## Evidencias y entrega
 
 - [ ] Leer el informe del catálogo y distinguir pruebas con servidor simulado, lectura real previa y resultado RLS aportado por vos.
-- [ ] Revisar los cuatro errores reales de IA documentados y entender cómo se detectaron y corrigieron.
+- [ ] Revisar los seis errores reales de IA documentados y entender cómo se detectaron y corrigieron.
 - [ ] Antes de entregar, reunir código, documentación y pruebas en el repositorio correcto, revisar los cambios y crear commits reales. Esto todavía está pendiente.
 
 No compartas claves secretas ni contraseñas para hacer esta revisión.

@@ -73,10 +73,10 @@ La función también controla la visibilidad del mensaje `no-results-msg`.
 
 | Requisito específico | General | Trabajo previsto |
 |---|---|---|
-| BUS-RF01 | RF03 | Revisar comparación con el nombre y probar coincidencias por texto |
-| BUS-RF02 | RF03 | Revisar comparación con la categoría, separada del nombre |
-| BUS-RF03 | RF05 | Comprobar eventos de botones, categoría activa y regreso a Todos |
-| BUS-RF04 | RF03/RF05 | Comprobar que texto y categoría deban cumplirse simultáneamente |
+| BUS-RF01 | RF05 | Revisar comparación con el nombre y probar coincidencias por texto |
+| BUS-RF02 | RF05 | Revisar comparación con la categoría, separada del nombre |
+| BUS-RF03 | RF03/RF05 | Comprobar eventos de botones, categoría activa y regreso a Todos |
+| BUS-RF04 | RF05 | Comprobar que texto y categoría deban cumplirse simultáneamente |
 | BUS-RF05 | RF05 | Comprobar aviso sin resultados y recuperación al cambiar condiciones |
 
 La correspondencia se mantiene según la matriz general de requerimientos del proyecto.
@@ -102,3 +102,6 @@ La funcionalidad ya cuenta con una implementación en el proyecto. El objetivo p
 No se incorporarán características nuevas fuera del alcance establecido.
 
 Las observaciones de seguridad relacionadas con la inserción de datos dinámicos se documentan en la funcionalidad 001 para evitar duplicar tareas.
+
+
+La matriz general distingue RF03 (organización por categorías) y RF05 (buscar/filtrar). La trazabilidad específica anterior se alineó con esos significados en el cierre documental, sin cambio de funcionalidad.
