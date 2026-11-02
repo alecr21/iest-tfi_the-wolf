@@ -76,3 +76,15 @@ La verificación del cambio expandió las referencias de color y comparó los va
 Inspección reproducible: `node tools/auditar-tabla2.cjs`. Diez escenarios (cinco páginas a 360 y 1440 px), sin desborde, imágenes sin atributo alt, controles sin nombre ni errores JS no capturados. En las primeras 16 pulsaciones de Tab por página no se observó foco dentro de aria-hidden=true. La inspección usa recursos locales, bloquea CDN visuales, usa el SDK real y siete productos ficticios; el informe es `tests/auditoria-tabla2.json`. Es una revisión preliminar, no un informe Lighthouse ni certificación WCAG, y no evalúa si cada descripción alternativa es suficientemente precisa.
 
 Pendientes concretos: contraste (en particular textos secundarios semitransparentes), recorrido completo y gestión de foco en menú/modal/carrito, títulos distintos por página y Lighthouse con recursos reales. Las cinco páginas actualmente repiten el mismo título, según el informe; se corregirá en el bloque SEO.
+
+## Diferencia entre copias y aviso de imagenes — 2 de noviembre de 2026
+
+El estudiante informó que los cambios no aparecían en F12 y compartió la URL `http://127.0.0.1:5500/Presentacion/The-Wolf/page/tienda.html`. Se solicitaron por HTTP main.js y style.css de ese origen: respuesta 200, sin `animations-enabled` ni límites nuevos del brillo, y con `disable: "mobile"` en el JS. Esa dirección seguía sirviendo la copia anterior, no la integrada. El problema de versión queda demostrado; no se atribuye a un error del estudiante ni se considera falsa su observación.
+
+Para evitar más confusiones se agregó `npm run preview`: servidor solo local, 127.0.0.1:5501, sobre dist y con cache desactivada. No es una publicación. Se conserva la carpeta anterior sin sobrescribirla.
+
+El aviso de imágenes diferidas era válido e independiente de las animaciones: se añadieron width/height con las dimensiones reales del PNG a las nueve imágenes estáticas diferidas y aspect-ratio a las imágenes dinámicas de productos/servicios. Las reglas existentes de object-fit se conservan. Dos pruebas nuevas fallaron antes y aprobaron después; junto con las dos responsive, cuatro aprobadas (`tests/imagenes-diferidas-antes.txt`, `tests/imagenes-diferidas-despues.txt`). Build aprobado. No se midió CLS ni se afirma una puntuación de Lighthouse.
+
+Verificación con Chrome y recursos reales de la copia servida en 5501: Inicio y Tienda en secuencia 1440→900→360→820→1440, sin recargar, recorriendo el documento para activar AOS. Diez escenarios sin desborde ni excepciones JS; Tienda con ocho productos visibles en cada ancho; ninguna imagen diferida sin dimensiones/proporción reservada. Evidencia: `tests/verificacion-cambio-f12.json`. Reproducir con preview activo y `node tools/verificar-cambio-f12.cjs`.
+
+Regresión de imágenes y catálogo posterior: diez pruebas aprobadas, cero fallidas, en tests/regresion-imagenes-actividad3.txt. Sumadas a las cuatro verificaciones de imágenes/responsive ejecutadas en esta corrección, catorce pruebas dirigidas aprobadas; no es una nueva ejecución de toda la batería.

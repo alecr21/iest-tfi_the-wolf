@@ -1,0 +1,15 @@
+✔ Las imagenes diferidas estaticas declaran dimensiones (4.4749ms)
+Chrome 156.0.8078.76; siete productos ficticios; SDK real; red interceptada.
+✔ Las imagenes de productos reservan proporcion antes de cargar (5889.5602ms)
+Chrome 156.0.8078.76; siete productos ficticios; SDK real; red interceptada.
+✔ Inicio conserva el ancho de 360 px sin JavaScript de animaciones (4299.2623ms)
+Chrome 156.0.8078.76; siete productos ficticios; SDK real; red interceptada.
+✔ Tienda muestra productos con CSS de entrada AOS, en móvil y movimiento reducido (7992.0203ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 20645.5898

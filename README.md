@@ -38,4 +38,12 @@ La validación técnica y los límites de cada prueba están en los tres `verifi
 
 El estudiante confirmó pruebas manuales de búsqueda, filtros, limpieza y subtotales. La lectura y comprensión del código y las evidencias siguen pendientes: ver [REVISION-ESTUDIANTE.md](docs/REVISION-ESTUDIANTE.md).
 
-GitHub se creará al momento que indique el estudiante. No se declara cumplida la publicación de la Actividad 3. El [diagnóstico inicial de Actividad 3](docs/ACTIVIDAD-3.md) reprodujo desborde y tarjetas invisibles a 360 px. Su corrección, accesibilidad, Lighthouse y revisión de tokens siguen pendientes.
+GitHub se creará al momento que indique el estudiante. No se declara cumplida la publicación de la Actividad 3. El [diagnóstico inicial de Actividad 3](docs/ACTIVIDAD-3.md) reprodujo desborde y tarjetas invisibles a 360 px. La corrección responsive y los tokens ya tienen evidencia posterior; accesibilidad completa y Lighthouse siguen pendientes. Usar la vista previa del puerto 5501 descrita abajo para revisar la versión integrada.
+
+## Abrir la version corregida sin confundir carpetas
+
+Desde esta carpeta integrada ejecutar `npm run build` y `npm run preview`. Inicio: http://127.0.0.1:5501/ . Tienda: http://127.0.0.1:5501/page/tienda.html . El servidor solo escucha en esta computadora y sirve dist con cache desactivada; detener con Ctrl+C. Si el puerto ya esta en uso por esta vista previa, usar el enlace existente.
+
+La URL `http://127.0.0.1:5500/Presentacion/The-Wolf/...` corresponde a la copia anterior. El 2 de noviembre se verifico por HTTP que sus archivos no incluyen las correcciones responsive. No utilizarla para revisar cambios de la copia integrada.
+
+Los resultados historicos de 82 pruebas corresponden a la integracion inicial; la regresion responsive posterior aprobo 84. Los avances y limites actuales se actualizan en docs/ACTIVIDAD-3.md.

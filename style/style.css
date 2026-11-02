@@ -1876,3 +1876,7 @@ html:not(.animations-enabled) [data-aos] {
     transition: none !important;
   }
 }
+
+/* Reserva de espacio para imagenes diferidas; el contenido conserva object-fit. */
+.product-card-img { aspect-ratio: 1 / 1; }
+.reel-media { aspect-ratio: 16 / 10; }

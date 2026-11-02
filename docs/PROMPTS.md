@@ -191,3 +191,7 @@ Se reprodujeron los defectos con pruebas anteriores al cambio. El diagnóstico p
 ### Actividad 3 — centralización de identidad visual
 
 Se continuó el pedido «sigamos entonces» con un cambio acotado a CSS: colores y familias tipográficas desde tokens. Se comprobó equivalencia de valores antes/después, referencias definidas, build y las dos pruebas responsive. Se ejecutó una inspección preliminar de las cinco páginas a dos anchos, con sus límites documentados; no se declaró accesibilidad completa ni un resultado Lighthouse. No se repitió la batería funcional de 84 pruebas porque no cambió JavaScript/HTML ni la lógica y la equivalencia de colores se comprobó directamente.
+
+### EIA-07 — indicar revision sin una URL inequívoca
+
+El asistente pidio revisar la copia integrada mientras Live Server del estudiante seguia sirviendo la carpeta anterior en 5500. El estudiante reprodujo el defecto y compartio su URL. Se compararon los recursos servidos con las correcciones y se demostro la diferencia. Se corrigio la entrega de revision con preview en 5501 y enlaces directos, sin sobrescribir originales. En adelante, confirmar origen/version antes de atribuir una diferencia a cache o al navegador.

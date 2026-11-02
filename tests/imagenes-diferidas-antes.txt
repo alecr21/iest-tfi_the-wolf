@@ -1,0 +1,48 @@
+✖ Las imagenes diferidas estaticas declaran dimensiones (3.9435ms)
+Chrome 156.0.8078.76; siete productos ficticios; SDK real; red interceptada.
+✖ Las imagenes de productos reservan proporcion antes de cargar (7446.4789ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 0
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8805.9692
+
+✖ failing tests:
+
+test at tests\imagenes-diferidas-actividad3.test.cjs:6:1
+✖ Las imagenes diferidas estaticas declaran dimensiones (3.9435ms)
+  AssertionError [ERR_ASSERTION]: index.html: <img src="./productos/8.png" alt="Disco SSD" loading="lazy" onerror="this.style.display='none'">
+      at TestContext.<anonymous> (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\imagenes-diferidas-actividad3.test.cjs:9:90)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.start (node:internal/test_runner/test:1003:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:358:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\imagenes-diferidas-actividad3.test.cjs:12:1
+✖ Las imagenes de productos reservan proporcion antes de cargar (7446.4789ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'auto' !== '1 / 1'
+  
+      at C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\imagenes-diferidas-actividad3.test.cjs:14:10
+      at async fixture (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\tienda-fixture-002.cjs:47:5)
+      at async TestContext.<anonymous> (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\imagenes-diferidas-actividad3.test.cjs:13:35)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'auto',
+    expected: '1 / 1',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

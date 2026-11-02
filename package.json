@@ -5,7 +5,8 @@
   "description": "THE WOLF: HTML, CSS y JavaScript con catálogo Supabase y consultas por WhatsApp.",
   "scripts": {
     "test": "node tools/run-tests.cjs",
-    "build": "node tools/build.cjs"
+    "build": "node tools/build.cjs",
+    "preview": "node tools/servir-local.cjs"
   },
   "engines": {
     "node": ">=22"

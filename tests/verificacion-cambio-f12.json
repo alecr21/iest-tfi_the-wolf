@@ -1,0 +1,107 @@
+{
+  "origin": "http://127.0.0.1:5501",
+  "liveResources": true,
+  "note": "Cambios de viewport sucesivos sin recargar; desplazamiento completo para activar AOS.",
+  "results": [
+    {
+      "page": "index.html",
+      "width": 1440,
+      "innerWidth": 1440,
+      "scrollWidth": 1440,
+      "products": 0,
+      "visibleProducts": 0,
+      "lazyWithoutReservedSpace": 0,
+      "errors": []
+    },
+    {
+      "page": "index.html",
+      "width": 900,
+      "innerWidth": 900,
+      "scrollWidth": 900,
+      "products": 0,
+      "visibleProducts": 0,
+      "lazyWithoutReservedSpace": 0,
+      "errors": []
+    },
+    {
+      "page": "index.html",
+      "width": 360,
+      "innerWidth": 360,
+      "scrollWidth": 360,
+      "products": 0,
+      "visibleProducts": 0,
+      "lazyWithoutReservedSpace": 0,
+      "errors": []
+    },
+    {
+      "page": "index.html",
+      "width": 820,
+      "innerWidth": 820,
+      "scrollWidth": 820,
+      "products": 0,
+      "visibleProducts": 0,
+      "lazyWithoutReservedSpace": 0,
+      "errors": []
+    },
+    {
+      "page": "index.html",
+      "width": 1440,
+      "innerWidth": 1440,
+      "scrollWidth": 1440,
+      "products": 0,
+      "visibleProducts": 0,
+      "lazyWithoutReservedSpace": 0,
+      "errors": []
+    },
+    {
+      "page": "page/tienda.html",
+      "width": 1440,
+      "innerWidth": 1440,
+      "scrollWidth": 1440,
+      "products": 8,
+      "visibleProducts": 8,
+      "lazyWithoutReservedSpace": 0,
+      "errors": []
+    },
+    {
+      "page": "page/tienda.html",
+      "width": 900,
+      "innerWidth": 900,
+      "scrollWidth": 900,
+      "products": 8,
+      "visibleProducts": 8,
+      "lazyWithoutReservedSpace": 0,
+      "errors": []
+    },
+    {
+      "page": "page/tienda.html",
+      "width": 360,
+      "innerWidth": 360,
+      "scrollWidth": 360,
+      "products": 8,
+      "visibleProducts": 8,
+      "lazyWithoutReservedSpace": 0,
+      "errors": []
+    },
+    {
+      "page": "page/tienda.html",
+      "width": 820,
+      "innerWidth": 820,
+      "scrollWidth": 820,
+      "products": 8,
+      "visibleProducts": 8,
+      "lazyWithoutReservedSpace": 0,
+      "errors": []
+    },
+    {
+      "page": "page/tienda.html",
+      "width": 1440,
+      "innerWidth": 1440,
+      "scrollWidth": 1440,
+      "products": 8,
+      "visibleProducts": 8,
+      "lazyWithoutReservedSpace": 0,
+      "errors": []
+    }
+  ]
+}
