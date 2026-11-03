@@ -1,0 +1,43 @@
+✔ tarjeta con nombre, imagen y precio; descripción en detalle (458.108ms)
+✔ descripción null llega al HTML del modal como texto alternativo (163.7585ms)
+✔ descripción vacía llega al HTML del modal como texto alternativo (2.4598ms)
+✔ tarjeta: conserva URL original y texto alternativo antes de cualquier error (54.5395ms)
+✔ tarjeta: intenta la alternativa una sola vez si ambas imágenes fallan (8.8511ms)
+✔ modal: conserva URL original y texto alternativo antes de cualquier error (2.2855ms)
+✔ modal: intenta la alternativa una sola vez si ambas imágenes fallan (2.9022ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+{
+  buttonStyle: 'visible',
+  focusFn: 'function focusDialog(dialog) {\n' +
+    '  dialogTriggers.set(dialog.id, document.activeElement);\n' +
+    `  const first = dialog.querySelector?.('button, [href], input, select, textarea, [tabindex="0"]');\n` +
+    '  first?.focus();\n' +
+    '}',
+  active: '<button class="modal-close-btn" id="close-modal-btn" aria-label="Cerrar ventana">\n' +
+    '                <i class="fa-solid fa-xmark"></i>\n' +
+    '            </button>',
+  dialog: 'product-modal open',
+  cart: 'cart-drawer'
+}
+{
+  buttonStyle: 'hidden',
+  focusFn: 'function focusDialog(dialog) {\n' +
+    '  dialogTriggers.set(dialog.id, document.activeElement);\n' +
+    `  const first = dialog.querySelector?.('button, [href], input, select, textarea, [tabindex="0"]');\n` +
+    '  first?.focus();\n' +
+    '}',
+  active: '<button class="cart-close-btn" id="close-cart-btn" aria-label="Cerrar carrito">\n' +
+    '                    <i class="fa-solid fa-xmark"></i>\n' +
+    '                </button>',
+  dialog: 'product-modal',
+  cart: 'cart-drawer open'
+}
+✔ Detalle y carrito reciben foco, contienen Tab y cierran con Escape devolviendo el foco (19726.4464ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 23601.3656

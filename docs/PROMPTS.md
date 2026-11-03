@@ -195,3 +195,7 @@ Se continuó el pedido «sigamos entonces» con un cambio acotado a CSS: colores
 ### EIA-07 — indicar revision sin una URL inequívoca
 
 El asistente pidio revisar la copia integrada mientras Live Server del estudiante seguia sirviendo la carpeta anterior en 5500. El estudiante reprodujo el defecto y compartio su URL. Se compararon los recursos servidos con las correcciones y se demostro la diferencia. Se corrigio la entrega de revision con preview en 5501 y enlaces directos, sin sobrescribir originales. En adelante, confirmar origen/version antes de atribuir una diferencia a cache o al navegador.
+
+### EIA-08 — foco durante una transición de visibilidad
+
+La primera corrección del foco de los diálogos se ejecutaba mientras visibility seguía en transición: Chrome no enfocaba el botón aunque el panel terminaba visible. La prueba con Enter/Tab/Escape lo detectó; diferir un frame no lo resolvió y el guardado introducido usó classList.contains, ausente en un doble mínimo del DOM. Se simplificó el código: visibility cambia inmediatamente, solo se anima opacidad y se enfoca el primer control. Se conservan las ejecuciones fallidas y la corrección en tests/teclado-dialogos-*.txt. No se declararon exitosas las pruebas intermedias.

@@ -1458,7 +1458,7 @@ h1, h2, h3 {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity .3s ease, visibility .3s ease;
+  transition: opacity .3s ease;
 }
 
 .product-modal.open {
@@ -1552,7 +1552,7 @@ h1, h2, h3 {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity .3s ease, visibility .3s ease;
+  transition: opacity .3s ease;
 }
 
 .cart-drawer.open {

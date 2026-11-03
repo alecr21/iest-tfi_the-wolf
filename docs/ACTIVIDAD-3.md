@@ -88,3 +88,17 @@ El aviso de imágenes diferidas era válido e independiente de las animaciones: 
 Verificación con Chrome y recursos reales de la copia servida en 5501: Inicio y Tienda en secuencia 1440→900→360→820→1440, sin recargar, recorriendo el documento para activar AOS. Diez escenarios sin desborde ni excepciones JS; Tienda con ocho productos visibles en cada ancho; ninguna imagen diferida sin dimensiones/proporción reservada. Evidencia: `tests/verificacion-cambio-f12.json`. Reproducir con preview activo y `node tools/verificar-cambio-f12.cjs`.
 
 Regresión de imágenes y catálogo posterior: diez pruebas aprobadas, cero fallidas, en tests/regresion-imagenes-actividad3.txt. Sumadas a las cuatro verificaciones de imágenes/responsive ejecutadas en esta corrección, catorce pruebas dirigidas aprobadas; no es una nueva ejecución de toda la batería.
+
+## Teclado y SEO — 2 de noviembre de 2026
+
+El estudiante confirmó que Inicio y Tienda se ven bien al abrir la versión integrada en 5501. La carpeta principal sigue siendo `outputs/iest-tfi_the-wolf`; no se trasladó al Escritorio ni se sobrescribió la copia anterior.
+
+Hallazgo de accesibilidad reproducido con prueba previa: el detalle y el carrito no recibían el foco al abrirse. Corrección: foco inicial en el botón de cierre, ciclo de Tab dentro del panel y Escape para cerrar y devolver el foco al control de origen. Se declararon role=dialog y aria-modal con nombre accesible. Se cierra primero el detalle antes de abrir el carrito desde su botón Agregar para conservar correctamente el origen del foco. No se cambió la preparación del pedido ni se envió ningún mensaje.
+
+La transición de visibility impedía enfocar durante la apertura. Se conserva la transición de opacidad y se cambia visibility de inmediato. Una prueba intermedia con requestAnimationFrame no corrigió el problema y además excedió el contrato del doble mínimo de DOM en pruebas unitarias; se descartó. La solución final pasó las siete verificaciones unitarias de tarjeta/detalle y el recorrido de teclado. Resultados intermedios y finales dirigidos conservados en tests/teclado-dialogos-*.txt. Regresión completa en ejecución al registrar este avance.
+
+Las cinco páginas tienen ahora títulos y descripciones propios y veraces, acordes con docs/09-SEO.md (incluido Sobre nosotros). La inspección de diez escenarios confirma los títulos nuevos. Build actualizado: tests/build-teclado-seo.txt.
+
+Contraste: se añadió una medición numérica preliminar a tools/auditar-tabla2.cjs, solo sobre texto con fondos sólidos y sin opacidad de grupo. No se encontraron relaciones inferiores al umbral en la parte medible, pero gran parte del sitio utiliza gradientes y queda sin resolver en ese instrumento. Los conteos y límites están en tests/auditoria-tabla2.json; no se declara contraste completo ni WCAG/Lighthouse aprobado. Sigue pendiente la auditoría integral, teclado del menú y Lighthouse real.
+
+Cierre de este bloque: `npm test` final aprobado, 87 pruebas, 0 fallidas, 0 omitidas (tests/ejecucion-teclado-seo-final.txt); build aprobado. Se conserva la primera ejecución intermedia fallida como evidencia, sin confundirla con la final. Preview 5501 verificado por HTTP con el título nuevo y dos roles de diálogo. Pendientes: menú por teclado, contraste completo y Lighthouse; publicación según decisión ya acordada.

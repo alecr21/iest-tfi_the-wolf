@@ -1,0 +1,247 @@
+
+> iest-tfi_the-wolf@1.0.0 test
+> node tools/run-tests.cjs
+
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 002/T01: existen los seis elementos HTML con identificadores únicos y buscador accesible por nombre (5046.5161ms)
+✔ 002/T01: siete botones con data-filter válido y único, Todos activo al iniciar (6148.5097ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 002/T02 CP01: búsqueda por nombre parcial, mayúsculas y espacios exteriores (7305.3084ms)
+✔ 002/T02 CP02: búsqueda por texto de categoría que no aparece en el nombre (3171.1888ms)
+✔ 002/T02 CP07: minúsculas y mayúsculas devuelven lo mismo, y el nombre con comillas/ampersand se busca como texto (3501.6514ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 002/T03 CP03: clic en notebooks muestra solo esa categoría y deja un único botón activo (8290.3865ms)
+✔ 002/T03 CP03: clic en computadoras muestra solo esa categoría y deja un único botón activo (2149.0722ms)
+✔ 002/T03 CP03: clic en celulares muestra solo esa categoría y deja un único botón activo (2994.6115ms)
+✔ 002/T03 CP03: clic en componentes muestra solo esa categoría y deja un único botón activo (7102.1476ms)
+✔ 002/T03 CP03: clic en perifericos muestra solo esa categoría y deja un único botón activo (3191.9004ms)
+✔ 002/T03 CP03: clic en accesorios muestra solo esa categoría y deja un único botón activo (2648.8347ms)
+✔ 002/T03 CP03: cambiar de categoría y volver a Todos restaura los siete productos (10004.9936ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 002/T04 CP04: categoría primero, búsqueda después; ambas condiciones restringen los resultados (5357.7644ms)
+✔ 002/T04 CP04: búsqueda primero, categoría después; Todos conserva la búsqueda (2436.0258ms)
+✔ 002/T04 CP04: buscar texto de categoría también se combina con el filtro activo (1859.9031ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 002/T05 CP05: sin coincidencias oculta tarjetas y muestra mensaje; nueva coincidencia lo oculta (5073.4147ms)
+✔ 002/T05 CP05: cambiar de categoría puede resolver la ausencia de coincidencias sin borrar texto (2202.1151ms)
+✔ 002/T05 CP05: una búsqueda de solo espacios recupera todas las coincidencias del filtro actual (1740.2922ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 002/T06 CP06: botón de limpieza borra texto y conserva categoría seleccionada (14296.8978ms)
+✔ 002/T06 CP06: limpiar una búsqueda sin coincidencias recupera la categoría activa y oculta el aviso (3365.1515ms)
+✔ 002/T06 CP06: limpiar con Todos activo restaura el catálogo completo (2819.1846ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T01: elementos del carrito únicos y estado inicial vacío (4981.8318ms)
+✔ 003/T01: panel abre y cierra por botón y por overlay, con aria-hidden coherente (6757.3335ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T02 CP01: agregar desde tarjeta abre el carrito con una unidad del producto (9835.5564ms)
+✔ 003/T02 CP02: agregar otra vez no duplica filas y aumenta la cantidad a dos (3267.0995ms)
+✔ 003/T02: productos distintos permanecen en filas separadas y suman unidades (5757.2096ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T03 CP03: aumentar unidades actualiza cantidad, indicador y total (5085.8357ms)
+✔ 003/T03 CP04: disminuir de dos a una unidad conserva el producto y actualiza importes (2425.2926ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T04 CP05: quitar la última unidad elimina el producto y muestra el carrito vacío (5380.7955ms)
+✔ 003/T04 CP05: eliminar un producto mantiene el otro y sus unidades (2648.17ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T05 CP06: muestra subtotal por fila y lo actualiza al subir o bajar unidades (5216.6717ms)
+✔ 003/T05 CP07: precios diferentes y decimales producen subtotales y total correctos (3338.7947ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T06 CP08: recargar recupera productos, cantidades, subtotales y total del almacenamiento (7023.1618ms)
+✔ 003/T06 CP08: otra pestaña del mismo contexto y origen recupera la selección guardada (3137.136ms)
+✔ 003/T06 CP08: un producto eliminado no reaparece al recargar (2501.8888ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T07 CP09: aceptar la confirmación vacía la selección y guarda el estado vacío (5476.6909ms)
+✔ 003/T07 CP10: cancelar la confirmación conserva productos, cantidades y almacenamiento (2094.6483ms)
+✔ 003/T07: vaciar cuando ya está vacío no abre diálogo ni modifica el almacenamiento (1871.6372ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T08 CP11: prepara productos, cantidades, subtotales, total y consulta sin contactar WhatsApp (6827.8334ms)
+✔ 003/T08 CP11: caracteres acentuados e importe decimal conservan su valor al decodificar la URL (2624.3234ms)
+✔ 003/T08 CP12: con carrito vacío no inicia navegación ni genera consulta (2014.068ms)
+✔ solicita productos disponibles y orden ascendente por id (8.9412ms)
+✔ transforma todos los campos y continúa con renderizado y filtros (4.5023ms)
+✔ usa descripción alternativa para null y cadena vacía, y conserva categoría desconocida (2.5578ms)
+✔ acepta respuesta vacía y llama al renderizado y filtros (3.4254ms)
+✔ captura el error devuelto por Supabase sin renderizar productos (2.9335ms)
+✔ captura un rechazo de red sin renderizar productos (2.2115ms)
+✔ omite la consulta si no existe el contenedor de la tienda (2.0991ms)
+✖ tarjeta con nombre, imagen y precio; descripción en detalle (74.382ms)
+✖ descripción null llega al HTML del modal como texto alternativo (11.55ms)
+✖ descripción vacía llega al HTML del modal como texto alternativo (2.6831ms)
+✔ el HTML contiene contenedor, mensaje vacío inicialmente oculto y buscador (2.5261ms)
+✔ la carga permanece hasta que se resuelve la consulta (9.1255ms)
+✔ el catálogo vacío muestra el mensaje sin resultados y elimina la carga (5.5804ms)
+✔ una consulta fallida muestra el mensaje establecido y elimina la carga (2.3547ms)
+✔ los productos recibidos ocultan el mensaje sin resultados (58.7354ms)
+✔ una nueva carga tras catálogo vacío oculta el mensaje anterior incluso si falla (3.4966ms)
+✖ tarjeta: conserva URL original y texto alternativo antes de cualquier error (63.2567ms)
+✖ tarjeta: intenta la alternativa una sola vez si ambas imágenes fallan (4.9721ms)
+✖ modal: conserva URL original y texto alternativo antes de cualquier error (3.8424ms)
+✖ modal: intenta la alternativa una sola vez si ambas imágenes fallan (2.698ms)
+Navegador de prueba: Chromium/Chrome 156.0.8078.80; red interceptada, sin Supabase real.
+✔ datos externos de nombre permanecen como texto o atributo en tarjeta y detalle (4639.1911ms)
+✔ datos externos de descripcion permanecen como texto o atributo en tarjeta y detalle (1472.1564ms)
+✔ datos externos de categoria permanecen como texto o atributo en tarjeta y detalle (1389.0206ms)
+✔ datos externos de etiqueta permanecen como texto o atributo en tarjeta y detalle (1234.4078ms)
+✔ datos externos de id permanecen como texto o atributo en tarjeta y detalle (1550.0441ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "javascript:window.__" (1535.4653ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "java\nscript:window._" (1443.0136ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "data:image/svg+xml,<" (1338.6201ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "file:///C:/privado.p" (1141.7496ms)
+✔ una URL HTTPS con comillas no inyecta atributos y conserva su valor (1528.5624ms)
+✔ carrito trata nombre persistido como dato, sin HTML ejecutable (1314.0247ms)
+✔ carrito trata id persistido como dato, sin HTML ejecutable (1265.8609ms)
+✔ carrito trata cantidad persistido como dato, sin HTML ejecutable (1027.3741ms)
+✔ carrito trata precio persistido como dato, sin HTML ejecutable (1147.0211ms)
+✔ flujo normal conserva filtros, detalle, suma de cantidad, total y persistencia (2265.0493ms)
+Chrome 156.0.8078.80; SDK real, servidor REST simulado, productos ficticios.
+✔ CP01/CP02: SDK solicita disponibles ordenados y el navegador excluye el registro no disponible del servidor simulado (4716.7333ms)
+✔ CP04: descripción alternativa visible en modal de un producto sin descripción (1991.2586ms)
+✔ CP05/CP07: carga visible hasta recibir respuesta vacía, luego aviso sin resultados (1646.8768ms)
+✔ CP06: error HTTP controlado muestra el texto esperado en navegador (8385.2336ms)
+✔ CP08: imágenes originales válidas y alternativa cargada por error real de recurso en tarjeta y modal (1752.5548ms)
+✔ CP08 límite: si también falla la alternativa, el manejador se desactiva y los intentos terminan (1828.848ms)
+✔ Las imagenes diferidas estaticas declaran dimensiones (6.9371ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ Las imagenes de productos reservan proporcion antes de cargar (16374.0521ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ Inicio conserva el ancho de 360 px sin JavaScript de animaciones (11753.7705ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ Tienda muestra productos con CSS de entrada AOS, en móvil y movimiento reducido (29476.5757ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ Detalle y carrito reciben foco, contienen Tab y cierran con Escape devolviendo el foco (42574.4275ms)
+ℹ tests 87
+ℹ suites 0
+ℹ pass 80
+ℹ fail 7
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 438218.2242
+
+✖ failing tests:
+
+test at tests\catalogo-tarea3.test.cjs:29:1
+✖ tarjeta con nombre, imagen y precio; descripción en detalle (74.382ms)
+  C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\Scripts\main.js:413
+      if (dialog.classList.contains("open")) dialog.querySelector?.('button, [href], input, select, textarea, [tabindex="0"]')?.focus?.();
+                           ^
+  
+  TypeError: dialog.classList.contains is not a function
+      at focusFirst (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\Scripts\main.js:413:26)
+      at focusDialog (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\Scripts\main.js:415:92)
+      at openProductModal (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\Scripts\main.js:451:3)
+      at evalmachine.<anonymous>:1:1
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at Object.run (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\catalogo-tarea3.test.cjs:26:8)
+      at async TestContext.<anonymous> (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\catalogo-tarea3.test.cjs:30:54)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+
+test at tests\catalogo-tarea3.test.cjs:45:3
+✖ descripción null llega al HTML del modal como texto alternativo (11.55ms)
+  C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\Scripts\main.js:413
+      if (dialog.classList.contains("open")) dialog.querySelector?.('button, [href], input, select, textarea, [tabindex="0"]')?.focus?.();
+                           ^
+  
+  TypeError: dialog.classList.contains is not a function
+      at focusFirst (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\Scripts\main.js:413:26)
+      at focusDialog (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\Scripts\main.js:415:92)
+      at openProductModal (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\Scripts\main.js:451:3)
+      at evalmachine.<anonymous>:1:1
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at Object.run (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\catalogo-tarea3.test.cjs:26:8)
+      at async TestContext.<anonymous> (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\catalogo-tarea3.test.cjs:46:35)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7)
+
+test at tests\catalogo-tarea3.test.cjs:45:3
+✖ descripción vacía llega al HTML del modal como texto alternativo (2.6831ms)
+  C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\Scripts\main.js:413
+      if (dialog.classList.contains("open")) dialog.querySelector?.('button, [href], input, select, textarea, [tabindex="0"]')?.focus?.();
+                           ^
+  
+  TypeError: dialog.classList.contains is not a function
+      at focusFirst (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\Scripts\main.js:413:26)
+      at focusDialog (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\Scripts\main.js:415:92)
+      at openProductModal (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\Scripts\main.js:451:3)
+      at evalmachine.<anonymous>:1:1
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at Object.run (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\catalogo-tarea3.test.cjs:26:8)
+      at async TestContext.<anonymous> (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\catalogo-tarea3.test.cjs:46:35)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7)
+
+test at tests\catalogo-tarea5.test.cjs:20:3
+✖ tarjeta: conserva URL original y texto alternativo antes de cualquier error (63.2567ms)
+  evalmachine.<anonymous>:413
+      if (dialog.classList.contains("open")) dialog.querySelector?.('button, [href], input, select, textarea, [tabindex="0"]')?.focus?.();
+                           ^
+  
+  TypeError: dialog.classList.contains is not a function
+      at focusFirst (evalmachine.<anonymous>:413:26)
+      at focusDialog (evalmachine.<anonymous>:415:92)
+      at openProductModal (evalmachine.<anonymous>:451:3)
+      at evalmachine.<anonymous>:1:190
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at render (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\catalogo-tarea5.test.cjs:16:6)
+      at TestContext.<anonymous> (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\catalogo-tarea5.test.cjs:21:18)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+
+test at tests\catalogo-tarea5.test.cjs:24:3
+✖ tarjeta: intenta la alternativa una sola vez si ambas imágenes fallan (4.9721ms)
+  evalmachine.<anonymous>:413
+      if (dialog.classList.contains("open")) dialog.querySelector?.('button, [href], input, select, textarea, [tabindex="0"]')?.focus?.();
+                           ^
+  
+  TypeError: dialog.classList.contains is not a function
+      at focusFirst (evalmachine.<anonymous>:413:26)
+      at focusDialog (evalmachine.<anonymous>:415:92)
+      at openProductModal (evalmachine.<anonymous>:451:3)
+      at evalmachine.<anonymous>:1:190
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at render (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\catalogo-tarea5.test.cjs:16:6)
+      at TestContext.<anonymous> (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\catalogo-tarea5.test.cjs:25:18)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+
+test at tests\catalogo-tarea5.test.cjs:20:3
+✖ modal: conserva URL original y texto alternativo antes de cualquier error (3.8424ms)
+  evalmachine.<anonymous>:413
+      if (dialog.classList.contains("open")) dialog.querySelector?.('button, [href], input, select, textarea, [tabindex="0"]')?.focus?.();
+                           ^
+  
+  TypeError: dialog.classList.contains is not a function
+      at focusFirst (evalmachine.<anonymous>:413:26)
+      at focusDialog (evalmachine.<anonymous>:415:92)
+      at openProductModal (evalmachine.<anonymous>:451:3)
+      at evalmachine.<anonymous>:1:190
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at render (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\catalogo-tarea5.test.cjs:16:6)
+      at TestContext.<anonymous> (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\catalogo-tarea5.test.cjs:21:18)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+
+test at tests\catalogo-tarea5.test.cjs:24:3
+✖ modal: intenta la alternativa una sola vez si ambas imágenes fallan (2.698ms)
+  evalmachine.<anonymous>:413
+      if (dialog.classList.contains("open")) dialog.querySelector?.('button, [href], input, select, textarea, [tabindex="0"]')?.focus?.();
+                           ^
+  
+  TypeError: dialog.classList.contains is not a function
+      at focusFirst (evalmachine.<anonymous>:413:26)
+      at focusDialog (evalmachine.<anonymous>:415:92)
+      at openProductModal (evalmachine.<anonymous>:451:3)
+      at evalmachine.<anonymous>:1:190
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at render (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\catalogo-tarea5.test.cjs:16:6)
+      at TestContext.<anonymous> (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\catalogo-tarea5.test.cjs:25:18)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)

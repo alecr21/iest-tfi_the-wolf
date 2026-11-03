@@ -4,9 +4,15 @@
     {
       "page": "index.html",
       "width": 360,
+      "contrast": {
+        "checked": 3,
+        "unresolved": 36,
+        "low": [],
+        "scope": "Solo texto sobre fondos solidos; gradientes, imagenes y opacidades de grupo requieren otra revision."
+      },
       "lang": "es",
-      "title": "The Wolf | Tecnología & Soporte",
-      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "title": "THE WOLF | Tecnología y soporte",
+      "description": "Conocé THE WOLF: productos tecnológicos, mantenimiento de equipos y soporte informático para personas y negocios.",
       "h1": 1,
       "scrollWidth": 360,
       "missingAlt": [],
@@ -99,14 +105,14 @@
         },
         {
           "element": "A",
-          "id": "wa-btn",
-          "text": "Contactar por WhatsApp",
+          "id": "back-to-top",
+          "text": "Volver al inicio",
           "insideAriaHidden": false
         },
         {
-          "element": "BODY",
-          "id": "",
-          "text": "Inicio\n            Nosotros\n            Servicios\n            Tienda\n ",
+          "element": "A",
+          "id": "wa-btn",
+          "text": "Contactar por WhatsApp",
           "insideAriaHidden": false
         }
       ]
@@ -114,9 +120,15 @@
     {
       "page": "page/tienda.html",
       "width": 360,
+      "contrast": {
+        "checked": 10,
+        "unresolved": 38,
+        "low": [],
+        "scope": "Solo texto sobre fondos solidos; gradientes, imagenes y opacidades de grupo requieren otra revision."
+      },
       "lang": "es",
-      "title": "The Wolf | Tecnología & Soporte",
-      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "title": "Productos tecnológicos | THE WOLF",
+      "description": "Explorá computadoras, celulares, componentes y accesorios. Armá tu consulta y confirmá disponibilidad y precios por WhatsApp.",
       "h1": 1,
       "scrollWidth": 360,
       "missingAlt": [],
@@ -224,9 +236,15 @@
     {
       "page": "page/servicios.html",
       "width": 360,
+      "contrast": {
+        "checked": 24,
+        "unresolved": 49,
+        "low": [],
+        "scope": "Solo texto sobre fondos solidos; gradientes, imagenes y opacidades de grupo requieren otra revision."
+      },
       "lang": "es",
-      "title": "The Wolf | Tecnología & Soporte",
-      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "title": "Servicio técnico y soporte | THE WOLF",
+      "description": "Conocé los servicios de mantenimiento, reparación, instalación de software y configuración de dispositivos de THE WOLF.",
       "h1": 0,
       "scrollWidth": 360,
       "missingAlt": [],
@@ -334,9 +352,15 @@
     {
       "page": "page/nostros.html",
       "width": 360,
+      "contrast": {
+        "checked": 7,
+        "unresolved": 20,
+        "low": [],
+        "scope": "Solo texto sobre fondos solidos; gradientes, imagenes y opacidades de grupo requieren otra revision."
+      },
       "lang": "es",
-      "title": "The Wolf | Tecnología & Soporte",
-      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "title": "Sobre nosotros | THE WOLF",
+      "description": "Conocé la propuesta de THE WOLF: tecnología, soporte informático y atención cercana para resolver tus necesidades.",
       "h1": 1,
       "scrollWidth": 360,
       "missingAlt": [],
@@ -444,9 +468,15 @@
     {
       "page": "page/contacto.html",
       "width": 360,
+      "contrast": {
+        "checked": 3,
+        "unresolved": 13,
+        "low": [],
+        "scope": "Solo texto sobre fondos solidos; gradientes, imagenes y opacidades de grupo requieren otra revision."
+      },
       "lang": "es",
-      "title": "The Wolf | Tecnología & Soporte",
-      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "title": "Contacto y consultas | THE WOLF",
+      "description": "Comunicate con THE WOLF por WhatsApp para consultar por productos, servicio técnico y soluciones digitales.",
       "h1": 1,
       "scrollWidth": 360,
       "missingAlt": [],
@@ -554,9 +584,15 @@
     {
       "page": "index.html",
       "width": 1440,
+      "contrast": {
+        "checked": 6,
+        "unresolved": 38,
+        "low": [],
+        "scope": "Solo texto sobre fondos solidos; gradientes, imagenes y opacidades de grupo requieren otra revision."
+      },
       "lang": "es",
-      "title": "The Wolf | Tecnología & Soporte",
-      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "title": "THE WOLF | Tecnología y soporte",
+      "description": "Conocé THE WOLF: productos tecnológicos, mantenimiento de equipos y soporte informático para personas y negocios.",
       "h1": 1,
       "scrollWidth": 1440,
       "missingAlt": [],
@@ -664,9 +700,15 @@
     {
       "page": "page/tienda.html",
       "width": 1440,
+      "contrast": {
+        "checked": 13,
+        "unresolved": 40,
+        "low": [],
+        "scope": "Solo texto sobre fondos solidos; gradientes, imagenes y opacidades de grupo requieren otra revision."
+      },
       "lang": "es",
-      "title": "The Wolf | Tecnología & Soporte",
-      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "title": "Productos tecnológicos | THE WOLF",
+      "description": "Explorá computadoras, celulares, componentes y accesorios. Armá tu consulta y confirmá disponibilidad y precios por WhatsApp.",
       "h1": 1,
       "scrollWidth": 1440,
       "missingAlt": [],
@@ -774,9 +816,15 @@
     {
       "page": "page/servicios.html",
       "width": 1440,
+      "contrast": {
+        "checked": 33,
+        "unresolved": 51,
+        "low": [],
+        "scope": "Solo texto sobre fondos solidos; gradientes, imagenes y opacidades de grupo requieren otra revision."
+      },
       "lang": "es",
-      "title": "The Wolf | Tecnología & Soporte",
-      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "title": "Servicio técnico y soporte | THE WOLF",
+      "description": "Conocé los servicios de mantenimiento, reparación, instalación de software y configuración de dispositivos de THE WOLF.",
       "h1": 0,
       "scrollWidth": 1440,
       "missingAlt": [],
@@ -884,9 +932,15 @@
     {
       "page": "page/nostros.html",
       "width": 1440,
+      "contrast": {
+        "checked": 10,
+        "unresolved": 22,
+        "low": [],
+        "scope": "Solo texto sobre fondos solidos; gradientes, imagenes y opacidades de grupo requieren otra revision."
+      },
       "lang": "es",
-      "title": "The Wolf | Tecnología & Soporte",
-      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "title": "Sobre nosotros | THE WOLF",
+      "description": "Conocé la propuesta de THE WOLF: tecnología, soporte informático y atención cercana para resolver tus necesidades.",
       "h1": 1,
       "scrollWidth": 1440,
       "missingAlt": [],
@@ -994,9 +1048,15 @@
     {
       "page": "page/contacto.html",
       "width": 1440,
+      "contrast": {
+        "checked": 6,
+        "unresolved": 15,
+        "low": [],
+        "scope": "Solo texto sobre fondos solidos; gradientes, imagenes y opacidades de grupo requieren otra revision."
+      },
       "lang": "es",
-      "title": "The Wolf | Tecnología & Soporte",
-      "description": "THE WOLF: soporte técnico, mantenimiento de equipos y desarrollo de soluciones digitales para personas y negocios.",
+      "title": "Contacto y consultas | THE WOLF",
+      "description": "Comunicate con THE WOLF por WhatsApp para consultar por productos, servicio técnico y soluciones digitales.",
       "h1": 1,
       "scrollWidth": 1440,
       "missingAlt": [],

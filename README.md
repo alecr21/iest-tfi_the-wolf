@@ -47,3 +47,5 @@ Desde esta carpeta integrada ejecutar `npm run build` y `npm run preview`. Inici
 La URL `http://127.0.0.1:5500/Presentacion/The-Wolf/...` corresponde a la copia anterior. El 2 de noviembre se verifico por HTTP que sus archivos no incluyen las correcciones responsive. No utilizarla para revisar cambios de la copia integrada.
 
 Los resultados historicos de 82 pruebas corresponden a la integracion inicial; la regresion responsive posterior aprobo 84. Los avances y limites actuales se actualizan en docs/ACTIVIDAD-3.md.
+
+Ultima regresion completa de Actividad 3: **87 pruebas aprobadas, 0 fallidas y 0 omitidas**; build aprobado. Detalle en tests/ejecucion-teclado-seo-final.txt y docs/ACTIVIDAD-3.md. Incluye correcciones de foco del detalle/carrito y metadatos SEO diferenciados. La accesibilidad integral y Lighthouse siguen pendientes.

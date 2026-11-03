@@ -1,0 +1,119 @@
+
+> iest-tfi_the-wolf@1.0.0 test
+> node tools/run-tests.cjs
+
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 002/T01: existen los seis elementos HTML con identificadores únicos y buscador accesible por nombre (4521.1652ms)
+✔ 002/T01: siete botones con data-filter válido y único, Todos activo al iniciar (1287.5433ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 002/T02 CP01: búsqueda por nombre parcial, mayúsculas y espacios exteriores (7165.8327ms)
+✔ 002/T02 CP02: búsqueda por texto de categoría que no aparece en el nombre (1722.1434ms)
+✔ 002/T02 CP07: minúsculas y mayúsculas devuelven lo mismo, y el nombre con comillas/ampersand se busca como texto (1362.5795ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 002/T03 CP03: clic en notebooks muestra solo esa categoría y deja un único botón activo (7221.1416ms)
+✔ 002/T03 CP03: clic en computadoras muestra solo esa categoría y deja un único botón activo (2023.2794ms)
+✔ 002/T03 CP03: clic en celulares muestra solo esa categoría y deja un único botón activo (1921.0768ms)
+✔ 002/T03 CP03: clic en componentes muestra solo esa categoría y deja un único botón activo (1570.4868ms)
+✔ 002/T03 CP03: clic en perifericos muestra solo esa categoría y deja un único botón activo (1487.6495ms)
+✔ 002/T03 CP03: clic en accesorios muestra solo esa categoría y deja un único botón activo (1734.358ms)
+✔ 002/T03 CP03: cambiar de categoría y volver a Todos restaura los siete productos (2105.0117ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 002/T04 CP04: categoría primero, búsqueda después; ambas condiciones restringen los resultados (7114.7223ms)
+✔ 002/T04 CP04: búsqueda primero, categoría después; Todos conserva la búsqueda (2229.8333ms)
+✔ 002/T04 CP04: buscar texto de categoría también se combina con el filtro activo (1724.7601ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 002/T05 CP05: sin coincidencias oculta tarjetas y muestra mensaje; nueva coincidencia lo oculta (4790.9274ms)
+✔ 002/T05 CP05: cambiar de categoría puede resolver la ausencia de coincidencias sin borrar texto (1957.1433ms)
+✔ 002/T05 CP05: una búsqueda de solo espacios recupera todas las coincidencias del filtro actual (1649.3406ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 002/T06 CP06: botón de limpieza borra texto y conserva categoría seleccionada (6003.8729ms)
+✔ 002/T06 CP06: limpiar una búsqueda sin coincidencias recupera la categoría activa y oculta el aviso (1714.2671ms)
+✔ 002/T06 CP06: limpiar con Todos activo restaura el catálogo completo (1858.3701ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T01: elementos del carrito únicos y estado inicial vacío (4757.8927ms)
+✔ 003/T01: panel abre y cierra por botón y por overlay, con aria-hidden coherente (2497.3023ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T02 CP01: agregar desde tarjeta abre el carrito con una unidad del producto (5065.9479ms)
+✔ 003/T02 CP02: agregar otra vez no duplica filas y aumenta la cantidad a dos (2050.4271ms)
+✔ 003/T02: productos distintos permanecen en filas separadas y suman unidades (2766.2891ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T03 CP03: aumentar unidades actualiza cantidad, indicador y total (4934.5395ms)
+✔ 003/T03 CP04: disminuir de dos a una unidad conserva el producto y actualiza importes (2312.6874ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T04 CP05: quitar la última unidad elimina el producto y muestra el carrito vacío (5648.149ms)
+✔ 003/T04 CP05: eliminar un producto mantiene el otro y sus unidades (2777.3578ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T05 CP06: muestra subtotal por fila y lo actualiza al subir o bajar unidades (5028.6935ms)
+✔ 003/T05 CP07: precios diferentes y decimales producen subtotales y total correctos (2798.1701ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T06 CP08: recargar recupera productos, cantidades, subtotales y total del almacenamiento (6995.5992ms)
+✔ 003/T06 CP08: otra pestaña del mismo contexto y origen recupera la selección guardada (3621.4048ms)
+✔ 003/T06 CP08: un producto eliminado no reaparece al recargar (2669.7739ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T07 CP09: aceptar la confirmación vacía la selección y guarda el estado vacío (5313.2774ms)
+✔ 003/T07 CP10: cancelar la confirmación conserva productos, cantidades y almacenamiento (2121.281ms)
+✔ 003/T07: vaciar cuando ya está vacío no abre diálogo ni modifica el almacenamiento (2282.7404ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T08 CP11: prepara productos, cantidades, subtotales, total y consulta sin contactar WhatsApp (6444.6166ms)
+✔ 003/T08 CP11: caracteres acentuados e importe decimal conservan su valor al decodificar la URL (2306.5804ms)
+✔ 003/T08 CP12: con carrito vacío no inicia navegación ni genera consulta (2211.9684ms)
+✔ solicita productos disponibles y orden ascendente por id (8.5683ms)
+✔ transforma todos los campos y continúa con renderizado y filtros (4.0877ms)
+✔ usa descripción alternativa para null y cadena vacía, y conserva categoría desconocida (2.3063ms)
+✔ acepta respuesta vacía y llama al renderizado y filtros (2.122ms)
+✔ captura el error devuelto por Supabase sin renderizar productos (3.248ms)
+✔ captura un rechazo de red sin renderizar productos (1.987ms)
+✔ omite la consulta si no existe el contenedor de la tienda (1.7287ms)
+✔ tarjeta con nombre, imagen y precio; descripción en detalle (54.4942ms)
+✔ descripción null llega al HTML del modal como texto alternativo (4.2565ms)
+✔ descripción vacía llega al HTML del modal como texto alternativo (2.2311ms)
+✔ el HTML contiene contenedor, mensaje vacío inicialmente oculto y buscador (3.2779ms)
+✔ la carga permanece hasta que se resuelve la consulta (5.4618ms)
+✔ el catálogo vacío muestra el mensaje sin resultados y elimina la carga (5.3379ms)
+✔ una consulta fallida muestra el mensaje establecido y elimina la carga (2.4333ms)
+✔ los productos recibidos ocultan el mensaje sin resultados (53.2462ms)
+✔ una nueva carga tras catálogo vacío oculta el mensaje anterior incluso si falla (3.1049ms)
+✔ tarjeta: conserva URL original y texto alternativo antes de cualquier error (51.1514ms)
+✔ tarjeta: intenta la alternativa una sola vez si ambas imágenes fallan (5.1739ms)
+✔ modal: conserva URL original y texto alternativo antes de cualquier error (2.0322ms)
+✔ modal: intenta la alternativa una sola vez si ambas imágenes fallan (2.656ms)
+Navegador de prueba: Chromium/Chrome 156.0.8078.80; red interceptada, sin Supabase real.
+✔ datos externos de nombre permanecen como texto o atributo en tarjeta y detalle (4178.5022ms)
+✔ datos externos de descripcion permanecen como texto o atributo en tarjeta y detalle (1291.0054ms)
+✔ datos externos de categoria permanecen como texto o atributo en tarjeta y detalle (1169.5065ms)
+✔ datos externos de etiqueta permanecen como texto o atributo en tarjeta y detalle (1901.7067ms)
+✔ datos externos de id permanecen como texto o atributo en tarjeta y detalle (1492.0301ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "javascript:window.__" (1448.7723ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "java\nscript:window._" (1766.8755ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "data:image/svg+xml,<" (1233.7391ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "file:///C:/privado.p" (1534.1448ms)
+✔ una URL HTTPS con comillas no inyecta atributos y conserva su valor (1544.2141ms)
+✔ carrito trata nombre persistido como dato, sin HTML ejecutable (1501.4918ms)
+✔ carrito trata id persistido como dato, sin HTML ejecutable (1470.415ms)
+✔ carrito trata cantidad persistido como dato, sin HTML ejecutable (1472.945ms)
+✔ carrito trata precio persistido como dato, sin HTML ejecutable (970.23ms)
+✔ flujo normal conserva filtros, detalle, suma de cantidad, total y persistencia (2212.7461ms)
+Chrome 156.0.8078.80; SDK real, servidor REST simulado, productos ficticios.
+✔ CP01/CP02: SDK solicita disponibles ordenados y el navegador excluye el registro no disponible del servidor simulado (5108.5358ms)
+✔ CP04: descripción alternativa visible en modal de un producto sin descripción (1949.0834ms)
+✔ CP05/CP07: carga visible hasta recibir respuesta vacía, luego aviso sin resultados (1970.1769ms)
+✔ CP06: error HTTP controlado muestra el texto esperado en navegador (8420.2564ms)
+✔ CP08: imágenes originales válidas y alternativa cargada por error real de recurso en tarjeta y modal (1744.0769ms)
+✔ CP08 límite: si también falla la alternativa, el manejador se desactiva y los intentos terminan (1984.2221ms)
+✔ Las imagenes diferidas estaticas declaran dimensiones (5.6702ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ Las imagenes de productos reservan proporcion antes de cargar (4878.1657ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ Inicio conserva el ancho de 360 px sin JavaScript de animaciones (4836.8832ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ Tienda muestra productos con CSS de entrada AOS, en móvil y movimiento reducido (8416.4798ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ Detalle y carrito reciben foco, contienen Tab y cierran con Escape devolviendo el foco (8169.2846ms)
+ℹ tests 87
+ℹ suites 0
+ℹ pass 87
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 320564.4695

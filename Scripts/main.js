@@ -405,6 +405,19 @@ function updateItemQuantity(prodId, delta) {
   saveCart();
 }
 
+// Foco de los paneles modales: entrada, recorrido y regreso al control de origen.
+const dialogTriggers = new Map();
+function focusDialog(dialog) {
+  dialogTriggers.set(dialog.id, document.activeElement);
+  const first = dialog.querySelector?.('button, [href], input, select, textarea, [tabindex="0"]');
+  first?.focus();
+}
+function restoreDialogFocus(dialog) {
+  const trigger = dialogTriggers.get(dialog.id);
+  if (trigger?.isConnected) trigger.focus();
+  dialogTriggers.delete(dialog.id);
+}
+
 function openProductModal(prodId) {
   const producto = PRODUCTOS_TIENDA.find(p => p.id === prodId);
   const modal = document.getElementById("product-modal");
@@ -433,6 +446,7 @@ function openProductModal(prodId) {
 
   modal.classList.add("open");
   modal.setAttribute("aria-hidden", "false");
+  focusDialog(modal);
 }
 
 // function closeModal() {
@@ -454,6 +468,7 @@ function closeModal() {
 
     modal.classList.remove("open");
     modal.setAttribute("aria-hidden", "true");
+    restoreDialogFocus(modal);
   }
 }
 function openCartDrawer() {
@@ -461,6 +476,7 @@ function openCartDrawer() {
   if (drawer) {
     drawer.classList.add("open");
     drawer.setAttribute("aria-hidden", "false");
+    focusDialog(drawer);
   }
 }
 
@@ -483,6 +499,7 @@ function closeCartDrawer() {
 
     drawer.classList.remove("open");
     drawer.setAttribute("aria-hidden", "true");
+    restoreDialogFocus(drawer);
   }
 }
 function checkoutWhatsApp() {
@@ -601,6 +618,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  document.addEventListener("keydown", (event) => {
+    const panel = document.querySelector('#product-modal.open, #cart-drawer.open');
+    if (!panel) return;
+    if (event.key === "Escape") {
+      event.preventDefault();
+      if (panel.id === "product-modal") closeModal(); else closeCartDrawer();
+    } else if (event.key === "Tab") {
+      const controls = [...panel.querySelectorAll('button, [href], input, select, textarea, [tabindex="0"]')]
+        .filter(node => !node.disabled && node.getClientRects().length);
+      const first = controls[0], last = controls[controls.length - 1];
+      if (event.shiftKey && (document.activeElement === first || !panel.contains(document.activeElement))) {
+        event.preventDefault(); last?.focus();
+      } else if (!event.shiftKey && (document.activeElement === last || !panel.contains(document.activeElement))) {
+        event.preventDefault(); first?.focus();
+      }
+    }
+  });
+
   // Renderizar componentes dinámicos de páginas
   renderShowcaseCards();
 renderServicesCards();
@@ -687,8 +722,8 @@ updateCartUI();
 
     const addModalBtn = e.target.closest(".btn-add-modal");
     if (addModalBtn) {
-      addToCart(addModalBtn.getAttribute("data-id"));
       closeModal();
+      addToCart(addModalBtn.getAttribute("data-id"));
     }
 
     const plusBtn = e.target.closest(".btn-plus");

@@ -1,0 +1,37 @@
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T01: elementos del carrito únicos y estado inicial vacío (5659.6141ms)
+✔ 003/T01: panel abre y cierra por botón y por overlay, con aria-hidden coherente (3087.5052ms)
+✔ tarjeta con nombre, imagen y precio; descripción en detalle (412.5634ms)
+✔ descripción null llega al HTML del modal como texto alternativo (68.1874ms)
+✔ descripción vacía llega al HTML del modal como texto alternativo (4.0644ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✖ Detalle y carrito reciben foco, contienen Tab y cierran con Escape devolviendo el foco (31178.8545ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 5
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 44415.1598
+
+✖ failing tests:
+
+test at tests\teclado-dialogos-actividad3.test.cjs:3:1
+✖ Detalle y carrito reciben foco, contienen Tab y cierran con Escape devolviendo el foco (31178.8545ms)
+  AssertionError [ERR_ASSERTION]: foco dentro de #product-modal
+  
+  false !== true
+  
+      at C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\teclado-dialogos-actividad3.test.cjs:8:10
+      at async fixture (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\tienda-fixture-002.cjs:47:5)
+      at async TestContext.<anonymous> (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\teclado-dialogos-actividad3.test.cjs:4:35)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
