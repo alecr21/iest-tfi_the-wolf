@@ -9,5 +9,5 @@ for (const name of ['main.js', 'supabase-config.js']) {
 }
 require("./generar-iconos.cjs");
 fs.mkdirSync(output, { recursive: true });
-for (const name of ['index.html', 'page', 'Scripts', 'style', 'logo', 'productos', 'servicios']) fs.cpSync(path.join(root, name), path.join(output, name), { recursive: true });
+for (const name of ['index.html', 'page', 'Scripts', 'style', 'logo', 'productos', 'servicios', 'media']) fs.cpSync(path.join(root, name), path.join(output, name), { recursive: true });
 console.log('Build estático generado en dist/. No se publica automáticamente.');

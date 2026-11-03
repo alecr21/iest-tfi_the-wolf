@@ -30,26 +30,25 @@ Para abrir el sitio durante el desarrollo, usar Live Server de Visual Studio Cod
 - `.github/prompts/`: tres prompts conservados; no se afirma que el editor los registre automáticamente como comandos.
 - `tools/`: ejecución de pruebas y build. Se usa este nombre porque Windows no distingue `scripts` de la carpeta existente `Scripts`.
 
-## Estado y próximos pasos
+## Estado de la entrega
 
-Validación más reciente: **npm test: 94 aprobadas, 0 fallidas y 0 omitidas**; build aprobado. Salida en tests/ejecucion-accesibilidad-rendimiento-final.txt. La integración inicial de82 pruebas se conserva como evidencia histórica en tests/ejecucion-integrada.txt.
+La última regresión completa registró **94 pruebas aprobadas, 0 fallidas y 0 omitidas**. El build posterior a la galería y al enlace del spot también pasó. La galería se verificó a 360 y 1440 px. Los informes anteriores se conservan como evidencia del proceso.
 
-La validación técnica y los límites de cada prueba están en los tres `verificacion.md`. El cierre formal, los resultados de la ejecución integrada y las diferencias con la pauta de trabajo se registran en [CIERRE-ACTIVIDAD-2.md](docs/CIERRE-ACTIVIDAD-2.md).
+| Para consultar | Documento |
+|---|---|
+| Alcance general | [Requisitos](docs/02-REQUERIMIENTOS.md) |
+| Precio unitario y subtotal del carrito | [CAR-RF04 y HU04](specs/003-carrito-whatsapp/spec.md) y [verificación CP06](specs/003-carrito-whatsapp/verificacion.md) |
+| Proceso y pruebas anteriores | [Cierre de Actividad 2](docs/CIERRE-ACTIVIDAD-2.md) y [registro de prompts](docs/PROMPTS.md) |
+| Rendimiento y accesibilidad | [Lighthouse](docs/LIGHTHOUSE.md). Rendimiento registrado de 68 en Inicio y 65 en Tienda, por debajo de 80. |
+| Multimedia | [Fichas](multimedia/FICHAS-IA.md) y [evolución de los mockups](multimedia/EVOLUCION-MOCKUPS.md) |
+| Informe y defensa | [Borrador](docs/INFORME-Y-DEFENSA.md) |
+| Declaración y revisión humana | [Declaración de IA](docs/DECLARACION-IA.md) y [guía de revisión](docs/REVISION-ESTUDIANTE.md) |
+| Enlaces de entrega | [ENLACES.md](ENLACES.md) |
 
-El estudiante confirmó pruebas manuales de búsqueda, filtros, limpieza y subtotales. La lectura y comprensión del código y las evidencias siguen pendientes: ver [REVISION-ESTUDIANTE.md](docs/REVISION-ESTUDIANTE.md).
+Ya están integradas las ocho imágenes y el spot está enlazado. Quedan la demo, los datos de producción de las fichas, la revisión y firma, los enlaces públicos y el PDF final.
 
-GitHub se creará al momento que indique el estudiante. No se declara cumplida la publicación de la Actividad 3. El [diagnóstico inicial de Actividad 3](docs/ACTIVIDAD-3.md) reprodujo desborde y tarjetas invisibles a 360 px. La corrección responsive y los tokens ya tienen evidencia posterior; accesibilidad completa y Lighthouse siguen pendientes. Usar la vista previa del puerto 5501 descrita abajo para revisar la versión integrada.
+## Vista previa local
 
-## Abrir la version corregida sin confundir carpetas
+Ejecutar npm run build y npm run preview desde la carpeta integrada. Abrir [Inicio](http://127.0.0.1:5501/), [Tienda](http://127.0.0.1:5501/page/tienda.html) o [Galería](http://127.0.0.1:5501/page/galeria.html).
 
-Desde esta carpeta integrada ejecutar `npm run build` y `npm run preview`. Inicio: http://127.0.0.1:5501/ . Tienda: http://127.0.0.1:5501/page/tienda.html . El servidor solo escucha en esta computadora y sirve dist con cache desactivada; detener con Ctrl+C. Si el puerto ya esta en uso por esta vista previa, usar el enlace existente.
-
-La URL `http://127.0.0.1:5500/Presentacion/The-Wolf/...` corresponde a la copia anterior. El 2 de noviembre se verifico por HTTP que sus archivos no incluyen las correcciones responsive. No utilizarla para revisar cambios de la copia integrada.
-
-Los resultados historicos de 82 pruebas corresponden a la integracion inicial; la regresion responsive posterior aprobo 84. Los avances y limites actuales se actualizan en docs/ACTIVIDAD-3.md.
-
-Regresion anterior de Actividad 3: **87 pruebas aprobadas, 0 fallidas y 0 omitidas**; build aprobado. Detalle en tests/ejecucion-teclado-seo-final.txt y docs/ACTIVIDAD-3.md. Incluye correcciones de foco del detalle/carrito y metadatos SEO diferenciados. La accesibilidad integral y Lighthouse siguen pendientes.
-
-## Medición de calidad
-
-Se agregó Lighthouse13.6.0 solo para desarrollo. Con preview HTTP activo ejecutar `node tools/medir-lighthouse.cjs`. Informes y límites en [docs/LIGHTHOUSE.md](docs/LIGHTHOUSE.md). El rendimiento todavía no cumple80; no confundir las comprobaciones funcionales aprobadas con un cierre de Actividad3. Las fuentes e iconos locales y sus licencias se incluyen dentro de style/; los PNG de marca se conservan y las páginas usan derivados WebP livianos.
+Para la preparación de la versión final, consultar el [control de entrega](docs/CONTROL-ENTREGA.md).

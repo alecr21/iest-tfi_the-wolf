@@ -1,0 +1,24 @@
+{
+  "rf": {
+    "001-catalogo": 8,
+    "002-busqueda-filtros": 5,
+    "003-carrito-whatsapp": 8
+  },
+  "pruebas": {
+    "fuente": "tests/ejecucion-accesibilidad-rendimiento-final.txt",
+    "aprobadas": 94,
+    "fallidas": 0,
+    "omitidas": 0
+  },
+  "git": {
+    "corte": "20a8d5b",
+    "porPrefijo": {
+      "fix": 6,
+      "docs": 1,
+      "style": 1,
+      "perf": 1,
+      "test": 1,
+      "chore": 1
+    }
+  }
+}

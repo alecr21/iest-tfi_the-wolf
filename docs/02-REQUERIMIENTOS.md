@@ -12,7 +12,7 @@ Los requerimientos funcionales describen las acciones que puede realizar el usua
 | RF04 | Mostrar nombre, descripción, imagen y precio de los productos disponibles obtenidos desde Supabase. | Alta |
 | RF05 | Permitir buscar productos por texto y filtrarlos por categoría. | Media |
 | RF06 | Permitir agregar productos al carrito. | Media |
-| RF07 | Permitir quitar productos del carrito y modificar cantidades. | Media |
+| RF07 | Permitir quitar productos del carrito y modificar cantidades. Cada fila muestra el precio unitario y el subtotal, que se recalcula al cambiar la cantidad. Ver CAR-RF04 en la especificación del carrito. | Media |
 | RF08 | Preparar un resumen del pedido para consultar por WhatsApp. | Alta |
 | RF09 | Mostrar los servicios de reparación, mantenimiento y soporte técnico. | Alta |
 | RF10 | Mostrar información de contacto y enlaces a los medios de comunicación definidos. | Alta |

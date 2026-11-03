@@ -1,0 +1,30 @@
+.galeria {
+  padding-block: 2rem;
+}
+
+.galeria a {
+  color: var(--dorado);
+  text-decoration: underline;
+}
+
+.galeria-grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+  gap: 1.5rem;
+}
+
+.galeria figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.galeria img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.galeria figcaption {
+  padding-block: 0.5rem;
+}
