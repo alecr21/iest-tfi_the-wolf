@@ -1,0 +1,31 @@
+✔ tarjeta: conserva URL original y texto alternativo antes de cualquier error (62.4801ms)
+✔ tarjeta: intenta la alternativa una sola vez si ambas imágenes fallan (6.9136ms)
+✔ modal: conserva URL original y texto alternativo antes de cualquier error (2.1683ms)
+✔ modal: intenta la alternativa una sola vez si ambas imágenes fallan (3.7015ms)
+Navegador de prueba: Chromium/Chrome 156.0.8078.80; red interceptada, sin Supabase real.
+✔ datos externos de nombre permanecen como texto o atributo en tarjeta y detalle (5561.1182ms)
+✔ datos externos de descripcion permanecen como texto o atributo en tarjeta y detalle (2690.7808ms)
+✔ datos externos de categoria permanecen como texto o atributo en tarjeta y detalle (1514.9352ms)
+✔ datos externos de etiqueta permanecen como texto o atributo en tarjeta y detalle (1616.1551ms)
+✔ datos externos de id permanecen como texto o atributo en tarjeta y detalle (1887.8583ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "javascript:window.__" (1792.6162ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "java\nscript:window._" (4448.6301ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "data:image/svg+xml,<" (1602.37ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "file:///C:/privado.p" (1635.4916ms)
+✔ una URL HTTPS con comillas no inyecta atributos y conserva su valor (1954.8066ms)
+✔ carrito trata nombre persistido como dato, sin HTML ejecutable (1886.6874ms)
+✔ carrito trata id persistido como dato, sin HTML ejecutable (1589.3494ms)
+✔ carrito trata cantidad persistido como dato, sin HTML ejecutable (2164.7914ms)
+✔ carrito trata precio persistido como dato, sin HTML ejecutable (1495.6725ms)
+✔ flujo normal conserva filtros, detalle, suma de cantidad, total y persistencia (3178.5364ms)
+✔ Las rutas relativas de productos se conservan al abrir tienda con file (210.704ms)
+✔ Abrir con file no autoriza URLs explicitas a archivos, UNC ni protocolos ejecutables (245.5463ms)
+✔ HTTPS y rutas relativas sobre HTTP conservan su funcionamiento (10.0884ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 52625.0291

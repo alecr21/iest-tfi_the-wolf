@@ -178,3 +178,7 @@ Regresión final de este bloque: 87/87 aprobadas, cero fallidas/omitidas; build 
 ### Incidencia abierta — productos sustituidos por logo en Edge
 
 Captura del estudiante a400x557 confirma fallback en tarjeta Auriculares. No reproducido en sesiones nuevas Chrome/escritorio/móvil ni Edge400x557/1440: las ocho imágenes originales cargan, archivos/rutas reales comprobados. Diagnósticos y captura conservados; NO declarar arreglado. Se pidió URL completa afectada, aún necesaria para comparar recurso/servidor exactos. No alterar DB ni borrar fallback especulativamente. Prioridad: resolver esta incidencia antes del resto de tabla2.
+
+### Cierre técnico del logo en productos al abrir archivo local
+
+URL del estudiante usa file:// (no 5501). Causa: safeProductImageUrl rechazaba rutas relativas que resuelven a file:. Corregido con validación de ruta relativa dentro del sitio y sin esquema/unidad/UNC; se conservan restricciones de protocolos y fallback. Regresión previa reprodujo defecto. Edge real abriendo page/tienda.html local a400x557 mostró ocho imágenes originales. Logs imagenes-file-final y imagenes-file-edge, captura tienda-file-edge-400-557. Build actualizado. Falta confirmación visual del estudiante tras recarga; no pedir repetir otras pruebas. Continuar luego con menú/contraste/Lighthouse.

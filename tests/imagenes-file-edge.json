@@ -1,0 +1,57 @@
+{
+  "protocol": "file:",
+  "viewport": {
+    "width": 400,
+    "height": 557
+  },
+  "images": [
+    {
+      "name": "Notebook Ryzen 5",
+      "source": "file:///C:/Users/El%20Mero%20Mero/Documents/Codex/2026-11-02/files-pasted-by-the-user-contexto/outputs/iest-tfi_the-wolf/productos/7.png",
+      "loaded": true,
+      "width": 246
+    },
+    {
+      "name": "Memoria RAM 8 GB DDR4",
+      "source": "file:///C:/Users/El%20Mero%20Mero/Documents/Codex/2026-11-02/files-pasted-by-the-user-contexto/outputs/iest-tfi_the-wolf/productos/6.png",
+      "loaded": true,
+      "width": 447
+    },
+    {
+      "name": "Celular Smartphone",
+      "source": "file:///C:/Users/El%20Mero%20Mero/Documents/Codex/2026-11-02/files-pasted-by-the-user-contexto/outputs/iest-tfi_the-wolf/productos/3.png",
+      "loaded": true,
+      "width": 447
+    },
+    {
+      "name": "Notebook Core i3",
+      "source": "file:///C:/Users/El%20Mero%20Mero/Documents/Codex/2026-11-02/files-pasted-by-the-user-contexto/outputs/iest-tfi_the-wolf/productos/5.png",
+      "loaded": true,
+      "width": 246
+    },
+    {
+      "name": "PC de escritorio Ryzen 5",
+      "source": "file:///C:/Users/El%20Mero%20Mero/Documents/Codex/2026-11-02/files-pasted-by-the-user-contexto/outputs/iest-tfi_the-wolf/productos/4.png",
+      "loaded": true,
+      "width": 246
+    },
+    {
+      "name": "Disco SSD 480 GB",
+      "source": "file:///C:/Users/El%20Mero%20Mero/Documents/Codex/2026-11-02/files-pasted-by-the-user-contexto/outputs/iest-tfi_the-wolf/productos/8.png",
+      "loaded": true,
+      "width": 225
+    },
+    {
+      "name": "Teclado y Mouse Inalámbricos",
+      "source": "file:///C:/Users/El%20Mero%20Mero/Documents/Codex/2026-11-02/files-pasted-by-the-user-contexto/outputs/iest-tfi_the-wolf/productos/9.png",
+      "loaded": true,
+      "width": 447
+    },
+    {
+      "name": "Auriculares con Micrófono",
+      "source": "file:///C:/Users/El%20Mero%20Mero/Documents/Codex/2026-11-02/files-pasted-by-the-user-contexto/outputs/iest-tfi_the-wolf/productos/2.png",
+      "loaded": true,
+      "width": 413
+    }
+  ]
+}

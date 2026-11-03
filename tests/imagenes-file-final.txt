@@ -1,0 +1,32 @@
+✔ tarjeta: conserva URL original y texto alternativo antes de cualquier error (59.141ms)
+✔ tarjeta: intenta la alternativa una sola vez si ambas imágenes fallan (9.746ms)
+✔ modal: conserva URL original y texto alternativo antes de cualquier error (2.4218ms)
+✔ modal: intenta la alternativa una sola vez si ambas imágenes fallan (10.927ms)
+Navegador de prueba: Chromium/Chrome 156.0.8078.80; red interceptada, sin Supabase real.
+✔ datos externos de nombre permanecen como texto o atributo en tarjeta y detalle (5615.9054ms)
+✔ datos externos de descripcion permanecen como texto o atributo en tarjeta y detalle (2897.4953ms)
+✔ datos externos de categoria permanecen como texto o atributo en tarjeta y detalle (1899.7312ms)
+✔ datos externos de etiqueta permanecen como texto o atributo en tarjeta y detalle (5045.4324ms)
+✔ datos externos de id permanecen como texto o atributo en tarjeta y detalle (1721.6878ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "javascript:window.__" (2194.6446ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "java\nscript:window._" (2469.1196ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "data:image/svg+xml,<" (2096.0763ms)
+✔ rechaza URL de imagen fuera de HTTP/HTTPS: "file:///C:/privado.p" (1759.4886ms)
+✔ una URL HTTPS con comillas no inyecta atributos y conserva su valor (2178.0687ms)
+✔ carrito trata nombre persistido como dato, sin HTML ejecutable (1686.5916ms)
+✔ carrito trata id persistido como dato, sin HTML ejecutable (1343.4942ms)
+✔ carrito trata cantidad persistido como dato, sin HTML ejecutable (1764.8047ms)
+✔ carrito trata precio persistido como dato, sin HTML ejecutable (1511.6275ms)
+✔ flujo normal conserva filtros, detalle, suma de cantidad, total y persistencia (3363.0132ms)
+✔ Las rutas relativas de productos se conservan al abrir tienda con file (17.871ms)
+✔ Abrir con file no autoriza URLs explicitas a archivos, UNC ni protocolos ejecutables (20.5178ms)
+✔ HTTPS y rutas relativas sobre HTTP conservan su funcionamiento (3.0471ms)
+✔ El modo file rechaza rutas UNC y rutas que salen de la carpeta del sitio (5.3942ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 73419.8577

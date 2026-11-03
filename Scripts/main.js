@@ -290,7 +290,15 @@ function safeProductImageUrl(value) {
   if (!source) return fallback;
   try {
     const url = new URL(source, document.baseURI || "https://the-wolf.invalid/page/tienda.html");
-    return ["http:", "https:"].includes(url.protocol) ? source : fallback;
+    if (["http:", "https:"].includes(url.protocol)) return source;
+    // Abrir el HTML localmente debe conservar sus imagenes relativas.
+    // No aceptar rutas file: explicitas, letras de unidad ni recursos UNC.
+    const localRelative = url.protocol === "file:"
+      && new URL(document.baseURI).protocol === "file:"
+      && !/^[a-z][a-z\d+.-]*:|^[\\/]{2}/i.test(source);
+    const insideLocalSite = localRelative && !url.host
+      && url.pathname.startsWith(new URL("../", document.baseURI).pathname);
+    return insideLocalSite ? source : fallback;
   } catch {
     return fallback;
   }

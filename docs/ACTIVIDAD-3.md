@@ -110,3 +110,17 @@ El estudiante aportó captura de Edge a 400 × 557 px: la tarjeta de Auriculares
 Comprobaciones de solo lectura ejecutadas: Supabase devuelve ocho rutas ../productos/N.png y los ocho PNG existen. Sesiones nuevas de Chrome (escritorio/móvil) y Edge (400 × 557 y 1440 × 900) cargaron las ocho imágenes originales desde 127.0.0.1:5501, sin fallos de descarga. En Chrome se registraron respuestas HTTP 200. Fuentes actuales y naturalWidth se conservan en tests/diagnostico-imagenes-reales.json y tests/diagnostico-edge-imagenes.json; la captura Edge se inspeccionó visualmente. Esto demuestra esos escenarios, no explica ni invalida la captura del estudiante.
 
 Se solicitó la URL completa de la pestaña afectada: la captura no incluye la dirección. No se modifica el fallback ni se cambia la base de datos sin identificar primero la diferencia. Próxima comprobación dependiente de esa URL: comparar origen, recurso solicitado y respuesta; si el origen coincide, revisar fallo/bloqueo registrado en la pestaña afectada. La revisión de imágenes sigue pendiente.
+
+## Causa identificada y corregida — apertura directa con file://
+
+El estudiante compartió la URL real: file:///C:/Users/.../outputs/iest-tfi_the-wolf/page/tienda.html. La diferencia con las pruebas anteriores era el protocolo, no Edge ni el ancho: safeProductImageUrl resolvía ../productos/N.png a file: y la sustituía por el logo al admitir solo HTTP/HTTPS.
+
+Se escribió una regresión antes del cambio que reprodujo el rechazo de rutas relativas locales. El validador ahora admite esas rutas solamente si la página se abrió con file:, el recurso queda dentro de la carpeta del sitio y la entrada no expresa un esquema, unidad de Windows ni UNC. HTTP/HTTPS conserva el comportamiento anterior; file: explícito, javascript:, data: y rutas locales que salen del sitio siguen rechazadas. No se modificó Supabase ni se quitó el fallback de errores reales.
+
+Una expectativa inicial de la prueba pretendía rechazar //servidor también sobre HTTP, aunque en ese contexto es una URL HTTP válida ya permitida: se corrigió esa expectativa y se separó la restricción UNC para file:. Las salidas intermedias se conservan sin presentarlas como aprobadas.
+
+Verificación real final en Edge abriendo el archivo local a400x557: ocho imágenes originales decodificadas, ninguna sustituida por el logo. Evidencias tests/imagenes-file-edge.json, tests/imagenes-file-edge-salida.txt y captura tests/evidencias/actividad3/tienda-file-edge-400-557.png. Prueba reproducible con node tools/verificar-imagenes-file.cjs. Regresión dirigida de seguridad/fallback/rutas locales en tests/imagenes-file-final.txt; build actualizado en tests/build-imagenes-file.txt. No es una nueva ejecución de la batería completa.
+
+La incidencia está corregida técnicamente y queda pendiente la confirmación visual del estudiante al recargar su archivo local. El desarrollo y Lighthouse deben seguir usando el servidor HTTP del proyecto para reproducir el entorno publicado.
+
+Resultado final de la correccion file://: 23 pruebas dirigidas aprobadas, cero fallidas/omitidas, y build correcto. No se repitio la bateria completa de 87, cuyo resultado anterior conserva su fecha/alcance.
