@@ -1,4 +1,11 @@
-# Actividad 3 — Diagnóstico inicial del producto final
+# Actividad 3 — Estado y evidencias
+
+## Estado actual — 2 de noviembre de 2026
+
+Imágenes y responsive confirmados por el estudiante. Catálogo/carrito: corregidos encabezados y contador accesible. Las últimas mediciones locales tienen Accesibilidad/Buenas prácticas/SEO100 en Inicio y Tienda y CLS0, pero Rendimiento sigue pendiente: Inicio68, Tienda65 en su última pasada (tuvo pasadas anteriores de86/83, sin estabilidad suficiente para darlo por aprobado). Ver docs/LIGHTHOUSE.md. GitHub/publicación continúan postergados por decisión del estudiante.
+
+El registro que sigue conserva resultados anteriores con su contexto; las cifras del diagnóstico inicial no son el estado actual.
+
 
 **Estado:** iniciada, sin publicar. El estudiante quiere crear GitHub y subir el conjunto al finalizar su PDF. No se creó un remoto ni se modificó el sitio publicado.
 
@@ -140,3 +147,17 @@ Se instalaron herramientas de medición de desarrollo y se ejecutaron seis infor
 Se redujo el peso de los dos logos web, conservando originales; se declararon dimensiones y se alojaron fuentes e iconos localmente con sus licencias. Se redujeron desenfoques grandes y animación decorativa en móvil. La regresión dirigida posterior aprobó10 pruebas (imágenes, file://, responsive y teclado) y el build. Edge400x557 abriendo el archivo local volvió a cargar ocho imágenes originales; captura inspeccionada visualmente.
 
 Siguiente bloque: resolver encabezado intermedio del catálogo y nombre accesible/contador del carrito; investigar tareas largas y CLS en vez de dar rendimiento por aprobado. Después medir las otras páginas y finalmente la URL pública cuando el estudiante autorice la publicación. No se requieren nuevas pruebas manuales de imágenes ya confirmadas.
+
+### Accesibilidad del catálogo y rendimiento — avance posterior
+
+Se corrigieron dos hallazgos de Lighthouse: h2 accesible antes de productos h3 y nombre del botón de carrito con contador actualizado. Una prueba previa falló y la prueba posterior cubre0/1/2 unidades. Cuatro pruebas dirigidas de catálogo/carrito/diálogos aprobadas antes de ampliar las optimizaciones.
+
+El observador de layout-shift reprodujo cambios de altura al intercambiar tipografías (tests/diagnostico-saltos-tienda.json). La precarga de las dos fuentes principales dejó CLS0 en las últimas mediciones. Se redujeron reglas de iconos a32 y se preservó la copia completa/licencia; npm run build regenera el subconjunto y valida nombres. AOS/Tilt pasan a carga condicional: pruebas previas detectaban tres descargas innecesarias en móvil, prueba posterior confirmó su ausencia y la inicialización en escritorio. Se conserva fallback visible ante error de descarga. Se añadieron también comprobaciones explícitas de movimiento reducido y Shift+Tab.
+
+Solo en Inicio móvil se simplifican composición3D/sombras y se difiere el renderizado de secciones lejanas sin quitar contenido ni enlaces. Las capturas iniciales definitivas son tests/evidencias/actividad3/*-movil-inicial-final.png, obtenidas en una página nueva con scrollY0 y revisadas visualmente. Las capturas posteriores al recorrido no se presentan como vista inicial.
+
+El recorrido F12 sin recarga volvió a pasar diez escenarios con recursos reales, sin desborde ni erroresJS y ocho tarjetas visibles en Tienda. Edge abriendo archivo local volvió a cargar ocho imágenes originales. La auditoría preliminar de cinco páginas por dos anchos no halló controles sin nombre, faltantes de atributo alt ni desborde; conserva sus límites respecto a contraste y teclado completo.
+
+Rendimiento no se declara resuelto: último Inicio68/Tienda65; aunque Tienda obtuvo86 y83 en otras pasadas, se conserva toda la variación. La tabla de LIGHTHOUSE.md y resumen.json distinguen13 ejecuciones únicas, snapshots y fechas reales. No se cambiaron las condiciones de Lighthouse para elevar el resultado ni se seleccionó solo la pasada favorable. Falta investigar bloqueo persistente, medir otras páginas y la URL pública.
+
+Cierre verificable de este bloque: npm test aprobó94 pruebas, cero fallidas y cero omitidas (tests/ejecucion-accesibilidad-rendimiento-final.txt). Las dos pruebas dirigidas posteriores de teclado/movimiento también aprobaron con Shift+Tab y reduced-motion explícitos (tests/teclado-y-movimiento-final.txt). Build final aprobado y subconjunto de32 iconos regenerado. Estos dos casos son parte de la batería, no se suman como funciones nuevas. Rendimiento continúa pendiente, sin publicación ni nueva revisión manual requerida de imágenes.

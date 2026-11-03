@@ -6,10 +6,10 @@ Fecha de trabajo: 2 de noviembre de 2026 (Argentina). Los JSON conservan la hora
 
 | Página | Rendimiento | Accesibilidad | Buenas prácticas | SEO |
 |---|---:|---:|---:|---:|
-| Inicio | 48 | 100 | 100 | 100 |
-| Tienda | 51 | 98 | 100 | 100 |
+| Inicio | 68 | 100 | 100 | 100 |
+| Tienda | 65 | 100 | 100 | 100 |
 
-**No cumple todavía el mínimo de 80 en Rendimiento.** No se declara terminada la Actividad 3. Solo se midieron estas dos páginas y sobre servidor local; falta el resto del sitio y repetir sobre la URL pública cuando se publique.
+**No cumple todavía el mínimo de 80 en Rendimiento.** No se declara terminada la Actividad 3. La tabla usa la última ejecución disponible por página; Tienda tuvo pasadas de86 y83, pero la más reciente fue65. Se conserva la variación y no se da por cumplido Rendimiento por una pasada favorable. Solo se midieron estas dos páginas y sobre servidor local; falta el resto del sitio y repetir sobre la URL pública cuando se publique.
 
 ## Método y evidencias
 
@@ -18,9 +18,9 @@ Fecha de trabajo: 2 de noviembre de 2026 (Argentina). Los JSON conservan la hora
 - Build servido en http://127.0.0.1:5501 con recursos reales (incluida consulta de lectura a Supabase), sin productos simulados ni exclusión de auditorías para elevar el resultado.
 - Una ejecución por etapa/página; los resultados pueden variar y no constituyen una comparación estadística ni mediciones de campo.
 - Informes finales: `tests/lighthouse/inicio.report.html`, `tienda.report.html` y sus JSON.
-- Etapas conservadas: `tests/lighthouse/inicial/` y `tests/lighthouse/solo-logos/`. Resumen de seis ejecuciones en `tests/lighthouse/resumen.json`.
+- Etapas conservadas: `tests/lighthouse/inicial/` y `tests/lighthouse/solo-logos/`. Historial de13 ejecuciones únicas y snapshots identificados en `tests/lighthouse/resumen.json`.
 - Primer intento por CLI falló al conectar con Chrome. Otro intento del módulo agotó la espera de creación de pestaña. No produjeron puntuaciones válidas; logs conservados. El runner final usa Puppeteer por pipe con página suministrada a Lighthouse; detalles del proceso temporal en 03-TECNOLOGIAS.md.
-- Repetir con `npm run build`, `npm run preview` y `node tools/medir-lighthouse.cjs`. El runner actual escribe los dos informes más recientes; preservar la etapa previa si se harán comparaciones.
+- Repetir con `npm run build`, `npm run preview` y `node tools/medir-lighthouse.cjs inicio tienda`. Sin argumentos, el runner permite medir las cinco páginas. El runner actual escribe los dos informes más recientes; preservar la etapa previa si se harán comparaciones.
 
 ## Cambios ejecutados
 
@@ -28,10 +28,20 @@ Se conservan los PNG originales y se derivan dos WebP para la web. Logo principa
 
 Montserrat, Orbitron y las dos fuentes de iconos usadas se sirven localmente; archivos de licencia en style/fonts y origen/tamaño descargados en tests/fuentes-origen.json. Font Awesome conserva sus avisos y licencia; se adaptaron las rutas de fuentes y dos colores predeterminados a tokens con valores equivalentes. Se suprimen filtros de desenfoque grandes y animaciones flotantes decorativas en móvil. No se declara que estas medidas ya hayan conseguido 80: la medición final sigue por debajo.
 
-## Hallazgos pendientes
+## Hallazgos del diagnóstico anterior (registro histórico)
 
 - Rendimiento: tiempos de bloqueo elevados y saltos de disposición en Tienda; investigar las tareas largas y sus causas antes de seguir modificando o asignar toda la demora a JavaScript propio. Inicio tiene TBT de3710 ms y Tienda de1770 ms en la ejecución final; CLS de Tienda0,354.
 - Tienda: falta un encabezado intermedio antes de los títulos h3 de productos; el nombre accesible del botón de carrito no incluye el contador visible. Son dos hallazgos del informe, no una puntuación de accesibilidad perfecta.
 - Accesibilidad manual: los resultados automáticos no certifican WCAG ni reemplazan teclado, contraste sobre gradientes o calidad de las alternativas de imágenes. Mantener las verificaciones humanas documentadas y sus límites.
 
 Referencia del instrumento: [documentación oficial de Lighthouse](https://github.com/GoogleChrome/lighthouse).
+
+## Correcciones posteriores y estado actual
+
+Se incorporó el h2 del catálogo y el nombre accesible del carrito incluye el contador; la auditoría automática de accesibilidad de Tienda pasó a100. La precarga de Montserrat y Orbitron eliminó los saltos de disposición en las últimas mediciones de ambas páginas (CLS0).
+
+Se redujo la hoja de iconos a los32 usados (90299 a1990 bytes), conservando las fuentes y licencia originales. El generador tools/generar-iconos.cjs lee la copia completa preservada en tests/fixtures/fontawesome-original.css (incluye las adaptaciones anteriores de rutas/tokens). npm run build regenera el subconjunto; un icono no encontrado detiene el build.
+
+AOS y Vanilla Tilt se descargan solo en escritorio compatible, respetando movimiento reducido y puntero fino para Tilt. Las descargas fallidas dejan el contenido visible. Las pruebas cubren ausencia de descargas en móvil y su inicialización en escritorio con dobles controlados. Se redujo composición3D/sombras de portada solo en móvil y se difiere el renderizado de secciones lejanas de Inicio mediante content-visibility:auto con espacio estimado. El logo mantiene su proporción natural.
+
+Inicio subió a68 en la última pasada, pero Rendimiento sigue pendiente en el criterio estricto de>=80 para ambas páginas. Los tiempos de bloqueo simulados todavía requieren investigación; el observador independiente de Tienda confirmó el desplazamiento al intercambiar fuentes, sin observar tareas>100ms en esos dos escenarios propios (no equivale a probar ausencia de tareas largas en todo el sitio).

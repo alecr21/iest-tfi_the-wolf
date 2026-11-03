@@ -1,0 +1,2 @@
+inicio: captura inicial, scrollY=0
+tienda: captura inicial, scrollY=0

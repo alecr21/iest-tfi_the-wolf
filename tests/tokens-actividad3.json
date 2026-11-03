@@ -15,8 +15,8 @@
     {
       "file": "style/iconos.css",
       "componentLiteralsRemaining": 0,
-      "valuesEquivalent": true,
-      "note": "Adaptacion de dos colores por defecto de Font Awesome a tokens con los mismos valores."
+      "note": "Subconjunto de las32 reglas usadas; no se declara equivalencia de todas las clases de la hoja completa.",
+      "usedIcons": 32
     }
   ]
 }

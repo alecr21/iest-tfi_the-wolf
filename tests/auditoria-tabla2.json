@@ -121,7 +121,7 @@
       "page": "page/tienda.html",
       "width": 360,
       "contrast": {
-        "checked": 10,
+        "checked": 11,
         "unresolved": 38,
         "low": [],
         "scope": "Solo texto sobre fondos solidos; gradientes, imagenes y opacidades de grupo requieren otra revision."
@@ -701,7 +701,7 @@
       "page": "page/tienda.html",
       "width": 1440,
       "contrast": {
-        "checked": 13,
+        "checked": 14,
         "unresolved": 40,
         "low": [],
         "scope": "Solo texto sobre fondos solidos; gradientes, imagenes y opacidades de grupo requieren otra revision."

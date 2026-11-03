@@ -10,6 +10,7 @@ try{for(const name of ['index.html','page/tienda.html']){
   const height=await page.evaluate(()=>document.documentElement.scrollHeight);for(let y=0;y<height;y+=600){await page.evaluate(y=>scrollTo(0,y),y);await page.waitForTimeout(120);}
   await page.waitForTimeout(800);
   results.push({page:name,width,...await page.evaluate(()=>({innerWidth,scrollWidth:document.documentElement.scrollWidth,products:document.querySelectorAll('.shop-product-card').length,visibleProducts:[...document.querySelectorAll('.shop-product-card')].filter(n=>Number(getComputedStyle(n).opacity)===1).length,lazyWithoutReservedSpace:[...document.querySelectorAll('img[loading=lazy]')].filter(n=>!(n.hasAttribute('width')&&n.hasAttribute('height'))&&getComputedStyle(n).aspectRatio==='auto').length})),errors:[...errors]});
+  if(width===360){await page.evaluate(()=>{document.documentElement.style.scrollBehavior="auto";scrollTo(0,0)});await page.screenshot({path:"tests/evidencias/actividad3/"+(name.includes("tienda")?"tienda":"inicio")+"-movil-posterior-recorrido.png"});}
  }
  await page.close();
 }}finally{await browser.close();}

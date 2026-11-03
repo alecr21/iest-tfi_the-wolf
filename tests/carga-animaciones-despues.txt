@@ -1,0 +1,15 @@
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ Catalogo tiene h2 antes de productos h3 y el carrito anuncia su contador (6421.0342ms)
+✔ Las librerias decorativas se cargan solo en escritorio compatible (8386.6767ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ Inicio conserva el ancho de 360 px sin JavaScript de animaciones (5245.3758ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ Tienda muestra productos con CSS de entrada AOS, en móvil y movimiento reducido (20791.7103ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 47417.4943

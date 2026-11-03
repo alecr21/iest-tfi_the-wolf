@@ -1,0 +1,15 @@
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ Catalogo tiene h2 antes de productos h3 y el carrito anuncia su contador (7505.2193ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ 003/T01: elementos del carrito únicos y estado inicial vacío (5142.7977ms)
+✔ 003/T01: panel abre y cierra por botón y por overlay, con aria-hidden coherente (2325.8955ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ Detalle y carrito reciben foco, contienen Tab y cierran con Escape devolviendo el foco (10763.2895ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 31771.9468

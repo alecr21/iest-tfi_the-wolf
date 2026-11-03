@@ -1,0 +1,34 @@
+✖ Las librerias decorativas se cargan solo en escritorio compatible (5587.5778ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7490.063
+
+✖ failing tests:
+
+test at tests\carga-animaciones-actividad3.test.cjs:3:1
+✖ Las librerias decorativas se cargan solo en escritorio compatible (5587.5778ms)
+  AssertionError [ERR_ASSERTION]: sin descargas decorativas en movil
+  + actual - expected
+  
+  + [
+  +   'https://unpkg.com/aos@2.3.4/dist/aos.css',
+  +   'https://unpkg.com/aos@2.3.4/dist/aos.js',
+  +   'https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js'
+  + ]
+  - []
+  
+      at TestContext.<anonymous> (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\carga-animaciones-actividad3.test.cjs:13:24)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ 'https://unpkg.com/aos@2.3.4/dist/aos.css', 'https://unpkg.com/aos@2.3.4/dist/aos.js', 'https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

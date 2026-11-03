@@ -205,3 +205,11 @@ La primera corrección del foco de los diálogos se ejecutaba mientras visibilit
 El pedido «podemos continuar» se abordó con menú por teclado, medición real y optimización acotada de recursos. La primera prueba de menú falló al devolver foco con Escape; la corrección y una transición de visibilidad inmediata aprobaron las pruebas dirigidas. Lighthouse por CLI no logró conectar con Chrome; el primer módulo también agotó su espera. Se usó finalmente la API con una página Puppeteer temporal por pipe, conservando las fallas sin asignarles puntuaciones.
 
 Se guardaron tres etapas reales por dos páginas. No se declaró mejoría de puntuación por reducir archivos: los puntajes variaron y Rendimiento sigue por debajo80. Los cambios demostrables son menos bytes de logos, dimensiones declaradas, fuentes locales licenciadas y efectos móviles menos costosos. La regresión posterior aprobó10 pruebas; docs/LIGHTHOUSE.md distingue hallazgos, límites y pendientes.
+
+### Actividad 3 — hallazgos del catálogo y carga móvil
+
+Pedido: «muy bien sigamos entonces». Se escribieron pruebas antes de corregir el h2/contador y las descargas decorativas móviles. Un observador independiente confirmó movimientos durante el intercambio de fuentes; se añadió precarga. La generación de reglas de iconos conserva los códigos y fuentes originales,32 clases usadas, con una copia completa y licencia. Se limitó la composición gráfica en móvil y el renderizado de secciones lejanas sin retirar contenido. Se conservaron13 mediciones únicas y los resultados variables, sin reemplazar el criterio80 por una selección de puntajes favorables.
+
+La comprobación visual detectó que las primeras capturas después del recorrido mostraban el pie de página, no la vista inicial. Se identificaron como posteriores al recorrido y se tomaron capturas nuevas desde una página recién cargada con scrollY0 comprobado. No se usó ese error del instrumento como motivo para cambiar el sitio.
+
+Resultado final:94 pruebas completas aprobadas y dos dirigidas posteriores aprobadas; build correcto. Rendimiento pendiente expresamente documentado. No se ejecutaron mensajes, compras, escrituras en Supabase ni publicación.

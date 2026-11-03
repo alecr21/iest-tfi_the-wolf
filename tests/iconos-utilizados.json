@@ -1,0 +1,162 @@
+[
+  {
+    "name": "fa-bars",
+    "code": "f0c9",
+    "family": "solid"
+  },
+  {
+    "name": "fa-xmark",
+    "code": "f00d",
+    "family": "solid"
+  },
+  {
+    "name": "fa-arrow-right",
+    "code": "f061",
+    "family": "solid"
+  },
+  {
+    "name": "fa-screwdriver-wrench",
+    "code": "f7d9",
+    "family": "solid"
+  },
+  {
+    "name": "fa-laptop-code",
+    "code": "f5fc",
+    "family": "solid"
+  },
+  {
+    "name": "fa-mobile-screen-button",
+    "code": "f3cd",
+    "family": "solid"
+  },
+  {
+    "name": "fa-hard-drive",
+    "code": "f0a0",
+    "family": "solid"
+  },
+  {
+    "name": "fa-headphones",
+    "code": "f025",
+    "family": "solid"
+  },
+  {
+    "name": "fa-computer-mouse",
+    "code": "f8cc",
+    "family": "solid"
+  },
+  {
+    "name": "fa-memory",
+    "code": "f538",
+    "family": "solid"
+  },
+  {
+    "name": "fa-chevron-right",
+    "code": "f054",
+    "family": "solid"
+  },
+  {
+    "name": "fa-arrow-up-right-from-square",
+    "code": "f08e",
+    "family": "solid"
+  },
+  {
+    "name": "fa-arrow-up",
+    "code": "f062",
+    "family": "solid"
+  },
+  {
+    "name": "fa-whatsapp",
+    "code": "f232",
+    "family": "brands"
+  },
+  {
+    "name": "fa-user",
+    "code": "f007",
+    "family": "solid"
+  },
+  {
+    "name": "fa-list",
+    "code": "f03a",
+    "family": "solid"
+  },
+  {
+    "name": "fa-comment-dots",
+    "code": "f4ad",
+    "family": "solid"
+  },
+  {
+    "name": "fa-shield-halved",
+    "code": "f3ed",
+    "family": "solid"
+  },
+  {
+    "name": "fa-rocket",
+    "code": "f135",
+    "family": "solid"
+  },
+  {
+    "name": "fa-bullseye",
+    "code": "f140",
+    "family": "solid"
+  },
+  {
+    "name": "fa-eye",
+    "code": "f06e",
+    "family": "solid"
+  },
+  {
+    "name": "fa-gem",
+    "code": "f3a5",
+    "family": "solid"
+  },
+  {
+    "name": "fa-magnifying-glass",
+    "code": "f002",
+    "family": "solid"
+  },
+  {
+    "name": "fa-box-open",
+    "code": "f49e",
+    "family": "solid"
+  },
+  {
+    "name": "fa-cart-shopping",
+    "code": "f07a",
+    "family": "solid"
+  },
+  {
+    "name": "fa-trash-can",
+    "code": "f2ed",
+    "family": "solid"
+  },
+  {
+    "name": "fa-microchip",
+    "code": "f2db",
+    "family": "solid"
+  },
+  {
+    "name": "fa-sliders",
+    "code": "f1de",
+    "family": "solid"
+  },
+  {
+    "name": "fa-code",
+    "code": "f121",
+    "family": "solid"
+  },
+  {
+    "name": "fa-check",
+    "code": "f00c",
+    "family": "solid"
+  },
+  {
+    "name": "fa-cart-plus",
+    "code": "f217",
+    "family": "solid"
+  },
+  {
+    "name": "fa-basket-shopping",
+    "code": "f291",
+    "family": "solid"
+  }
+]

@@ -32,7 +32,7 @@ Para abrir el sitio durante el desarrollo, usar Live Server de Visual Studio Cod
 
 ## Estado y próximos pasos
 
-Comprobación ejecutada en esta copia: **npm test: 82 aprobadas, 0 fallidas**; **npm run build: aprobado**. Salidas en tests/ejecucion-integrada.txt y tests/build-integrado.txt.
+Validación más reciente: **npm test: 94 aprobadas, 0 fallidas y 0 omitidas**; build aprobado. Salida en tests/ejecucion-accesibilidad-rendimiento-final.txt. La integración inicial de82 pruebas se conserva como evidencia histórica en tests/ejecucion-integrada.txt.
 
 La validación técnica y los límites de cada prueba están en los tres `verificacion.md`. El cierre formal, los resultados de la ejecución integrada y las diferencias con la pauta de trabajo se registran en [CIERRE-ACTIVIDAD-2.md](docs/CIERRE-ACTIVIDAD-2.md).
 
@@ -48,7 +48,7 @@ La URL `http://127.0.0.1:5500/Presentacion/The-Wolf/...` corresponde a la copia 
 
 Los resultados historicos de 82 pruebas corresponden a la integracion inicial; la regresion responsive posterior aprobo 84. Los avances y limites actuales se actualizan en docs/ACTIVIDAD-3.md.
 
-Ultima regresion completa de Actividad 3: **87 pruebas aprobadas, 0 fallidas y 0 omitidas**; build aprobado. Detalle en tests/ejecucion-teclado-seo-final.txt y docs/ACTIVIDAD-3.md. Incluye correcciones de foco del detalle/carrito y metadatos SEO diferenciados. La accesibilidad integral y Lighthouse siguen pendientes.
+Regresion anterior de Actividad 3: **87 pruebas aprobadas, 0 fallidas y 0 omitidas**; build aprobado. Detalle en tests/ejecucion-teclado-seo-final.txt y docs/ACTIVIDAD-3.md. Incluye correcciones de foco del detalle/carrito y metadatos SEO diferenciados. La accesibilidad integral y Lighthouse siguen pendientes.
 
 ## Medición de calidad
 

@@ -1,81 +1,52 @@
 {
-  "scope": "Medicion local del build en Inicio/Tienda; recursos reales; una ejecucion por etapa; no equivale a validacion de URL publica.",
+  "scope": "Historial local; snapshots duplicados identificados; no elegir solo la pasada de mayor puntuacion.",
+  "uniqueExecutions": 13,
   "reports": [
     {
-      "stage": "inicial",
-      "page": "inicio",
-      "lighthouse": "13.6.0",
-      "fetchTime": "2026-11-03T00:29:46.959Z",
+      "reportFile": "tests/lighthouse/inicio.report.json",
+      "fetchTime": "2026-11-03T01:01:07.494Z",
       "url": "http://127.0.0.1:5501/",
-      "formFactor": "mobile",
-      "throttling": {
-        "rttMs": 150,
-        "throughputKbps": 1638.4,
-        "requestLatencyMs": 562.5,
-        "downloadThroughputKbps": 1474.5600000000002,
-        "uploadThroughputKbps": 675,
-        "cpuSlowdownMultiplier": 4
-      },
+      "duplicateSnapshot": false,
+      "version": "13.6.0",
       "categories": {
-        "performance": 40,
+        "performance": 68,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
+      "metrics": {
+        "largest-contentful-paint": 3458.3729999999996,
+        "total-blocking-time": 1129,
+        "cumulative-layout-shift": 0
+      },
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
       "runtimeError": null
     },
     {
-      "stage": "inicial",
-      "page": "tienda",
-      "lighthouse": "13.6.0",
-      "fetchTime": "2026-11-03T00:30:30.843Z",
+      "reportFile": "tests/lighthouse/tienda.report.json",
+      "fetchTime": "2026-11-03T00:58:22.732Z",
       "url": "http://127.0.0.1:5501/page/tienda.html",
-      "formFactor": "mobile",
-      "throttling": {
-        "rttMs": 150,
-        "throughputKbps": 1638.4,
-        "requestLatencyMs": 562.5,
-        "downloadThroughputKbps": 1474.5600000000002,
-        "uploadThroughputKbps": 675,
-        "cpuSlowdownMultiplier": 4
-      },
+      "duplicateSnapshot": false,
+      "version": "13.6.0",
       "categories": {
-        "performance": 73,
-        "accessibility": 98,
-        "best-practices": 100,
-        "seo": 100
-      },
-      "runtimeError": null
-    },
-    {
-      "stage": "logos",
-      "page": "inicio",
-      "lighthouse": "13.6.0",
-      "fetchTime": "2026-11-03T00:32:55.699Z",
-      "url": "http://127.0.0.1:5501/",
-      "formFactor": "mobile",
-      "throttling": {
-        "rttMs": 150,
-        "throughputKbps": 1638.4,
-        "requestLatencyMs": 562.5,
-        "downloadThroughputKbps": 1474.5600000000002,
-        "uploadThroughputKbps": 675,
-        "cpuSlowdownMultiplier": 4
-      },
-      "categories": {
-        "performance": 61,
+        "performance": 65,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
-      "runtimeError": null
-    },
-    {
-      "stage": "logos",
-      "page": "tienda",
-      "lighthouse": "13.6.0",
-      "fetchTime": "2026-11-03T00:33:24.515Z",
-      "url": "http://127.0.0.1:5501/page/tienda.html",
+      "metrics": {
+        "largest-contentful-paint": 1959.233,
+        "total-blocking-time": 3152.5,
+        "cumulative-layout-shift": 0.000009232572468726282
+      },
       "formFactor": "mobile",
       "throttling": {
         "rttMs": 150,
@@ -85,43 +56,81 @@
         "uploadThroughputKbps": 675,
         "cpuSlowdownMultiplier": 4
       },
+      "runtimeError": null
+    },
+    {
+      "reportFile": "tests/lighthouse/carga-condicional/inicio.report.json",
+      "fetchTime": "2026-11-03T00:57:59.817Z",
+      "url": "http://127.0.0.1:5501/",
+      "duplicateSnapshot": false,
+      "version": "13.6.0",
       "categories": {
-        "performance": 47,
-        "accessibility": 98,
+        "performance": 59,
+        "accessibility": 100,
         "best-practices": 100,
         "seo": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 4127.237999999999,
+        "total-blocking-time": 1542.2539999999997,
+        "cumulative-layout-shift": 0
+      },
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
       },
       "runtimeError": null
     },
     {
-      "stage": "fuentes-locales",
-      "page": "inicio",
-      "lighthouse": "13.6.0",
+      "reportFile": "tests/lighthouse/carga-condicional/tienda.report.json",
+      "fetchTime": "2026-11-03T00:58:22.732Z",
+      "url": "http://127.0.0.1:5501/page/tienda.html",
+      "duplicateSnapshot": true,
+      "version": "13.6.0",
+      "categories": {
+        "performance": 65,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 1959.233,
+        "total-blocking-time": 3152.5,
+        "cumulative-layout-shift": 0.000009232572468726282
+      },
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "runtimeError": null
+    },
+    {
+      "reportFile": "tests/lighthouse/fuentes-sin-preload/inicio.report.json",
       "fetchTime": "2026-11-03T00:35:22.955Z",
       "url": "http://127.0.0.1:5501/",
-      "formFactor": "mobile",
-      "throttling": {
-        "rttMs": 150,
-        "throughputKbps": 1638.4,
-        "requestLatencyMs": 562.5,
-        "downloadThroughputKbps": 1474.5600000000002,
-        "uploadThroughputKbps": 675,
-        "cpuSlowdownMultiplier": 4
-      },
+      "duplicateSnapshot": false,
+      "version": "13.6.0",
       "categories": {
         "performance": 48,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
-      "runtimeError": null
-    },
-    {
-      "stage": "fuentes-locales",
-      "page": "tienda",
-      "lighthouse": "13.6.0",
-      "fetchTime": "2026-11-03T00:35:57.823Z",
-      "url": "http://127.0.0.1:5501/page/tienda.html",
+      "metrics": {
+        "largest-contentful-paint": 4847.041499999999,
+        "total-blocking-time": 3705.3194999999996,
+        "cumulative-layout-shift": 0.005668625921733379
+      },
       "formFactor": "mobile",
       "throttling": {
         "rttMs": 150,
@@ -131,11 +140,257 @@
         "uploadThroughputKbps": 675,
         "cpuSlowdownMultiplier": 4
       },
+      "runtimeError": null
+    },
+    {
+      "reportFile": "tests/lighthouse/fuentes-sin-preload/tienda.report.json",
+      "fetchTime": "2026-11-03T00:35:57.823Z",
+      "url": "http://127.0.0.1:5501/page/tienda.html",
+      "duplicateSnapshot": false,
+      "version": "13.6.0",
       "categories": {
         "performance": 51,
         "accessibility": 98,
         "best-practices": 100,
         "seo": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 2102.196,
+        "total-blocking-time": 1771.402,
+        "cumulative-layout-shift": 0.35380618689223275
+      },
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "runtimeError": null
+    },
+    {
+      "reportFile": "tests/lighthouse/inicial/inicio.report.json",
+      "fetchTime": "2026-11-03T00:29:46.959Z",
+      "url": "http://127.0.0.1:5501/",
+      "duplicateSnapshot": false,
+      "version": "13.6.0",
+      "categories": {
+        "performance": 40,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 9208.359,
+        "total-blocking-time": 4809.2335,
+        "cumulative-layout-shift": 0.008111721306342832
+      },
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "runtimeError": null
+    },
+    {
+      "reportFile": "tests/lighthouse/inicial/tienda.report.json",
+      "fetchTime": "2026-11-03T00:30:30.843Z",
+      "url": "http://127.0.0.1:5501/page/tienda.html",
+      "duplicateSnapshot": false,
+      "version": "13.6.0",
+      "categories": {
+        "performance": 73,
+        "accessibility": 98,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 2334.653,
+        "total-blocking-time": 241,
+        "cumulative-layout-shift": 0.3052530637654441
+      },
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "runtimeError": null
+    },
+    {
+      "reportFile": "tests/lighthouse/preload/inicio.report.json",
+      "fetchTime": "2026-11-03T00:49:54.508Z",
+      "url": "http://127.0.0.1:5501/",
+      "duplicateSnapshot": false,
+      "version": "13.6.0",
+      "categories": {
+        "performance": 39,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 6976.268749999999,
+        "total-blocking-time": 1696.6375000000003,
+        "cumulative-layout-shift": 0
+      },
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "runtimeError": null
+    },
+    {
+      "reportFile": "tests/lighthouse/preload/tienda.report.json",
+      "fetchTime": "2026-11-03T00:50:25.750Z",
+      "url": "http://127.0.0.1:5501/page/tienda.html",
+      "duplicateSnapshot": false,
+      "version": "13.6.0",
+      "categories": {
+        "performance": 86,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 2551.008,
+        "total-blocking-time": 34,
+        "cumulative-layout-shift": 0
+      },
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "runtimeError": null
+    },
+    {
+      "reportFile": "tests/lighthouse/sin-carga-condicional/inicio.report.json",
+      "fetchTime": "2026-11-03T00:52:58.822Z",
+      "url": "http://127.0.0.1:5501/",
+      "duplicateSnapshot": false,
+      "version": "13.6.0",
+      "categories": {
+        "performance": 54,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 4580.634,
+        "total-blocking-time": 2154.7219999999998,
+        "cumulative-layout-shift": 0
+      },
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "runtimeError": null
+    },
+    {
+      "reportFile": "tests/lighthouse/sin-carga-condicional/tienda.report.json",
+      "fetchTime": "2026-11-03T00:53:30.336Z",
+      "url": "http://127.0.0.1:5501/page/tienda.html",
+      "duplicateSnapshot": false,
+      "version": "13.6.0",
+      "categories": {
+        "performance": 83,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 2041.5035,
+        "total-blocking-time": 263.17449999999985,
+        "cumulative-layout-shift": 0.000009232572468726282
+      },
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "runtimeError": null
+    },
+    {
+      "reportFile": "tests/lighthouse/solo-logos/inicio.report.json",
+      "fetchTime": "2026-11-03T00:32:55.699Z",
+      "url": "http://127.0.0.1:5501/",
+      "duplicateSnapshot": false,
+      "version": "13.6.0",
+      "categories": {
+        "performance": 61,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 3538.2300000000005,
+        "total-blocking-time": 1327.0935000000004,
+        "cumulative-layout-shift": 0.008111721306342832
+      },
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "runtimeError": null
+    },
+    {
+      "reportFile": "tests/lighthouse/solo-logos/tienda.report.json",
+      "fetchTime": "2026-11-03T00:33:24.515Z",
+      "url": "http://127.0.0.1:5501/page/tienda.html",
+      "duplicateSnapshot": false,
+      "version": "13.6.0",
+      "categories": {
+        "performance": 47,
+        "accessibility": 98,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 2316.9700000000003,
+        "total-blocking-time": 2021.8309999999992,
+        "cumulative-layout-shift": 0.35380618689223275
+      },
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
       },
       "runtimeError": null
     }

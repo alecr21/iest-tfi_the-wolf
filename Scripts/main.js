@@ -342,6 +342,7 @@ function updateCartUI() {
 
   const totalItems = carrito.reduce((sum, item) => sum + item.cantidad, 0);
   cartCountEl.textContent = totalItems;
+  document.getElementById("open-cart-btn")?.setAttribute("aria-label", `Ver carrito: ${totalItems} productos seleccionados`);
 
   if (carrito.length === 0) {
     cartContainer.innerHTML = `
@@ -792,26 +793,33 @@ updateCartUI();
     });
   });
 
-  // Animaciones AOS
-  if (window.AOS && !reducedMotion.matches && window.matchMedia("(min-width: 769px)").matches) {
-    document.documentElement.classList.add("animations-enabled");
-    AOS.init({
-      duration: 650,
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 55,
-      disable: false
+  // Las librerias decorativas no bloquean ni se descargan en movil.
+  function loadDecoration(tag, url) {
+    return new Promise(resolve => {
+      const element = document.createElement(tag);
+      if (tag === "link") { element.rel = "stylesheet"; element.href = url; }
+      else element.src = url;
+      element.onload = () => resolve(true);
+      element.onerror = () => resolve(false);
+      document.head.appendChild(element);
     });
   }
-
-  // Vanilla Tilt
+  const canAnimate = !reducedMotion.matches && window.matchMedia("(min-width: 769px)").matches;
+  if (canAnimate) {
+    Promise.all([
+      loadDecoration("link", "https://unpkg.com/aos@2.3.4/dist/aos.css"),
+      loadDecoration("script", "https://unpkg.com/aos@2.3.4/dist/aos.js")
+    ]).then(loaded => {
+      if (!loaded.every(Boolean) || !window.AOS) return;
+      AOS.init({ duration: 650, easing: "ease-out-cubic", once: true, offset: 55, disable: false });
+      document.documentElement.classList.add("animations-enabled");
+    });
+  }
   const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
-  if (window.VanillaTilt && finePointer.matches && !reducedMotion.matches) {
-    VanillaTilt.init($$("[data-tilt]"), {
-      max: 6,
-      speed: 400,
-      glare: true,
-      "max-glare": 0.12
+  const tiltTargets = $$("[data-tilt]");
+  if (canAnimate && finePointer.matches && tiltTargets.length) {
+    loadDecoration("script", "https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js").then(loaded => {
+      if (loaded && window.VanillaTilt) VanillaTilt.init(tiltTargets, { max: 6, speed: 400, glare: true, "max-glare": 0.12 });
     });
   }
 });

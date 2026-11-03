@@ -1,7 +1,10 @@
 const fs=require('node:fs'),path=require('node:path');
 (async()=>{const {default:lighthouse}=await import('lighthouse');const {default:puppeteer}=await import('puppeteer-core');
 const dir=path.resolve('tests/lighthouse');fs.mkdirSync(dir,{recursive:true});
-for(const [name,relative]of [['inicio','/'],['tienda','/page/tienda.html']]){
+const selected=process.argv.slice(2);
+const pages=[['inicio','/'],['tienda','/page/tienda.html'],['servicios','/page/servicios.html'],['nosotros','/page/nostros.html'],['contacto','/page/contacto.html']];
+if(selected.some(name=>!pages.some(p=>p[0]===name)))throw new Error('Pagina desconocida');
+for(const [name,relative]of pages.filter(p=>!selected.length||selected.includes(p[0]))){
  const browser=await puppeteer.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,pipe:true,waitForInitialPage:false,args:["--no-sandbox"]});
  try{const page=await browser.newPage();const result=await lighthouse('http://127.0.0.1:5501'+relative,{output:['html','json'],onlyCategories:['performance','accessibility','best-practices','seo'],logLevel:'error'},undefined,page);
  fs.writeFileSync(path.join(dir,name+'.report.json'),JSON.stringify(result.lhr,null,2));fs.writeFileSync(path.join(dir,name+'.report.html'),result.report[0]);

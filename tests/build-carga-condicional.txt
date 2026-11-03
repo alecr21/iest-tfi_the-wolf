@@ -1,0 +1,6 @@
+
+> iest-tfi_the-wolf@1.0.0 build
+> node tools/build.cjs
+
+32 iconos; 90299 a 1990 bytes CSS
+Build estático generado en dist/. No se publica automáticamente.
