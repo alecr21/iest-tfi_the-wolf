@@ -9,9 +9,10 @@
     "preview": "node tools/servir-local.cjs"
   },
   "engines": {
-    "node": ">=22"
+    "node": ">=22.19"
   },
   "devDependencies": {
+    "lighthouse": "13.6.0",
     "playwright": "1.62.1"
   }
 }

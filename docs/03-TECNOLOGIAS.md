@@ -46,3 +46,11 @@ No se debe afirmar que se utiliza PHP, que existe un backend propio o que MySQL 
 Node.js y npm se usan para ejecutar node:test y los comandos npm test/npm run build, no como un backend del sitio. Playwright 1.62.1 es dependencia de desarrollo para pruebas en Chrome/Chromium; los recursos del sitio continúan siendo HTML/CSS/JavaScript y Supabase. Se eligió para comprobar el DOM y las interacciones reales, sin enviar pedidos o modificar la base. El SDK 2.118.0 conservado en tests/fixtures corresponde a la descarga documentada; la tienda conserva su URL CDN existente.
 
 El stack de clase se adapta al sitio preexistente: HTML/CSS/JavaScript permite conservar la implementación multipágina sin migrar a React/Next.js; Supabase mantiene PostgreSQL y Netlify permite alojar los recursos estáticos. Esta justificación no acredita por sí sola despliegue, rendimiento o cumplimiento de la Actividad 3.
+
+## Medición Lighthouse
+
+Lighthouse 13.6.0 se agregó como dependencia de desarrollo, fijada en package-lock.json. Genera los informes requeridos por la tabla 2; no se copia al sitio de producción. Requiere Node >=22.19, comprobado contra los metadatos de npm. Referencia primaria: https://github.com/GoogleChrome/lighthouse#using-the-node-cli .
+
+Para ejecutar con preview HTTP activo: node tools/medir-lighthouse.cjs. Utiliza Chrome instalado mediante Puppeteer (dependencia transitiva de Lighthouse) y la API oficial de Lighthouse con una página del navegador. El navegador de medición es un proceso temporal aislado del perfil del estudiante; no se modifica su Edge. Se usa transporte por pipe y, en este entorno de ejecución restringido, el proceso temporal se inicia sin sandbox de Chrome igual que las pruebas automatizadas existentes. Debe revisarse esta opción antes de reutilizar la herramienta en otro entorno.
+
+Los informes son locales, sobre Inicio/Tienda, con los recursos reales del sitio. No sustituyen la medición sobre la URL pública definitiva ni las verificaciones manuales de accesibilidad.

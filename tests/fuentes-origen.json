@@ -1,0 +1,42 @@
+[
+  {
+    "file": "style/fonts/montserrat.woff2",
+    "url": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2",
+    "bytes": 35508
+  },
+  {
+    "file": "style/fonts/orbitron.woff2",
+    "url": "https://fonts.gstatic.com/s/orbitron/v35/yMJRMIlzdpvBhQQL_Qq7dy1biN15.woff2",
+    "bytes": 11768
+  },
+  {
+    "file": "style/fonts/Montserrat-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/montserrat/OFL.txt",
+    "bytes": 4400
+  },
+  {
+    "file": "style/fonts/Orbitron-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/orbitron/OFL.txt",
+    "bytes": 4426
+  },
+  {
+    "file": "style/fonts/fa-solid-900.woff2",
+    "url": "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/webfonts/fa-solid-900.woff2",
+    "bytes": 119488
+  },
+  {
+    "file": "style/fonts/fa-brands-400.woff2",
+    "url": "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/webfonts/fa-brands-400.woff2",
+    "bytes": 115420
+  },
+  {
+    "file": "style/fonts/FontAwesome-LICENSE.txt",
+    "url": "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/LICENSE.txt",
+    "bytes": 7427
+  },
+  {
+    "file": "style/iconos.css",
+    "url": "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css",
+    "bytes": 90336
+  }
+]

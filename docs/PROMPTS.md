@@ -199,3 +199,9 @@ El asistente pidio revisar la copia integrada mientras Live Server del estudiant
 ### EIA-08 — foco durante una transición de visibilidad
 
 La primera corrección del foco de los diálogos se ejecutaba mientras visibility seguía en transición: Chrome no enfocaba el botón aunque el panel terminaba visible. La prueba con Enter/Tab/Escape lo detectó; diferir un frame no lo resolvió y el guardado introducido usó classList.contains, ausente en un doble mínimo del DOM. Se simplificó el código: visibility cambia inmediatamente, solo se anima opacidad y se enfoca el primer control. Se conservan las ejecuciones fallidas y la corrección en tests/teclado-dialogos-*.txt. No se declararon exitosas las pruebas intermedias.
+
+### Actividad 3 — medición de Lighthouse y recursos
+
+El pedido «podemos continuar» se abordó con menú por teclado, medición real y optimización acotada de recursos. La primera prueba de menú falló al devolver foco con Escape; la corrección y una transición de visibilidad inmediata aprobaron las pruebas dirigidas. Lighthouse por CLI no logró conectar con Chrome; el primer módulo también agotó su espera. Se usó finalmente la API con una página Puppeteer temporal por pipe, conservando las fallas sin asignarles puntuaciones.
+
+Se guardaron tres etapas reales por dos páginas. No se declaró mejoría de puntuación por reducir archivos: los puntajes variaron y Rendimiento sigue por debajo80. Los cambios demostrables son menos bytes de logos, dimensiones declaradas, fuentes locales licenciadas y efectos móviles menos costosos. La regresión posterior aprobó10 pruebas; docs/LIGHTHOUSE.md distingue hallazgos, límites y pendientes.

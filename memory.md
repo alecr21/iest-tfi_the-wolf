@@ -186,3 +186,7 @@ URL del estudiante usa file:// (no 5501). Causa: safeProductImageUrl rechazaba r
 ### Confirmación imágenes y menú por teclado
 
 El estudiante confirmó que las imágenes ya funcionan. Menú móvil corregido tras prueba fallida: Escape devuelve foco al botón, Tab circula entre botón/enlaces mientras abierto y visibility cambia sin demora, manteniendo animación visual. Menú y diálogos: dos pruebas aprobadas, build correcto; evidencia menu-teclado-final.txt. Lighthouse13.6.0 instalado como dependencia solo de desarrollo para tabla2; informes iniciales en ejecución, no declarar puntuaciones antes de leerlos. Node requerido>=22.19. Sin publicación.
+
+### Lighthouse inicial real y optimización de recursos
+
+Menú cerrado con pruebas; confirmación de imágenes registrada. Lighthouse13.6.0 ya funciona por API Puppeteer pipe en Chrome temporal, Node>=22.19. Logs fallidos iniciales se preservan, sin inventar resultados. Tres etapas/2páginas; último Inicio48/100/100/100 Tienda51/98/100/100. Rendimiento NO cumple80. Informes docs/LIGHTHOUSE.md y tests/lighthouse (inicial, solo-logos, final, resumen.json). Logos WebP59KB/22KB con PNG originales conservados; fuentes/iconos locales con licencias; decoración móvil menos costosa. Regresión dirigida10 aprobadas y build; Edge file400x557 ocho imágenes originales. Próximo: dos fallos a11y de Tienda (h3 sin h2 y contador no incluido en nombre del carrito), tareas largas/CLS, resto páginas y futura URL pública. No afirmar Actividad3 completa.

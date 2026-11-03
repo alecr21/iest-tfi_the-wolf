@@ -1,6 +1,6 @@
 {
   "scope": "Dos hojas CSS; valores equivalentes normalizados, sin auditoria de contraste",
-  "registryTokens": 87,
+  "registryTokens": 88,
   "report": [
     {
       "file": "style/style.css",
@@ -11,6 +11,12 @@
       "file": "style/styleNC.css",
       "componentLiteralsRemaining": 0,
       "valuesEquivalent": true
+    },
+    {
+      "file": "style/iconos.css",
+      "componentLiteralsRemaining": 0,
+      "valuesEquivalent": true,
+      "note": "Adaptacion de dos colores por defecto de Font Awesome a tokens con los mismos valores."
     }
   ]
 }

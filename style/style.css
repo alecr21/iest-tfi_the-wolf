@@ -3,6 +3,7 @@
    ========================================================== */
 
 :root {
+  --icono-borde: #eee;
   --fuente-texto: Montserrat, system-ui, sans-serif;
   --fuente-titulos: Orbitron, Montserrat, sans-serif;
   --fuente-acento: Orbitron, sans-serif;
@@ -1880,3 +1881,9 @@ html:not(.animations-enabled) [data-aos] {
 /* Reserva de espacio para imagenes diferidas; el contenido conserva object-fit. */
 .product-card-img { aspect-ratio: 1 / 1; }
 .reel-media { aspect-ratio: 16 / 10; }
+
+/* En movil, los gradientes conservan el brillo sin filtros de gran superficie. */
+@media (max-width: 768px) {
+ .hero-glow, .statement-glow { filter: none; }
+ .floating-product { animation: none; }
+}

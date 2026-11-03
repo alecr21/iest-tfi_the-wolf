@@ -1,0 +1,23 @@
+✔ Las imagenes diferidas estaticas declaran dimensiones (3.8202ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ Las imagenes de productos reservan proporcion antes de cargar (6583.4296ms)
+✔ Las rutas relativas de productos se conservan al abrir tienda con file (17.0008ms)
+✔ Abrir con file no autoriza URLs explicitas a archivos, UNC ni protocolos ejecutables (16.6028ms)
+✔ HTTPS y rutas relativas sobre HTTP conservan su funcionamiento (3.3269ms)
+✔ El modo file rechaza rutas UNC y rutas que salen de la carpeta del sitio (5.7886ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ Menu movil: Enter abre, Tab recorre enlaces, Escape devuelve foco y evita foco oculto (6792.5531ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ Inicio conserva el ancho de 360 px sin JavaScript de animaciones (10514.6374ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ Tienda muestra productos con CSS de entrada AOS, en móvil y movimiento reducido (20467.5239ms)
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✔ Detalle y carrito reciben foco, contienen Tab y cierran con Escape devolviendo el foco (11214.9219ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 64251.3127

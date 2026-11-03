@@ -1,0 +1,2 @@
+{"page":"inicio","version":"13.6.0","scores":{"performance":61,"accessibility":100,"best-practices":100,"seo":100},"errors":null}
+{"page":"tienda","version":"13.6.0","scores":{"performance":47,"accessibility":98,"best-practices":100,"seo":100},"errors":null}

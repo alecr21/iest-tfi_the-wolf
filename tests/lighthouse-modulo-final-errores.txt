@@ -1,0 +1,11 @@
+TimeoutError: Timed out after waiting 30000ms
+    at file:///C:/Users/El%20Mero%20Mero/Documents/Codex/2026-11-02/files-pasted-by-the-user-contexto/outputs/iest-tfi_the-wolf/node_modules/puppeteer-core/lib/puppeteer/common/util.js:222:19
+    at file:///C:/Users/El%20Mero%20Mero/Documents/Codex/2026-11-02/files-pasted-by-the-user-contexto/outputs/iest-tfi_the-wolf/node_modules/puppeteer-core/lib/third_party/rxjs/rxjs.js:1944:31
+    at OperatorSubscriber2._this._next (file:///C:/Users/El%20Mero%20Mero/Documents/Codex/2026-11-02/files-pasted-by-the-user-contexto/outputs/iest-tfi_the-wolf/node_modules/puppeteer-core/lib/third_party/rxjs/rxjs.js:1001:9)
+    at Subscriber2.next (file:///C:/Users/El%20Mero%20Mero/Documents/Codex/2026-11-02/files-pasted-by-the-user-contexto/outputs/iest-tfi_the-wolf/node_modules/puppeteer-core/lib/third_party/rxjs/rxjs.js:704:12)
+    at AsyncAction2.<anonymous> (file:///C:/Users/El%20Mero%20Mero/Documents/Codex/2026-11-02/files-pasted-by-the-user-contexto/outputs/iest-tfi_the-wolf/node_modules/puppeteer-core/lib/third_party/rxjs/rxjs.js:2288:20)
+    at AsyncAction2._execute (file:///C:/Users/El%20Mero%20Mero/Documents/Codex/2026-11-02/files-pasted-by-the-user-contexto/outputs/iest-tfi_the-wolf/node_modules/puppeteer-core/lib/third_party/rxjs/rxjs.js:1368:12)
+    at AsyncAction2.execute (file:///C:/Users/El%20Mero%20Mero/Documents/Codex/2026-11-02/files-pasted-by-the-user-contexto/outputs/iest-tfi_the-wolf/node_modules/puppeteer-core/lib/third_party/rxjs/rxjs.js:1357:22)
+    at AsyncScheduler2.flush (file:///C:/Users/El%20Mero%20Mero/Documents/Codex/2026-11-02/files-pasted-by-the-user-contexto/outputs/iest-tfi_the-wolf/node_modules/puppeteer-core/lib/third_party/rxjs/rxjs.js:1435:26)
+    at listOnTimeout (node:internal/timers:608:17)
+    at process.processTimers (node:internal/timers:543:7)

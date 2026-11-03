@@ -1,0 +1,143 @@
+{
+  "scope": "Medicion local del build en Inicio/Tienda; recursos reales; una ejecucion por etapa; no equivale a validacion de URL publica.",
+  "reports": [
+    {
+      "stage": "inicial",
+      "page": "inicio",
+      "lighthouse": "13.6.0",
+      "fetchTime": "2026-11-03T00:29:46.959Z",
+      "url": "http://127.0.0.1:5501/",
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "categories": {
+        "performance": 40,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "runtimeError": null
+    },
+    {
+      "stage": "inicial",
+      "page": "tienda",
+      "lighthouse": "13.6.0",
+      "fetchTime": "2026-11-03T00:30:30.843Z",
+      "url": "http://127.0.0.1:5501/page/tienda.html",
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "categories": {
+        "performance": 73,
+        "accessibility": 98,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "runtimeError": null
+    },
+    {
+      "stage": "logos",
+      "page": "inicio",
+      "lighthouse": "13.6.0",
+      "fetchTime": "2026-11-03T00:32:55.699Z",
+      "url": "http://127.0.0.1:5501/",
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "categories": {
+        "performance": 61,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "runtimeError": null
+    },
+    {
+      "stage": "logos",
+      "page": "tienda",
+      "lighthouse": "13.6.0",
+      "fetchTime": "2026-11-03T00:33:24.515Z",
+      "url": "http://127.0.0.1:5501/page/tienda.html",
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "categories": {
+        "performance": 47,
+        "accessibility": 98,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "runtimeError": null
+    },
+    {
+      "stage": "fuentes-locales",
+      "page": "inicio",
+      "lighthouse": "13.6.0",
+      "fetchTime": "2026-11-03T00:35:22.955Z",
+      "url": "http://127.0.0.1:5501/",
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "categories": {
+        "performance": 48,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "runtimeError": null
+    },
+    {
+      "stage": "fuentes-locales",
+      "page": "tienda",
+      "lighthouse": "13.6.0",
+      "fetchTime": "2026-11-03T00:35:57.823Z",
+      "url": "http://127.0.0.1:5501/page/tienda.html",
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "categories": {
+        "performance": 51,
+        "accessibility": 98,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "runtimeError": null
+    }
+  ]
+}

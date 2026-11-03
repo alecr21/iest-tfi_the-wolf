@@ -6,7 +6,7 @@ Esta es una **copia local integrada de entrega**. Las carpetas originales del Es
 
 ## Ejecutar y comprobar
 
-Requisitos: Node.js 22 o superior, npm y Google Chrome instalado para las pruebas de navegador.
+Requisitos: Node.js 22.19 o superior, npm y Google Chrome instalado para las pruebas de navegador.
 
 ```powershell
 npm ci
@@ -49,3 +49,7 @@ La URL `http://127.0.0.1:5500/Presentacion/The-Wolf/...` corresponde a la copia 
 Los resultados historicos de 82 pruebas corresponden a la integracion inicial; la regresion responsive posterior aprobo 84. Los avances y limites actuales se actualizan en docs/ACTIVIDAD-3.md.
 
 Ultima regresion completa de Actividad 3: **87 pruebas aprobadas, 0 fallidas y 0 omitidas**; build aprobado. Detalle en tests/ejecucion-teclado-seo-final.txt y docs/ACTIVIDAD-3.md. Incluye correcciones de foco del detalle/carrito y metadatos SEO diferenciados. La accesibilidad integral y Lighthouse siguen pendientes.
+
+## Medición de calidad
+
+Se agregó Lighthouse13.6.0 solo para desarrollo. Con preview HTTP activo ejecutar `node tools/medir-lighthouse.cjs`. Informes y límites en [docs/LIGHTHOUSE.md](docs/LIGHTHOUSE.md). El rendimiento todavía no cumple80; no confundir las comprobaciones funcionales aprobadas con un cierre de Actividad3. Las fuentes e iconos locales y sus licencias se incluyen dentro de style/; los PNG de marca se conservan y las páginas usan derivados WebP livianos.

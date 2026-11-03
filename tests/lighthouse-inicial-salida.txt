@@ -1,0 +1,2 @@
+inicio: proceso 1
+tienda: proceso 1

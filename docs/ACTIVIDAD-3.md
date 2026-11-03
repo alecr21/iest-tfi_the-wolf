@@ -132,3 +132,11 @@ El estudiante confirmó la corrección de las imágenes al abrir el archivo loca
 La prueba nueva del menú móvil reprodujo que Escape cerraba el panel dejando el foco en un enlace oculto. Se devuelve el foco al botón antes de cerrar, se mantiene el ciclo Tab/Shift+Tab entre botón y enlaces mientras el menú está abierto y se conserva la navegación de escritorio. La visibilidad se activa inmediatamente y se mantienen las transiciones de opacidad/desplazamiento, evitando perder el primer Tab por la transición de visibility. Evidencia previa tests/menu-teclado-antes.txt; final tests/menu-teclado-final.txt: dos pruebas aprobadas (menú y diálogos), sin errores JS no capturados; build aprobado.
 
 El recorrido automatizado comprueba Enter, Tab y Escape del menú y los diálogos con datos ficticios. La implementación contempla también Shift+Tab; su comprobación explícita queda pendiente si no aparece en una prueba posterior. No se declara una certificación integral de accesibilidad.
+
+## Informe Lighthouse inicial y optimizaciones
+
+Se instalaron herramientas de medición de desarrollo y se ejecutaron seis informes válidos (Inicio/Tienda por tres etapas), preservando los resultados originales. Informe legible en docs/LIGHTHOUSE.md y evidencias HTML/JSON en tests/lighthouse. Último resultado: Inicio48/100/100/100 y Tienda51/98/100/100 (Rendimiento/Accesibilidad/Buenas prácticas/SEO). Rendimiento NO cumple80; otras tres categorías superan80 en esos dos escenarios locales, sin certificar toda la accesibilidad ni la URL pública.
+
+Se redujo el peso de los dos logos web, conservando originales; se declararon dimensiones y se alojaron fuentes e iconos localmente con sus licencias. Se redujeron desenfoques grandes y animación decorativa en móvil. La regresión dirigida posterior aprobó10 pruebas (imágenes, file://, responsive y teclado) y el build. Edge400x557 abriendo el archivo local volvió a cargar ocho imágenes originales; captura inspeccionada visualmente.
+
+Siguiente bloque: resolver encabezado intermedio del catálogo y nombre accesible/contador del carrito; investigar tareas largas y CLS en vez de dar rendimiento por aprobado. Después medir las otras páginas y finalmente la URL pública cuando el estudiante autorice la publicación. No se requieren nuevas pruebas manuales de imágenes ya confirmadas.
