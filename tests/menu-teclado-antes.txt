@@ -1,0 +1,31 @@
+Chrome 156.0.8078.80; siete productos ficticios; SDK real; red interceptada.
+✖ Menu movil: Enter abre, Tab recorre enlaces, Escape devuelve foco y evita foco oculto (5059.289ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6117.8187
+
+✖ failing tests:
+
+test at tests\menu-teclado-actividad3.test.cjs:2:1
+✖ Menu movil: Enter abre, Tab recorre enlaces, Escape devuelve foco y evita foco oculto (5059.289ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\menu-teclado-actividad3.test.cjs:8:9
+      at async fixture (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\tienda-fixture-002.cjs:47:5)
+      at async TestContext.<anonymous> (C:\Users\El Mero Mero\Documents\Codex\2026-11-02\files-pasted-by-the-user-contexto\outputs\iest-tfi_the-wolf\tests\menu-teclado-actividad3.test.cjs:3:35)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

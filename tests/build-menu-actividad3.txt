@@ -1,0 +1,5 @@
+
+> iest-tfi_the-wolf@1.0.0 build
+> node tools/build.cjs
+
+Build estático generado en dist/. No se publica automáticamente.

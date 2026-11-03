@@ -591,6 +591,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function setMenu(open) {
     if (!burger || !nav) return;
+    if (!open && nav.contains(document.activeElement)) burger.focus();
     burger.setAttribute("aria-expanded", String(open));
     burger.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
     nav.classList.toggle("open", open);
@@ -619,6 +620,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape") setMenu(false);
+      if (event.key === "Tab" && burger.getAttribute("aria-expanded") === "true") {
+        const links = [...nav.querySelectorAll("a[href]")];
+        const last = links[links.length - 1];
+        if (event.shiftKey && document.activeElement === burger) {
+          event.preventDefault(); last?.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault(); burger.focus();
+        }
+      }
     });
 
     window.addEventListener("resize", () => {

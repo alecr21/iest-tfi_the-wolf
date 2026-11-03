@@ -182,3 +182,7 @@ Captura del estudiante a400x557 confirma fallback en tarjeta Auriculares. No rep
 ### Cierre técnico del logo en productos al abrir archivo local
 
 URL del estudiante usa file:// (no 5501). Causa: safeProductImageUrl rechazaba rutas relativas que resuelven a file:. Corregido con validación de ruta relativa dentro del sitio y sin esquema/unidad/UNC; se conservan restricciones de protocolos y fallback. Regresión previa reprodujo defecto. Edge real abriendo page/tienda.html local a400x557 mostró ocho imágenes originales. Logs imagenes-file-final y imagenes-file-edge, captura tienda-file-edge-400-557. Build actualizado. Falta confirmación visual del estudiante tras recarga; no pedir repetir otras pruebas. Continuar luego con menú/contraste/Lighthouse.
+
+### Confirmación imágenes y menú por teclado
+
+El estudiante confirmó que las imágenes ya funcionan. Menú móvil corregido tras prueba fallida: Escape devuelve foco al botón, Tab circula entre botón/enlaces mientras abierto y visibility cambia sin demora, manteniendo animación visual. Menú y diálogos: dos pruebas aprobadas, build correcto; evidencia menu-teclado-final.txt. Lighthouse13.6.0 instalado como dependencia solo de desarrollo para tabla2; informes iniciales en ejecución, no declarar puntuaciones antes de leerlos. Node requerido>=22.19. Sin publicación.

@@ -983,7 +983,7 @@ h1, h2, h3 {
     pointer-events: none;
     opacity: 0;
     transform: translateY(-10px);
-    transition: opacity .22s ease, transform .22s ease, visibility .22s ease;
+    transition: opacity .22s ease, transform .22s ease;
   }
   .nav-menu.open {
     visibility: visible;

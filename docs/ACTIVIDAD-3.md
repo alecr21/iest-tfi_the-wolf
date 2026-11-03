@@ -124,3 +124,11 @@ Verificación real final en Edge abriendo el archivo local a400x557: ocho imáge
 La incidencia está corregida técnicamente y queda pendiente la confirmación visual del estudiante al recargar su archivo local. El desarrollo y Lighthouse deben seguir usando el servidor HTTP del proyecto para reproducir el entorno publicado.
 
 Resultado final de la correccion file://: 23 pruebas dirigidas aprobadas, cero fallidas/omitidas, y build correcto. No se repitio la bateria completa de 87, cuyo resultado anterior conserva su fecha/alcance.
+
+## Menú por teclado — 2 de noviembre de 2026
+
+El estudiante confirmó la corrección de las imágenes al abrir el archivo local. Incidencia cerrada con esa confirmación; no solicitar repetirla.
+
+La prueba nueva del menú móvil reprodujo que Escape cerraba el panel dejando el foco en un enlace oculto. Se devuelve el foco al botón antes de cerrar, se mantiene el ciclo Tab/Shift+Tab entre botón y enlaces mientras el menú está abierto y se conserva la navegación de escritorio. La visibilidad se activa inmediatamente y se mantienen las transiciones de opacidad/desplazamiento, evitando perder el primer Tab por la transición de visibility. Evidencia previa tests/menu-teclado-antes.txt; final tests/menu-teclado-final.txt: dos pruebas aprobadas (menú y diálogos), sin errores JS no capturados; build aprobado.
+
+El recorrido automatizado comprueba Enter, Tab y Escape del menú y los diálogos con datos ficticios. La implementación contempla también Shift+Tab; su comprobación explícita queda pendiente si no aparece en una prueba posterior. No se declara una certificación integral de accesibilidad.
