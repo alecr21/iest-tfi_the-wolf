@@ -102,3 +102,11 @@ Las cinco páginas tienen ahora títulos y descripciones propios y veraces, acor
 Contraste: se añadió una medición numérica preliminar a tools/auditar-tabla2.cjs, solo sobre texto con fondos sólidos y sin opacidad de grupo. No se encontraron relaciones inferiores al umbral en la parte medible, pero gran parte del sitio utiliza gradientes y queda sin resolver en ese instrumento. Los conteos y límites están en tests/auditoria-tabla2.json; no se declara contraste completo ni WCAG/Lighthouse aprobado. Sigue pendiente la auditoría integral, teclado del menú y Lighthouse real.
 
 Cierre de este bloque: `npm test` final aprobado, 87 pruebas, 0 fallidas, 0 omitidas (tests/ejecucion-teclado-seo-final.txt); build aprobado. Se conserva la primera ejecución intermedia fallida como evidencia, sin confundirla con la final. Preview 5501 verificado por HTTP con el título nuevo y dos roles de diálogo. Pendientes: menú por teclado, contraste completo y Lighthouse; publicación según decisión ya acordada.
+
+## Imágenes originales frente al respaldo — diagnóstico pendiente
+
+El estudiante aportó captura de Edge a 400 × 557 px: la tarjeta de Auriculares con Micrófono muestra el logo de respaldo. Se reconoce el defecto observado; no se declara resuelto.
+
+Comprobaciones de solo lectura ejecutadas: Supabase devuelve ocho rutas ../productos/N.png y los ocho PNG existen. Sesiones nuevas de Chrome (escritorio/móvil) y Edge (400 × 557 y 1440 × 900) cargaron las ocho imágenes originales desde 127.0.0.1:5501, sin fallos de descarga. En Chrome se registraron respuestas HTTP 200. Fuentes actuales y naturalWidth se conservan en tests/diagnostico-imagenes-reales.json y tests/diagnostico-edge-imagenes.json; la captura Edge se inspeccionó visualmente. Esto demuestra esos escenarios, no explica ni invalida la captura del estudiante.
+
+Se solicitó la URL completa de la pestaña afectada: la captura no incluye la dirección. No se modifica el fallback ni se cambia la base de datos sin identificar primero la diferencia. Próxima comprobación dependiente de esa URL: comparar origen, recurso solicitado y respuesta; si el origen coincide, revisar fallo/bloqueo registrado en la pestaña afectada. La revisión de imágenes sigue pendiente.

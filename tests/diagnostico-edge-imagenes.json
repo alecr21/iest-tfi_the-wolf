@@ -1,0 +1,116 @@
+[
+  {
+    "size": {
+      "width": 400,
+      "height": 557
+    },
+    "failures": [],
+    "images": [
+      {
+        "name": "Notebook Ryzen 5",
+        "source": "http://127.0.0.1:5501/productos/7.png",
+        "loaded": true,
+        "width": 246
+      },
+      {
+        "name": "Memoria RAM 8 GB DDR4",
+        "source": "http://127.0.0.1:5501/productos/6.png",
+        "loaded": true,
+        "width": 447
+      },
+      {
+        "name": "Celular Smartphone",
+        "source": "http://127.0.0.1:5501/productos/3.png",
+        "loaded": true,
+        "width": 447
+      },
+      {
+        "name": "Notebook Core i3",
+        "source": "http://127.0.0.1:5501/productos/5.png",
+        "loaded": true,
+        "width": 246
+      },
+      {
+        "name": "PC de escritorio Ryzen 5",
+        "source": "http://127.0.0.1:5501/productos/4.png",
+        "loaded": true,
+        "width": 246
+      },
+      {
+        "name": "Disco SSD 480 GB",
+        "source": "http://127.0.0.1:5501/productos/8.png",
+        "loaded": true,
+        "width": 225
+      },
+      {
+        "name": "Teclado y Mouse Inalámbricos",
+        "source": "http://127.0.0.1:5501/productos/9.png",
+        "loaded": true,
+        "width": 447
+      },
+      {
+        "name": "Auriculares con Micrófono",
+        "source": "http://127.0.0.1:5501/productos/2.png",
+        "loaded": true,
+        "width": 413
+      }
+    ]
+  },
+  {
+    "size": {
+      "width": 1440,
+      "height": 900
+    },
+    "failures": [],
+    "images": [
+      {
+        "name": "Notebook Ryzen 5",
+        "source": "http://127.0.0.1:5501/productos/7.png",
+        "loaded": true,
+        "width": 246
+      },
+      {
+        "name": "Memoria RAM 8 GB DDR4",
+        "source": "http://127.0.0.1:5501/productos/6.png",
+        "loaded": true,
+        "width": 447
+      },
+      {
+        "name": "Celular Smartphone",
+        "source": "http://127.0.0.1:5501/productos/3.png",
+        "loaded": true,
+        "width": 447
+      },
+      {
+        "name": "Notebook Core i3",
+        "source": "http://127.0.0.1:5501/productos/5.png",
+        "loaded": true,
+        "width": 246
+      },
+      {
+        "name": "PC de escritorio Ryzen 5",
+        "source": "http://127.0.0.1:5501/productos/4.png",
+        "loaded": true,
+        "width": 246
+      },
+      {
+        "name": "Disco SSD 480 GB",
+        "source": "http://127.0.0.1:5501/productos/8.png",
+        "loaded": true,
+        "width": 225
+      },
+      {
+        "name": "Teclado y Mouse Inalámbricos",
+        "source": "http://127.0.0.1:5501/productos/9.png",
+        "loaded": true,
+        "width": 447
+      },
+      {
+        "name": "Auriculares con Micrófono",
+        "source": "http://127.0.0.1:5501/productos/2.png",
+        "loaded": true,
+        "width": 413
+      }
+    ]
+  }
+]
