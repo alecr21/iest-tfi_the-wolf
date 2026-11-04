@@ -54,6 +54,5 @@ El carrito prepara un mensaje para que el usuario lo revise y lo envíe por What
 
 ## 8. Ampliaciones futuras
 
-La incorporación de administración, autenticación, pedidos o escritura en la base de datos requiere un análisis de amenazas y permisos adicional. No se debe considerar segura una operación solamente porque la interfaz oculte un botón; la autorización debe aplicarse también en la base de datos o en el servidor.
+La incorporación de administración, autenticación, pedidos o escritura en la base de datos requiere un análisis de amenazas y permisos adicional.
 
-Para imagenes de productos se admiten HTTP/HTTPS. Al abrir el HTML directamente con file://, se permiten ademas rutas relativas que permanecen dentro de la carpeta del sitio. No se aceptan direcciones file: explicitas, letras de unidad, UNC ni rutas relativas que salen de la carpeta. Este soporte de previsualizacion local no cambia las politicas de Supabase ni sustituye las pruebas bajo HTTP.

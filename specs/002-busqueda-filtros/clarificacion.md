@@ -65,11 +65,6 @@ Aclaraciones revisadas a partir de la implementación existente. Las decisiones 
 
 **Estado de implementación:** Comprobado en Chrome con datos controlados durante T01–T03; ver evidencia de CP01/CP02/CP03/CP07 en verificacion.md. Revisión humana y commit pendientes.
 
-## Observación adicional — Acentos
-
-La búsqueda actual convierte los textos a minúsculas, pero no elimina las diferencias entre caracteres acentuados y no acentuados. Por ejemplo, "periféricos" y "perifericos" no son necesariamente equivalentes.
-
-Esta mejora no forma parte del alcance inicial aprobado. Podrá considerarse como una mejora posterior si se decide incorporarla.
 
 ---
 

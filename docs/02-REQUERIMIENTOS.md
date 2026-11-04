@@ -35,4 +35,3 @@ La tienda obtiene los productos disponibles desde la tabla `public.productos` de
 
 El carrito prepara una consulta para WhatsApp. No se procesan pagos ni se guardan pedidos en la base de datos. Tampoco se documenta un panel administrativo para gestionar productos.
 
-Los requerimientos describen el comportamiento esperado; su cumplimiento debe verificarse mediante pruebas y evidencia antes de marcarlos como completados.

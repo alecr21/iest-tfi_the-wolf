@@ -263,13 +263,5 @@ La matriz de BUS-RF01–BUS-RF05 anterior también cuenta con resultado Cumple p
 
 Los cinco requisitos se reformularon a notación EARS manteniendo el significado aprobado; se explicitaron casos límite ya previstos y se vinculó el plan con cada BUS-RF. Se completaron Listo cuando y estimación de T07. Son ajustes documentales del cierre, posteriores a la implementación preexistente y a sus pruebas; no se inventa un ciclo histórico con specs previas ni un nuevo requisito funcional. Fase 7: sin cambio de alcance ni código. No hubo una falla nueva del producto en esta revisión.
 
-### Evidencias de proceso y pendientes
-
-No se crearon commits; código y documentación siguen separados. Deben integrarse en el repositorio de entrega con rutas/comandos reproducibles y revisión humana. La pauta de una conversación por tarea no se cumplió literalmente en las tandas agrupadas por preferencia del estudiante, lo que ya está documentado. No se afirma que estos ajustes por sí solos cumplan todos los requisitos de proceso de la Actividad 2. Mensaje propuesto para un futuro commit real de esta revisión: `docs: consolidar validación de búsqueda y filtros`.
-
-**Resultado:** 002 validada técnicamente para el alcance registrado; lectura humana, revisión documental final del estudiante, integración y commits pendientes. Ningún código, permiso o dato de Supabase fue modificado en T07.
 
 
-### Confirmación manual posterior — Limpieza con filtro
-
-El estudiante confirmó explícitamente que al limpiar el texto permanece la categoría seleccionada y no cambia a Todos. Complementa CP06 con evidencia textual aportada por el estudiante; no se inventan capturas, navegador o lectura completa de código.

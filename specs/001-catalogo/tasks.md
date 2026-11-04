@@ -189,4 +189,3 @@ Ejecutar las pruebas correspondientes a los requerimientos generales RF02, RF04 
 - Si una tarea no requiere modificaciones, se debe documentar la revisión realizada.
 - Los resultados deben reflejar lo que realmente se comprobó.
 
-**Estado general:** Siete tareas comprobadas técnicamente con sus alcances y evidencia registrados. Revisión humana, integración y commits pendientes. La validación técnica de 001 está cerrada; no equivale al cierre de toda la Actividad 2.

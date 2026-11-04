@@ -149,6 +149,3 @@ T01–T07 comprobadas técnicamente, con pruebas y resultados separados. El estu
 | T07 | Ejecutar y documentar las pruebas. | Completada técnicamente |
 
 
-## Confirmación manual del estudiante
-
-El estudiante respondió «ya revise y anda todo, podes seguir» después de las instrucciones de buscar un producto, borrar el texto, seleccionar una categoría y volver a Todos. Se registra como comprobación manual favorable de ese flujo; no como prueba de todos los casos posibles ni como confirmación de lectura completa del código o de todos los errores de IA. Sin capturas o navegador aportados por el estudiante.

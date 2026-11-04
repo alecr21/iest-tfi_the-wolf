@@ -116,4 +116,4 @@ Contar con un catálogo conectado a Supabase que permita consultar y visualizar 
 **Estado:** Plan definido. Pendiente de ejecución y verificación formal.
 
 
-La trazabilidad específica se completó durante la revisión de cierre, sin modificar el comportamiento ya definido o el código.
+

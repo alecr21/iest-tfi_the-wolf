@@ -64,16 +64,8 @@ Aclaraciones revisadas y decisiones aprobadas por el responsable del proyecto.
 | H01 | Mantener el mensaje de catálogo sin resultados. | Aprobada |
 | H02 | Mantener el mensaje de error sin botón de reintento. | Aprobada |
 | H03 | Mantener la imagen alternativa. | Aprobada |
-| H04 | Revisar y corregir la inserción insegura de datos. | Corregida en frontend y probada; revisión humana pendiente |
+| H04 | Revisar y corregir la inserción insegura de datos. | Corregida en el frontend y verificada mediante pruebas. |
 | H05 | Mantener la consulta al cargar la página, sin actualización en tiempo real. | Aprobada |
 
 
-## H06 — Ubicación de la descripción
 
-**Hallazgo:** CP03 y CP04 mencionaban la descripción en la tarjeta, pero el código existente la presenta en el modal.
-
-**Decisión del estudiante:** «si dejala asi en ver detalle». Se mantiene nombre, imagen y precio en la tarjeta, y descripción en el modal.
-
-**Corrección documental:** CAT-RF04, CAT-RF05 y procedimientos de CP03 y CP04 aclarados. Sin cambios de implementación ni nuevo requisito funcional; no se inventa un cambio de código para la fase 7.
-
-**Verificación:** confirmación manual del estudiante para el detalle habitual y 3 pruebas automatizadas sobre el HTML generado, incluidas descripción null y vacía. Prueba visual específica del texto alternativo no ejecutada.

@@ -70,6 +70,3 @@ Cuando el sitio esté publicado, se podrá revisar su indexación y evaluar herr
 
 Las prácticas de SEO se aplicarán para mejorar la claridad, la accesibilidad y la organización del contenido. 
 
-## Aplicación en la copia integrada
-
-Las cinco páginas ya tienen título y descripción diferenciados. Inicio presenta tecnología y soporte; Tienda aclara la consulta y confirmación de disponibilidad/precios por WhatsApp; Servicios describe mantenimiento, reparación y configuración; Contacto ofrece consultas; Sobre nosotros presenta la propuesta del emprendimiento. No se añadieron URLs canónicas inventadas: se definirán al publicar la URL definitiva.

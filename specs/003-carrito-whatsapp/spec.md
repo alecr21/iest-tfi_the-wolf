@@ -135,6 +135,3 @@ La correspondencia específica debe mantenerse de acuerdo con la matriz general 
 | Precios distintos/decimales | Sumar subtotales con el formato existente; CP06/CP07 |
 | Nombre con acentos, comillas y ampersand | Conservar texto en URL de consulta; CP11 |
 
-El cierre técnico exige resultado por CAR-RF y CA y evidencia en verificacion.md. Los escenarios de almacenamiento usan datos válidos en el mismo navegador/origen; no se promete conservación entre dispositivos ni si se borran los datos del navegador. No se verifica stock ni se envía una venta confirmada.
-
-Durante T09 se formalizaron en EARS requisitos ya existentes y se hicieron explícitos sus casos límite, sin nuevo alcance. La adecuación es posterior a la implementación preexistente; no es evidencia histórica de una especificación anterior al código. La visualización del subtotal ya estaba prevista en HU04 y CP06/CP07.

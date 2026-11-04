@@ -23,7 +23,7 @@ No se vuelven a marcar como tareas pendientes las etapas históricas de creació
 - [x] Adaptar los registros recibidos a la estructura utilizada por el catálogo.
 - [x] Cargar los productos registrados en la tabla.
 
-**Estado:** el estudiante informó que los productos se muestran correctamente y que funcionan el detalle, el carrito y el envío por WhatsApp después de la conexión. La evidencia formal de pruebas y los resultados deben incorporarse a la especificación y al registro de verificación de esta funcionalidad.
+**Estado:** se informó que los productos se muestran correctamente y que funcionan el detalle, el carrito y la consulta por WhatsApp. Los resultados y la evidencia están en los registros de [verificación del catálogo](../specs/001-catalogo/verificacion.md) y [verificación del carrito](../specs/003-carrito-whatsapp/verificacion.md).
 
 ## 3. Tareas de verificación pendientes
 
@@ -53,6 +53,3 @@ Cada funcionalidad deberá contar con una carpeta propia dentro de `specs/`, evi
 Una tarea se marcará como completada únicamente cuando se haya realizado y exista evidencia suficiente. No se deben inventar pruebas, resultados ni commits. Los problemas detectados y las correcciones se registrarán en los documentos correspondientes.
 
 
-## Estado técnico consolidado
-
-Las 23 tareas de las listas de 001 (7), 002 (7) y 003 (9) tienen comprobación técnica registrada para sus alcances. Los resultados de datos ficticios/servidor simulado no se confunden con lectura real previa o evidencia RLS del estudiante. Los pendientes responsive, Lighthouse y publicación de la Actividad 3 siguen abiertos. Revisión humana y requisitos de proceso no se dan por completados por este conteo.

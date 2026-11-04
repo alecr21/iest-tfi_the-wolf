@@ -101,7 +101,4 @@ La funcionalidad ya cuenta con una implementación en el proyecto. El objetivo p
 
 No se incorporarán características nuevas fuera del alcance establecido.
 
-Las observaciones de seguridad relacionadas con la inserción de datos dinámicos se documentan en la funcionalidad 001 para evitar duplicar tareas.
 
-
-La matriz general distingue RF03 (organización por categorías) y RF05 (buscar/filtrar). La trazabilidad específica anterior se alineó con esos significados en el cierre documental, sin cambio de funcionalidad.

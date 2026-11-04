@@ -111,6 +111,4 @@ La correspondencia específica debe mantenerse de acuerdo con la matriz general 
 | Limpiar con categoría activa | Borrar texto y conservar la categoría |
 | Nombre con comillas o ampersand | Comparar el texto real; no interpretar esos datos como HTML |
 
-La normalización de acentos sigue fuera del alcance acordado en clarificacion.md. No se incorpora como requisito nuevo. El cierre técnico exige resultado y evidencia por BUS-RF y CA en verificacion.md; la entrega completa requiere también revisión humana y evidencias reales de proceso.
 
-**Adecuación documental:** durante T07 se reformularon los cinco requisitos existentes en notación EARS y se hicieron explícitos casos ya cubiertos por criterios/clarificaciones. Esta adecuación ocurrió después de las pruebas de la implementación preexistente; no se presenta como una especificación EARS histórica anterior al código. No hubo nuevo comportamiento ni cambio de código.

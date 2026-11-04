@@ -90,14 +90,3 @@ Aclaraciones elaboradas a partir de la implementación existente. Las decisiones
 | H07 | Mantener el carrito como consulta, sin pagos ni confirmación automática de stock. | Aprobada |
 
 
-## CAR-H08 — Subtotal no visible por producto
-
-**Hallazgo real:** updateCartUI calculaba precio por cantidad y acumulaba el total, pero mostraba solo el precio unitario en cada fila. HU04 y los procedimientos CP06/CP07 ya contemplaban consultar subtotales.
-
-**Clasificación:** defecto del código de presentación, sin requisito nuevo. No se atribuye su autoría a la IA sin evidencia.
-
-**Corrección:** etiqueta Unidad y nueva línea Subtotal, manteniendo formatMoney y escapeHtml. Sin cambio de CSS o fórmulas.
-
-**Pruebas:** dos fallidas antes del cambio; dos aprobadas después, nueve de operaciones del carrito y quince de seguridad también aprobadas. Captura y hash del código conservados en tests/.
-
-**Estado:** corregido técnicamente y vista Unidad/Subtotal confirmada por el estudiante; lectura del código, integración y commit pendientes.

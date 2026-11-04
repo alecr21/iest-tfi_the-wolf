@@ -367,12 +367,4 @@ Se revisaron los resultados previos de T01–T08: 2+3+2+2+2+3+3+3 = 20 pruebas a
 | CA11 | Cumple | CP11, consulta de disponibilidad |
 | CA12 | Cumple | CP09/CP10, diálogo y conservación al cancelar |
 
-### Falla y fase 7
 
-CAR-H08 fue una omisión del código de presentación: subtotal calculado pero no visible. Dos pruebas fallaron antes de corregir; después pasaron, junto con la regresión. No fue una nueva funcionalidad porque HU04/CP06/CP07 ya contemplaban los subtotales. En T09 se formalizaron en EARS los requisitos existentes y los casos límite y se enlazó el plan con los ocho CAR-RF. Es una adecuación documental posterior, no un historial de especificación previa inventado. Fase 7: sin nuevo requisito funcional ni commit ficticio de cambio de alcance.
-
-### Alcance y pendientes
-
-Chrome real con SDK real, HTML/CSS/main.js actuales, REST simulado y contextos aislados. Persistencia con localStorage válido en el mismo origen; WhatsApp interceptado sin contacto real o envío. Recursos externos omitidos, responsive, accesibilidad completa, disponibilidad comercial, corrupción del almacenamiento y permisos de otras tablas no se acreditan por estas pruebas.
-
-El estudiante confirmó manualmente Unidad/Subtotal; no se da por revisado o comprendido todo el código. La copia integrada y la ejecución reproducible de pruebas se registran por separado en docs/CIERRE-ACTIVIDAD-2.md. La revisión humana y los commits reales siguen siendo requisitos de cierre; no se inventa cumplimiento histórico de un commit por tarea. Mensaje propuesto para este consolidado: `docs: cerrar validación técnica del carrito`.

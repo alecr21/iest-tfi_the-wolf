@@ -421,8 +421,4 @@ Dos fallas de los tests iniciales de esta tarea se distinguieron de defectos del
 
 No se identificó un nuevo requisito funcional en esta revisión. H04, H07 y H08 corrigen condiciones ya previstas; H06 explicita la ubicación de la descripción acordada por el estudiante, sin añadir funcionalidad. No se inventa un commit de cambio de requisito. Si aparece un requisito nuevo en otra etapa, debe documentarse antes de programarlo.
 
-### Pendientes para la entrega
 
-Revisión humana del estudiante sobre el código y el informe; integración de código, documentación y tests en el repositorio de entrega; rutas reproducibles y comandos de ejecución; commits reales sin reescribir la historia; revisión formal de 002 y 003. No se afirma cumplimiento histórico de tests primero ni de un commit por tarea en la implementación preexistente. No se creó commit ni se publicó durante esta tarea.
-
-**Estado:** Tarea 7 completada técnicamente. Los ocho CAT-RF cuentan con resultado y evidencia favorable dentro del alcance indicado; el catálogo queda validado técnicamente, no declarado listo para entregar con todos sus requisitos de proceso cerrados.

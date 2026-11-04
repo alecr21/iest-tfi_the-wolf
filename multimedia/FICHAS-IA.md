@@ -22,33 +22,43 @@ Los siguientes campos aplican a cada una de las cuatro piezas.
 - **Licencia.** Gráficos propios del TFI hechos con datos del repositorio y código asistido por IA. Sin fotografías ni ilustraciones de terceros. Registrar las condiciones de reutilización que correspondan al entregar el informe.
 - **Leyenda.** «Diseño y código asistidos por IA · Datos del proyecto».
 
-## Plantilla para completar por imagen, video u otro recurso generado con IA
+## Imágenes de la galería
 
-Copiar este bloque por cada pieza. Para las dos piezas que se mostrarán en tres iteraciones, conservar los archivos de cada intento y completar el registro de cambios.
+Las ocho piezas son imágenes promocionales generadas con Google Gemini. El modelo exacto y la fecha de generación no están registrados. En la galería se identifican como generadas con IA.
 
-| Campo | Completar |
+| ID | Pieza y archivo final |
 |---|---|
-| Nº y nombre | |
-| Tipo | Imagen, video, voz, música u otro |
-| Archivo o enlace | |
-| Herramienta, modelo o versión y fecha | |
-| Prompt final exacto | |
-| Iteraciones | Intento, archivo, problema observado y corrección |
-| Edición humana | Recorte, color, montaje, texto, subtítulos u otros ajustes realizados |
-| Uso en el proyecto | Página, sección, video o figura del informe |
-| Licencia y permiso de uso | Condiciones de la herramienta y fuente de cada recurso externo |
-| Leyenda de transparencia | Indicar qué se generó con IA y qué editó o grabó el estudiante |
+| IMG-01 | [Escritorio con notebook y periféricos](../media/galeria/escritorio.jpeg) |
+| IMG-02 | [Notebook con editor de código y componentes](../media/galeria/desarrollo.jpeg) |
+| IMG-03 | [Componentes de PC sobre una mesa](../media/galeria/componentes.jpeg) |
+| IMG-04 | [Persona usando una notebook en una plaza](../media/galeria/uso-notebook.jpeg) |
+| IMG-05 | [Escena de reparación electrónica](../media/galeria/reparacion.jpeg) |
+| IMG-06 | [Banco de trabajo con equipos y herramientas](../media/galeria/banco.jpeg) |
+| IMG-07 | [Mockup del catálogo en computadora](../media/galeria/tienda-notebook.jpeg) |
+| IMG-08 | [Mockup del catálogo en celular](../media/galeria/tienda-celular.jpeg) |
 
-| Iteración | Archivo | Qué se observó | Qué se cambió |
-|---|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+Para IMG-01 a IMG-06 se conserva la versión final de cada pieza. Los prompts originales, la cantidad de intentos y los retoques individuales no están registrados.
 
-Para el spot, registrar los clips de IA y los recursos de música o voz según su origen real. Si la voz es propia, identificarla como grabación del estudiante. El video demo se registra como grabación propia si fue producido sin IA.
+### IMG-07 — Mockup en computadora
 
-## Imágenes y spot del estudiante
+- **Reconstrucción del prompt.** Crear una imagen promocional de una notebook que muestre el catálogo de THE WOLF en su pantalla. Usar como referencia la captura adjunta de Tienda.
+- **Iteraciones.** La primera versión mostraba una tienda genérica en azul y blanco. La segunda incorporó una captura de Inicio de THE WOLF. La tercera recreó Tienda en escritorio y fue la elegida para la galería.
+- **Edición humana.** El autor seleccionó las capturas de referencia, comparó las versiones y eligió la imagen final.
+- **Leyenda.** Imagen generada con Google Gemini a partir de una captura propia de THE WOLF.
 
-[Registro individual de las ocho imágenes, el spot y las dos secuencias de iteraciones](REGISTRO-IMAGENES-Y-SPOT.md).
+### IMG-08 — Mockup en celular
 
-[Comparación de las tres versiones de cada mockup](EVOLUCION-MOCKUPS.md).
+- **Reconstrucción del prompt.** Crear una imagen promocional de un celular que muestre el catálogo móvil de THE WOLF. Usar como referencia la captura adjunta de Tienda.
+- **Iteraciones.** La primera versión mostraba un panel genérico en inglés. La segunda incorporó una captura de Inicio. La tercera recreó el catálogo móvil y quitó la barra con un dominio sin confirmar.
+- **Edición humana.** El autor aportó las capturas y eligió la versión final para la galería.
+- **Leyenda.** Imagen generada con Google Gemini a partir de una captura propia de THE WOLF.
+
+### Condiciones de uso de las imágenes
+
+Google indica que no reclama la propiedad del contenido original generado con sus servicios. El uso comercial queda sujeto a las condiciones aplicables y a los derechos de terceros. [Condiciones del servicio de Google](https://policies.google.com/terms?hl=es-419#toc-content)
+
+## VID-01 — Spot promocional
+
+- **Tipo y uso.** Video promocional de 49,52 segundos, enlazado en la galería y documentado en el guion técnico del informe. [Spot en YouTube](https://www.youtube.com/watch?v=bayZ9xMWXIU) · [MP4](spot-promocional.mp4)
+- **Herramienta y edición.** El informe identifica CapCut para el video. Quedan por confirmar el origen de los clips generados, el modelo, la fecha, el prompt y las iteraciones.
+- **Licencia y transparencia.** Quedan por registrar el origen y los permisos de la voz, la música y cualquier recurso de terceros, así como el crédito específico de los clips generados con IA.

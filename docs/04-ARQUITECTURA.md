@@ -78,4 +78,3 @@ El carrito se gestiona desde el frontend: permite reunir productos y cantidades 
 Las futuras ampliaciones deberán contar con requisitos, especificaciones y políticas de seguridad propias. Si se incorporan altas, modificaciones, administración, autenticación o almacenamiento de pedidos, será necesario revisar la arquitectura, los permisos de Supabase y la documentación correspondiente.
 
 
-La copia autorizada contiene page/nostros.html con esa escritura; se documenta su nombre real sin renombrarlo. LLL era una carpeta hermana, no un recurso de esta copia del sitio, y no se incluyó como parte del árbol. Se agregaron documentación, tests y herramientas solo en la copia integrada.

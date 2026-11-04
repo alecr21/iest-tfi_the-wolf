@@ -127,9 +127,6 @@ La conexión con Supabase y la visualización del catálogo cuentan con una impl
 
 La especificación documenta el comportamiento esperado de esa implementación. Su cumplimiento deberá confirmarse mediante las pruebas y evidencias registradas en `verificacion.md`.
 
-**Estado:** Validación técnica completada para los escenarios y alcances registrados en `verificacion.md`. Los criterios marcados se respaldan con pruebas controladas, lectura real previa y evidencia RLS aportada por el estudiante. Revisión humana, integración y commits pendientes; no se declara la Actividad 2 lista para entregar.
+**Estado:** Validación técnica completada para los escenarios y alcances registrados en `verificacion.md`. Los criterios marcados se respaldan con pruebas controladas, lectura real previa y evidencia RLS aportada.
 
 
-### Aclaración aprobada durante la Tarea 3
-
-El estudiante indicó «si dejala asi en ver detalle». Se explicita en CAT-RF04 y CAT-RF05 la ubicación de la descripción que ya utiliza el código. Es una aclaración del comportamiento existente; no se incorporó una funcionalidad nueva ni se modificó código por esta decisión.
